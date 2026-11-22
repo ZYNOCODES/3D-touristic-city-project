@@ -2,13 +2,17 @@
 
     blender -b --factory-startup --python blender/run_all.py -- [steps...] [--samples N]
 
-steps (default: fetch villa residence amenities interior gallery):
-    fetch      download CC0 HDRIs / textures / models (cached)
-    villa      public/models/villa.glb
-    residence  public/models/residence.glb
-    amenities  public/models/amenities.glb + props.glb
-    interior   public/models/interior.glb
-    gallery    Cycles stills → public/renders/*.jpg
+steps (default: everything below except masterplan):
+    fetch               download CC0 HDRIs / textures / models / Khronos products (cached)
+    fetch_people        download Rocketbox avatars + mocap clips (MIT, ~1.1 GB, cached)
+    villa               public/models/villa.glb
+    residence           public/models/residence.glb + src/data/generated/residence.json
+    amenities           public/models/amenities.glb + props.glb
+    interior_villa      public/models/villa_interior.glb (+ .json hotspots, validation report)
+    interior_apartment  public/models/apartment_interior.glb (+ .json)
+    build_people        public/models/people/*.glb, anims/*.glb, people.json
+    build_vegetation    public/models/vegetation/*.webp impostor atlases + vegetation.json
+    gallery             Cycles stills → public/renders/*.jpg
     masterplan full site assembly → assets/masterplan.blend + public/renders/aerial.jpg (slow)
 
 Every step is isolated: a failure is logged and the next step still runs, and the
@@ -23,7 +27,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bl_util as U  # noqa: E402
 
-DEFAULT = ["fetch", "villa", "residence", "amenities", "interior", "gallery"]
+DEFAULT = ["fetch", "fetch_people", "villa", "residence", "amenities", "interior_villa", "interior_apartment",
+           "build_people", "build_vegetation", "gallery"]
 
 
 def main():

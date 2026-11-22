@@ -7,12 +7,12 @@ import { SkySystem } from './env/SkySystem'
 import { Terrain } from './masterplan/Terrain'
 import { BayLife, Ocean } from './masterplan/Ocean'
 import { Paths } from './masterplan/Paths'
-import { Vegetation } from './masterplan/Vegetation'
+import { MediterraneanVegetation as Vegetation } from './vegetation/MediterraneanVegetation'
 import { Villas } from './masterplan/Villas'
 import { ResidenceBlock } from './masterplan/ResidenceBlock'
 import { Amenities } from './masterplan/Amenities'
 import { UnitPins } from './masterplan/UnitPins'
-import { People } from './people/People'
+import { RealPeople as People } from './people/RealPeople'
 import { CameraRig, unitAnchor } from './camera/CameraRig'
 import { Interior } from './interior/Interior'
 import { PostFX } from './post/PostFX'
@@ -119,7 +119,7 @@ export function Experience() {
       shadows
       flat
       dpr={[1, 1.75]}
-      gl={{ antialias: false, powerPreference: 'high-performance', stencil: false }}
+      gl={{ antialias: false, powerPreference: 'high-performance', stencil: false, preserveDrawingBuffer: import.meta.env.DEV }}
       camera={{ fov: 40, near: 0.5, far: 30000, position: [0, 600, 1200] }}
       onPointerMissed={() => {
         const st = useStore.getState()

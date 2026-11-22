@@ -10,7 +10,7 @@ import { APARTMENTS, STATUS_META } from '../../data/units'
 import { loadModel } from '../../lib/assets'
 import { padHeight } from '../../lib/heightfield'
 import { useStore } from '../../store'
-import { Parts, RES, cellBox, residenceParts } from '../geo/build'
+import { Parts, RES, cellBox, cellEdgeZ, residenceParts } from '../geo/build'
 import { gltfToProto, type Proto } from '../geo/instancing'
 import { getMaterial } from '../materials/library'
 import { GLOBAL, damp } from '../shared'
@@ -167,7 +167,7 @@ export function ResidenceBlock() {
 
   const frameRef = useRef<THREE.LineSegments>(null)
   const dioramaRef = useRef<THREE.Group>(null)
-  const [diorama, setDiorama] = useState<{ id: string; obj: THREE.Group; box: THREE.Box3 } | null>(null)
+  const [diorama, setDiorama] = useState<{ id: string; obj: THREE.Group; box: THREE.Box3; edge: number } | null>(null)
   const cutAmt = useRef(0)
 
   // build the diorama for the selected apartment
@@ -180,7 +180,7 @@ export function ResidenceBlock() {
         return
       }
       const box = cellBox(a.floorIdx!, a.bay!)
-      setDiorama({ id: a.id, obj: buildDiorama(box, a.bedrooms), box })
+      setDiorama({ id: a.id, obj: buildDiorama(box, a.bedrooms), box, edge: cellEdgeZ(a.floorIdx!, a.bay!) })
       cutAmt.current = 0
     })
   }, [])
@@ -205,6 +205,20 @@ export function ResidenceBlock() {
         b.getSize(hoverRef.current.scale).addScalar(0.25)
       }
     }
+    // touring an apartment: open the building around its cell + terrace (interior model fills it)
+    const touring = (st.mode === 'interior' || st.mode === 'sheet' || st.mode === 'entering') && st.interiorUnit?.startsWith('A')
+    if (touring && st.mode !== 'entering') {
+      const a = APARTMENTS.find((x) => x.id === st.interiorUnit)!
+      const b = cellBox(a.floorIdx!, a.bay!)
+      cut.uCutMin.value.copy(b.min).add(origin).add(new THREE.Vector3(-0.05, -0.1, -0.05))
+      cut.uCutMax.value.copy(b.max).add(origin).add(new THREE.Vector3(0.05, 0.08, 0))
+      cut.uCutMax.value.z = origin.z + b.max.z + 3.2
+      if (dioramaRef.current) dioramaRef.current.visible = false
+      if (frameRef.current) frameRef.current.visible = false
+      return
+    }
+    if (dioramaRef.current) dioramaRef.current.visible = true
+    if (frameRef.current) frameRef.current.visible = true
     // cutaway animation
     if (diorama) {
       cutAmt.current = damp(cutAmt.current, 1, 3.5, dt)
@@ -212,7 +226,9 @@ export function ResidenceBlock() {
       const b = diorama.box
       const min = b.min.clone().add(origin)
       const max = b.max.clone().add(origin)
-      max.z += 2.8 // also remove the terrace railing in front of the unit
+      max.z = diorama.edge + 0.3 + origin.z // also open the terrace and its balustrade in front of the unit
+      min.y -= 0.05
+      max.y -= 0.05
       // reveal grows from the centre outwards
       const ctr = min.clone().add(max).multiplyScalar(0.5)
       cut.uCutMin.value.copy(ctr).lerp(min, k)

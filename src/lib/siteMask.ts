@@ -1,5 +1,5 @@
 // Rasterised site mask (2 m cells) used to keep trees off roads, buildings and amenities.
-import layout from '../data/layout.json'
+import layout from '../data/layout.json' with { type: 'json' }
 
 export const MASK = { x0: -560, z0: -620, size: 1120, cell: 2 }
 export const FREE = 0

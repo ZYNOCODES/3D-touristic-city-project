@@ -1,0 +1,280 @@
+{
+ "source": "Microsoft Rocketbox (MIT) \u2014 https://github.com/microsoft/Microsoft-Rocketbox",
+ "avatars": [
+  {
+   "id": "Female_Adult_01",
+   "file": "models/people/Female_Adult_01.glb",
+   "child": false,
+   "female": true,
+   "height": 1.739
+  },
+  {
+   "id": "Female_Adult_02",
+   "file": "models/people/Female_Adult_02.glb",
+   "child": false,
+   "female": true,
+   "height": 1.731
+  },
+  {
+   "id": "Female_Adult_03",
+   "file": "models/people/Female_Adult_03.glb",
+   "child": false,
+   "female": true,
+   "height": 1.739
+  },
+  {
+   "id": "Female_Adult_05",
+   "file": "models/people/Female_Adult_05.glb",
+   "child": false,
+   "female": true,
+   "height": 1.736
+  },
+  {
+   "id": "Female_Adult_08",
+   "file": "models/people/Female_Adult_08.glb",
+   "child": false,
+   "female": true,
+   "height": 1.735
+  },
+  {
+   "id": "Female_Adult_13",
+   "file": "models/people/Female_Adult_13.glb",
+   "child": false,
+   "female": true,
+   "height": 1.751
+  },
+  {
+   "id": "Female_Adult_17",
+   "file": "models/people/Female_Adult_17.glb",
+   "child": false,
+   "female": true,
+   "height": 1.751
+  },
+  {
+   "id": "Male_Adult_01",
+   "file": "models/people/Male_Adult_01.glb",
+   "child": false,
+   "female": false,
+   "height": 1.823
+  },
+  {
+   "id": "Male_Adult_02",
+   "file": "models/people/Male_Adult_02.glb",
+   "child": false,
+   "female": false,
+   "height": 1.822
+  },
+  {
+   "id": "Male_Adult_06",
+   "file": "models/people/Male_Adult_06.glb",
+   "child": false,
+   "female": false,
+   "height": 1.831
+  },
+  {
+   "id": "Male_Adult_08",
+   "file": "models/people/Male_Adult_08.glb",
+   "child": false,
+   "female": false,
+   "height": 1.825
+  },
+  {
+   "id": "Male_Adult_09",
+   "file": "models/people/Male_Adult_09.glb",
+   "child": false,
+   "female": false,
+   "height": 1.821
+  },
+  {
+   "id": "Male_Adult_14",
+   "file": "models/people/Male_Adult_14.glb",
+   "child": false,
+   "female": false,
+   "height": 1.795
+  },
+  {
+   "id": "Male_Adult_16",
+   "file": "models/people/Male_Adult_16.glb",
+   "child": false,
+   "female": false,
+   "height": 1.809
+  },
+  {
+   "id": "Female_Child_01",
+   "file": "models/people/Female_Child_01.glb",
+   "child": true,
+   "female": true,
+   "height": 1.431
+  },
+  {
+   "id": "Female_Child_02",
+   "file": "models/people/Female_Child_02.glb",
+   "child": true,
+   "female": true,
+   "height": 1.437
+  },
+  {
+   "id": "Male_Child_01",
+   "file": "models/people/Male_Child_01.glb",
+   "child": true,
+   "female": false,
+   "height": 1.434
+  },
+  {
+   "id": "Male_Child_02",
+   "file": "models/people/Male_Child_02.glb",
+   "child": true,
+   "female": false,
+   "height": 1.425
+  }
+ ],
+ "clips": {
+  "f_idle_neutral_01": {
+   "file": "models/people/anims/f_idle_neutral_01.glb",
+   "duration": 15.533,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.919,
+   "inPlace": true
+  },
+  "f_idle_look_around_01": {
+   "file": "models/people/anims/f_idle_look_around_01.glb",
+   "duration": 4.467,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.919,
+   "inPlace": true
+  },
+  "f_drink_idle": {
+   "file": "models/people/anims/f_drink_idle.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.919,
+   "inPlace": true
+  },
+  "f_sit_chair_idle_relaxed_01": {
+   "file": "models/people/anims/f_sit_chair_idle_relaxed_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.611,
+   "inPlace": true
+  },
+  "f_sit_table_idle_neutral_01": {
+   "file": "models/people/anims/f_sit_table_idle_neutral_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.611,
+   "inPlace": true
+  },
+  "f_crouch_idle": {
+   "file": "models/people/anims/f_crouch_idle.glb",
+   "duration": 9.933,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.329,
+   "inPlace": true
+  },
+  "m_idle_neutral_01": {
+   "file": "models/people/anims/m_idle_neutral_01.glb",
+   "duration": 11.667,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": true
+  },
+  "m_idle_look_around_01": {
+   "file": "models/people/anims/m_idle_look_around_01.glb",
+   "duration": 4.633,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": true
+  },
+  "m_drink_idle": {
+   "file": "models/people/anims/m_drink_idle.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": true
+  },
+  "m_cell_phone_talk_01": {
+   "file": "models/people/anims/m_cell_phone_talk_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": true
+  },
+  "m_sit_chair_idle_relaxed_01": {
+   "file": "models/people/anims/m_sit_chair_idle_relaxed_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.591,
+   "inPlace": true
+  },
+  "m_sit_table_idle_relaxed_01": {
+   "file": "models/people/anims/m_sit_table_idle_relaxed_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.579,
+   "inPlace": true
+  },
+  "f_walk_neutral": {
+   "file": "models/people/anims/f_walk_neutral.glb",
+   "duration": 1.233,
+   "rootSpeed": 1.295,
+   "rootHeight": 0.914,
+   "inPlace": true
+  },
+  "f_walk_stroll_01": {
+   "file": "models/people/anims/f_walk_stroll_01.glb",
+   "duration": 1.4,
+   "rootSpeed": 0.926,
+   "rootHeight": 0.921,
+   "inPlace": true
+  },
+  "f_walk_fast_01": {
+   "file": "models/people/anims/f_walk_fast_01.glb",
+   "duration": 1.033,
+   "rootSpeed": 1.53,
+   "rootHeight": 0.919,
+   "inPlace": true
+  },
+  "m_walk_neutral": {
+   "file": "models/people/anims/m_walk_neutral.glb",
+   "duration": 1.067,
+   "rootSpeed": 1.402,
+   "rootHeight": 0.902,
+   "inPlace": true
+  },
+  "m_walk_stroll_01": {
+   "file": "models/people/anims/m_walk_stroll_01.glb",
+   "duration": 1.567,
+   "rootSpeed": 0.693,
+   "rootHeight": 0.893,
+   "inPlace": true
+  },
+  "m_walk_fast_01": {
+   "file": "models/people/anims/m_walk_fast_01.glb",
+   "duration": 1.067,
+   "rootSpeed": 1.495,
+   "rootHeight": 0.889,
+   "inPlace": true
+  },
+  "f_gestic_talk_neutral_04": {
+   "file": "models/people/anims/f_gestic_talk_neutral_04.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.919,
+   "inPlace": false
+  },
+  "m_gestic_talk_neutral_04": {
+   "file": "models/people/anims/m_gestic_talk_neutral_04.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": false
+  },
+  "m_gestic_talk_self_assured_01": {
+   "file": "models/people/anims/m_gestic_talk_self_assured_01.glb",
+   "duration": 16.0,
+   "rootSpeed": 0.0,
+   "rootHeight": 0.895,
+   "inPlace": false
+  }
+ }
+}

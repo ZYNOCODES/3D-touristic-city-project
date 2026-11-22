@@ -1,0 +1,166 @@
+00:03.922  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+[blender] Cycles device: OPTIX
+19:11:51 | INFO: Data are loaded, start creating Blender stuff
+19:11:51 | INFO: Blender create Mesh node Cylinder.009
+19:11:51 | INFO: glTF import finished in 0.06s
+19:11:51 | INFO: Data are loaded, start creating Blender stuff
+19:11:51 | INFO: Blender create Mesh node mesh
+19:11:51 | INFO: Blender create Mesh node mesh.001
+19:11:51 | INFO: glTF import finished in 0.07s
+19:11:53 | INFO: Data are loaded, start creating Blender stuff
+19:11:53 | INFO: Blender create Mesh node Cube.001
+19:11:53 | INFO: glTF import finished in 0.05s
+19:11:54 | INFO: Data are loaded, start creating Blender stuff
+19:11:54 | INFO: Blender create Mesh node HaworthiaScan_Model_2.001
+19:11:54 | INFO: Blender create Mesh node Plane.118
+19:11:54 | INFO: Blender create Mesh node Plane.116
+19:11:54 | INFO: Blender create Mesh node Mesh
+19:11:54 | INFO: glTF import finished in 0.08s
+19:11:54 | INFO: Data are loaded, start creating Blender stuff
+19:11:54 | INFO: Blender create Mesh node SheenChair_fabric
+19:11:54 | INFO: Blender create Mesh node SheenChair_wood
+19:11:54 | INFO: Blender create Mesh node SheenChair_metal
+19:11:54 | INFO: Blender create Mesh node SheenChair_label
+19:11:54 | INFO: glTF import finished in 0.13s
+19:11:54 | INFO: Data are loaded, start creating Blender stuff
+19:11:54 | INFO: Blender create Mesh node SheenChair_fabric
+19:11:55 | INFO: Blender create Mesh node SheenChair_wood
+19:11:55 | INFO: Blender create Mesh node SheenChair_metal
+19:11:55 | INFO: Blender create Mesh node SheenChair_label
+19:11:55 | INFO: glTF import finished in 0.24s
+19:11:55 | INFO: Data are loaded, start creating Blender stuff
+19:11:55 | INFO: Blender create Mesh node Circle.001
+19:11:55 | INFO: glTF import finished in 0.08s
+19:11:55 | INFO: Data are loaded, start creating Blender stuff
+19:11:55 | INFO: Blender create Mesh node Circle
+19:11:55 | INFO: Blender create Mesh node Circle.001
+19:11:55 | INFO: Blender create Mesh node low.008
+19:11:55 | INFO: glTF import finished in 0.18s
+19:11:55 | INFO: Data are loaded, start creating Blender stuff
+19:11:55 | INFO: Blender create Mesh node potted_plant_01_base_low
+19:11:55 | INFO: Blender create Mesh node Circle.008
+19:11:55 | INFO: Blender create Mesh node Circle.002
+19:11:55 | INFO: Blender create Mesh node Plane.070
+19:11:56 | INFO: glTF import finished in 0.40s
+19:11:56 | INFO: Data are loaded, start creating Blender stuff
+19:11:56 | INFO: Blender create Mesh node Cube.001
+19:11:56 | INFO: glTF import finished in 0.05s
+19:11:56 | INFO: Data are loaded, start creating Blender stuff
+19:11:56 | INFO: Blender create Mesh node Cylinder.009
+19:11:56 | INFO: glTF import finished in 0.09s
+19:12:00 | INFO: Data are loaded, start creating Blender stuff
+19:12:00 | INFO: Blender create Mesh node SpecularSilkPouf
+19:12:01 | INFO: glTF import finished in 0.25s
+19:12:01 | INFO: Data are loaded, start creating Blender stuff
+19:12:01 | INFO: Blender create Mesh node SheenChair_fabric
+19:12:01 | INFO: Blender create Mesh node SheenChair_wood
+19:12:01 | INFO: Blender create Mesh node SheenChair_metal
+19:12:01 | INFO: Blender create Mesh node SheenChair_label
+19:12:01 | INFO: glTF import finished in 0.24s
+19:12:01 | INFO: Data are loaded, start creating Blender stuff
+19:12:01 | INFO: Blender create Mesh node potted_plant_01_base_low
+19:12:01 | INFO: Blender create Mesh node Circle.008
+19:12:01 | INFO: Blender create Mesh node Circle.002
+19:12:01 | INFO: Blender create Mesh node Plane.070
+19:12:02 | INFO: glTF import finished in 0.55s
+19:12:07 | INFO: Data are loaded, start creating Blender stuff
+19:12:07 | INFO: Blender create Mesh node Circle
+19:12:07 | INFO: Blender create Mesh node Circle.001
+19:12:07 | INFO: Blender create Mesh node low.008
+19:12:07 | INFO: glTF import finished in 0.22s
+C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\blender\render_gallery.py:129: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m.use_nodes = True
+C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\blender\render_gallery.py:153: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  hm.use_nodes = True
+C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\blender\render_gallery.py:84: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+[blender] rendering villa_living
+00:41.250  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\villa_living.jpg'
+[blender] rendering villa_dining
+00:58.516  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\villa_dining.jpg'
+[blender] rendering villa_terrace
+01:18.703  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\villa_terrace.jpg'
+[blender] rendering villa_bedroom
+01:38.250  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\villa_bedroom.jpg'
+[blender] Cycles device: OPTIX
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node GlamVelvetSofa_legs
+19:13:25 | INFO: Blender create Mesh node GlamVelvetSofa_fabric
+19:13:25 | INFO: Blender create Mesh node GlamVelvetSofa_feet
+19:13:25 | INFO: glTF import finished in 0.08s
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node BezierCircle.002
+19:13:25 | INFO: glTF import finished in 0.11s
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node Cube.007
+19:13:25 | INFO: glTF import finished in 0.04s
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node SpecularSilkPouf
+19:13:25 | INFO: glTF import finished in 0.18s
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node Flowers
+19:13:25 | INFO: Blender create Mesh node GlassAlpha
+19:13:25 | INFO: Blender create Mesh node GlassTransmission
+19:13:25 | INFO: glTF import finished in 0.05s
+19:13:25 | INFO: Data are loaded, start creating Blender stuff
+19:13:25 | INFO: Blender create Mesh node pot
+19:13:25 | INFO: Blender create Mesh node leaves
+19:13:25 | INFO: Blender create Mesh node dirt
+19:13:26 | INFO: Blender create Mesh node firefly1
+19:13:26 | INFO: Blender create Mesh node firefly1_wing_right
+19:13:26 | INFO: Blender create Mesh node firefly1_wing_left
+19:13:26 | INFO: Blender create Mesh node firefly2
+19:13:26 | INFO: Blender create Mesh node firefly2_wing_left
+19:13:26 | INFO: Blender create Mesh node firefly2_wing_right
+19:13:26 | INFO: glTF import finished in 0.32s
+19:13:26 | INFO: Data are loaded, start creating Blender stuff
+19:13:26 | INFO: Blender create Mesh node Cube.054
+19:13:26 | INFO: glTF import finished in 0.06s
+19:13:26 | INFO: Data are loaded, start creating Blender stuff
+19:13:26 | INFO: Blender create Mesh node Cube.054
+19:13:26 | INFO: glTF import finished in 0.08s
+19:13:26 | INFO: Data are loaded, start creating Blender stuff
+19:13:26 | INFO: Blender create Mesh node Cube.054
+19:13:26 | INFO: glTF import finished in 0.13s
+19:13:26 | INFO: Data are loaded, start creating Blender stuff
+19:13:26 | INFO: Blender create Mesh node Cube.054
+19:13:26 | INFO: glTF import finished in 0.07s
+19:13:27 | INFO: Data are loaded, start creating Blender stuff
+19:13:27 | INFO: Blender create Mesh node Circle.001
+19:13:27 | INFO: glTF import finished in 0.12s
+19:13:27 | INFO: Data are loaded, start creating Blender stuff
+19:13:27 | INFO: Blender create Mesh node mesh
+19:13:27 | INFO: Blender create Mesh node mesh.001
+19:13:27 | INFO: glTF import finished in 0.12s
+19:13:28 | INFO: Data are loaded, start creating Blender stuff
+19:13:28 | INFO: Blender create Mesh node Cube.001
+19:13:28 | INFO: glTF import finished in 0.06s
+19:13:31 | INFO: Data are loaded, start creating Blender stuff
+19:13:31 | INFO: Blender create Mesh node Folding_Chair_Wood
+19:13:31 | INFO: Blender create Mesh node Folding_Table_Wood.001
+19:13:31 | INFO: Blender create Mesh node Folding_Chair_Wood.001
+19:13:31 | INFO: glTF import finished in 0.11s
+19:13:31 | INFO: Data are loaded, start creating Blender stuff
+19:13:31 | INFO: Blender create Mesh node Circle
+19:13:31 | INFO: Blender create Mesh node Circle.001
+19:13:31 | INFO: Blender create Mesh node low.008
+19:13:31 | INFO: glTF import finished in 0.27s
+19:13:31 | INFO: Data are loaded, start creating Blender stuff
+19:13:31 | INFO: Blender create Mesh node Circle
+19:13:31 | INFO: Blender create Mesh node Circle.001
+19:13:31 | INFO: Blender create Mesh node low.008
+19:13:31 | INFO: glTF import finished in 0.23s
+[blender] rendering apt_living
+02:07.859  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\apt_living.jpg'
+[blender] rendering apt_kitchen
+02:27.422  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\apt_kitchen.jpg'
+[blender] rendering apt_bedroom
+02:47.953  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\apt_bedroom.jpg'
+C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\blender\render_gallery.py:256: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  lm.use_nodes = True
+[blender] rendering exterior
+03:03.422  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\exterior.jpg'
+[blender] gallery done → public\renders
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+
+Blender quit

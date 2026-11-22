@@ -234,22 +234,9 @@ def garden(A, col):
 def props(col):
     b = U.box
     out = {}
-    out["lounger"] = collect(lambda: (
-        b("lounger_frame", "wood", -0.36, 0.0, -1.0, 0.36, 0.3, 1.0, col, bevel=0.03),
-        b("lounger_mat", "cushion", -0.33, 0.3, -0.95, 0.33, 0.4, 0.45, col, bevel=0.04),
-    ))
-    back = b("lounger_back", "cushion", -0.33, 0.3, 0.45, 0.33, 0.4, 1.0, col, bevel=0.04)
-    back.rotation_euler = (math.radians(-40), 0, 0)
-    out["lounger"].append(back)
-    out["umbrella"] = collect(lambda: (U.cyl("umbrella_pole", "wood", 0, 0, 0, 0.04, 2.5, 8, col=col),))
-    bpy.ops.mesh.primitive_cone_add(vertices=10, radius1=1.6, radius2=0.05, depth=0.5, location=U.W(0, 2.55, 0), end_fill_type="NOTHING")
-    canopy = bpy.context.active_object
-    canopy.name = "umbrella_canopy"
-    for c in list(canopy.users_collection):
-        c.objects.unlink(canopy)
-    col.objects.link(canopy)
-    canopy.data.materials.append(U.material("umbrella"))
-    out["umbrella"].append(canopy)
+    import furniture as F  # detailed teak lounger (slats, rails, adjustable back, padded mattress)
+    out["lounger"] = F.lounger(col, "pool", 0.0, 0.0)
+    out["umbrella"] = F.parasol(col, "pool", 0.0, 0.0, r=1.6)
     out["lamp"] = collect(lambda: (
         U.cyl("lamp_pole", "frame", 0, 0, 0, 0.07, 4.2, 10, r2=0.05, col=col),
         b("lamp_arm", "frame", -0.08, 4.1, -0.08, 0.08, 4.2, 0.7, col),

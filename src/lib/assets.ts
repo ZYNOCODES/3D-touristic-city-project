@@ -156,3 +156,20 @@ export function loadModel(key: string, onProgress?: (p: number) => void) {
   }
   return gltfCache.get(key)!
 }
+
+const urlCache = new Map<string, Promise<GLTF | null>>()
+/** Load a GLB by public path (e.g. models/people/Male_Adult_01.glb); null on failure. */
+export function loadGLTFUrl(path: string) {
+  if (!urlCache.has(path)) {
+    urlCache.set(
+      path,
+      new Promise<GLTF | null>((resolve) =>
+        gltfLoader.load(BASE + path, resolve, undefined, (e) => {
+          console.warn('[assets] failed', path, e)
+          resolve(null)
+        }),
+      ),
+    )
+  }
+  return urlCache.get(path)!
+}

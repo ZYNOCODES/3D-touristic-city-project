@@ -1,0 +1,922 @@
+[
+ {
+  "name": "kloofendal_48d_partly_cloudy_puresky",
+  "type": "HDRI",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+  "author": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "modifications": "Normalised exposure, sun direction detected and aligned to the scene sun; blended per time of day.",
+  "path": "public/hdri/day.hdr"
+ },
+ {
+  "name": "qwantani_sunset_puresky",
+  "type": "HDRI",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/qwantani_sunset_puresky",
+  "author": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "modifications": "Normalised exposure, sun direction detected and aligned to the scene sun; blended per time of day.",
+  "path": "public/hdri/golden.hdr"
+ },
+ {
+  "name": "qwantani_night_puresky",
+  "type": "HDRI",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/qwantani_night_puresky",
+  "author": "Greg Zaal, Jarod Guest",
+  "license": "CC0 1.0",
+  "modifications": "Normalised exposure, sun direction detected and aligned to the scene sun; blended per time of day.",
+  "path": "public/hdri/night.hdr"
+ },
+ {
+  "name": "aerial_grass_rock",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/aerial_grass_rock",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terrain_grass/"
+ },
+ {
+  "name": "forest_ground_04",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/forest_ground_04",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terrain_forest/"
+ },
+ {
+  "name": "aerial_rocks_02",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/aerial_rocks_02",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terrain_rock/"
+ },
+ {
+  "name": "coast_sand_01",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/coast_sand_01",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terrain_sand/"
+ },
+ {
+  "name": "patterned_paving",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/patterned_paving",
+  "author": "Charlotte Baglioni",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/paving/"
+ },
+ {
+  "name": "white_plaster_02",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/white_plaster_02",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/plaster/"
+ },
+ {
+  "name": "oak_veneer_01",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/oak_veneer_01",
+  "author": "Jenelle van Heerden",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/oak/"
+ },
+ {
+  "name": "wood_floor_deck",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/wood_floor_deck",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/deck/"
+ },
+ {
+  "name": "large_floor_tiles_02",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/large_floor_tiles_02",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/stone_floor/"
+ },
+ {
+  "name": "blue_floor_tiles_01",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/blue_floor_tiles_01",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/pool_tiles/"
+ },
+ {
+  "name": "rough_linen",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/rough_linen",
+  "author": "colormass, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/linen/"
+ },
+ {
+  "name": "marble_01",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/marble_01",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/marble/"
+ },
+ {
+  "name": "walnut_veneer",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/walnut_veneer",
+  "author": "Jenelle van Heerden",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/walnut/"
+ },
+ {
+  "name": "clean_asphalt",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/clean_asphalt",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/asphalt/"
+ },
+ {
+  "name": "rubber_tiles",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/rubber_tiles",
+  "author": "Amal Kumar",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/rubber/"
+ },
+ {
+  "name": "grey_roof_01",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/grey_roof_01",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/roof/"
+ },
+ {
+  "name": "rustic_stone_wall",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/rustic_stone_wall",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/stone_wall/"
+ },
+ {
+  "name": "stacked_stone_wall",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/stacked_stone_wall",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/stacked_stone/"
+ },
+ {
+  "name": "terracotta_floor_tiles",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/terracotta_floor_tiles",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terracotta/"
+ },
+ {
+  "name": "herringbone_parquet",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/herringbone_parquet",
+  "author": "Jenelle van Heerden, Sergej Majboroda",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/parquet/"
+ },
+ {
+  "name": "white_stucco",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/white_stucco",
+  "author": "Amal Kumar",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/stucco/"
+ },
+ {
+  "name": "terrazzo_tiles",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/terrazzo_tiles",
+  "author": "Amal Kumar",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/terrazzo/"
+ },
+ {
+  "name": "beige_wall_001",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/beige_wall_001",
+  "author": "Dimitrios Savva, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/travertine/"
+ },
+ {
+  "name": "marble_tiles",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/marble_tiles",
+  "author": "Charlotte Baglioni",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/marble_tiles/"
+ },
+ {
+  "name": "fine_grained_wood",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/fine_grained_wood",
+  "author": "Rob Tuytel",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/cladding/"
+ },
+ {
+  "name": "smooth_concrete_floor",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/smooth_concrete_floor",
+  "author": "Dimitrios Savva",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/concrete_smooth/"
+ },
+ {
+  "name": "leafy_grass",
+  "type": "PBR texture",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/leafy_grass",
+  "author": "Charlotte Baglioni",
+  "license": "CC0 1.0",
+  "modifications": "1K maps; colour maps of plaster/stucco/linen dropped in favour of tinted base colours where noted.",
+  "path": "public/textures/lawn/"
+ },
+ {
+  "name": "potted_plant_02",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/potted_plant_02",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/potted_plant_02/potted_plant_02_1k.gltf"
+ },
+ {
+  "name": "potted_plant_04",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/potted_plant_04",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/potted_plant_04/potted_plant_04_1k.gltf"
+ },
+ {
+  "name": "pachira_aquatica_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/pachira_aquatica_01",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/pachira_aquatica_01/pachira_aquatica_01_1k.gltf"
+ },
+ {
+  "name": "calathea_orbifolia_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/calathea_orbifolia_01",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/calathea_orbifolia_01/calathea_orbifolia_01_1k.gltf"
+ },
+ {
+  "name": "dining_chair_02",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/dining_chair_02",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/dining_chair_02/dining_chair_02_1k.gltf"
+ },
+ {
+  "name": "mid_century_lounge_chair",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/mid_century_lounge_chair",
+  "author": "Kuutti Siitonen",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/mid_century_lounge_chair/mid_century_lounge_chair_1k.gltf"
+ },
+ {
+  "name": "modern_ceiling_lamp_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/modern_ceiling_lamp_01",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/modern_ceiling_lamp_01/modern_ceiling_lamp_01_1k.gltf"
+ },
+ {
+  "name": "ceramic_vase_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/ceramic_vase_01",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/ceramic_vase_01/ceramic_vase_01_1k.gltf"
+ },
+ {
+  "name": "ceramic_vase_03",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/ceramic_vase_03",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/ceramic_vase_03/ceramic_vase_03_1k.gltf"
+ },
+ {
+  "name": "wicker_basket_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/wicker_basket_01",
+  "author": "Kuutti Siitonen",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/wicker_basket_01/wicker_basket_01_1k.gltf"
+ },
+ {
+  "name": "side_table_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/side_table_01",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/side_table_01/side_table_01_1k.gltf"
+ },
+ {
+  "name": "potted_plant_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/potted_plant_01",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/potted_plant_01/potted_plant_01_1k.gltf"
+ },
+ {
+  "name": "island_tree_01",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/island_tree_01",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/island_tree_01/island_tree_01_1k.gltf"
+ },
+ {
+  "name": "island_tree_02",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/island_tree_02",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/island_tree_02/island_tree_02_1k.gltf"
+ },
+ {
+  "name": "island_tree_03",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/island_tree_03",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/island_tree_03/island_tree_03_1k.gltf"
+ },
+ {
+  "name": "pine_tree_01",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/pine_tree_01",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/pine_tree_01/pine_tree_01_1k.gltf"
+ },
+ {
+  "name": "fir_tree_01",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/fir_tree_01",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/fir_tree_01/fir_tree_01_1k.gltf"
+ },
+ {
+  "name": "jacaranda_tree",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/jacaranda_tree",
+  "author": "Rob Tuytel, Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/jacaranda_tree/jacaranda_tree_1k.gltf"
+ },
+ {
+  "name": "tree_small_02",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/tree_small_02",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/tree_small_02/tree_small_02_1k.gltf"
+ },
+ {
+  "name": "shrub_01",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/shrub_01",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/shrub_01/shrub_01_1k.gltf"
+ },
+ {
+  "name": "shrub_04",
+  "type": "3D model (scanned plant)",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/shrub_04",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Rendered in Blender into 24-view impostor atlases (8 azimuths × 3 elevations), WebP.",
+  "path": "assets/cache/models/shrub_04/shrub_04_1k.gltf"
+ },
+ {
+  "name": "modern_arm_chair_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/modern_arm_chair_01",
+  "author": "Vibrant Nordic",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/modern_arm_chair_01/modern_arm_chair_01_1k.gltf"
+ },
+ {
+  "name": "modern_wooden_cabinet",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/modern_wooden_cabinet",
+  "author": "Patrik Pangerl",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/modern_wooden_cabinet/modern_wooden_cabinet_1k.gltf"
+ },
+ {
+  "name": "modern_coffee_table_02",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/modern_coffee_table_02",
+  "author": "Amin",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/modern_coffee_table_02/modern_coffee_table_02_1k.gltf"
+ },
+ {
+  "name": "standing_picture_frame_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/standing_picture_frame_01",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/standing_picture_frame_01/standing_picture_frame_01_1k.gltf"
+ },
+ {
+  "name": "brass_vase_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/brass_vase_01",
+  "author": "Rico Cilliers",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/brass_vase_01/brass_vase_01_1k.gltf"
+ },
+ {
+  "name": "wicker_basket_02",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/wicker_basket_02",
+  "author": "Kuutti Siitonen",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/wicker_basket_02/wicker_basket_02_1k.gltf"
+ },
+ {
+  "name": "outdoor_table_chair_set_01",
+  "type": "3D model",
+  "source": "Poly Haven",
+  "url": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+  "author": "James Ray Cock",
+  "license": "CC0 1.0",
+  "modifications": "Imported in Blender, placed & validated in generated interiors; textures capped at 1K, exported as WebP inside the interior GLBs.",
+  "path": "assets/cache/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_1k.gltf"
+ },
+ {
+  "name": "GlamVelvetSofa",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlamVelvetSofa",
+  "author": "Wayfair, LLC",
+  "license": "CC-BY-4.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/GlamVelvetSofa.glb"
+ },
+ {
+  "name": "SheenWoodLeatherSofa",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenWoodLeatherSofa",
+  "author": "Darmstadt Graphics Group GmbH",
+  "license": "CC-BY-4.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/SheenWoodLeatherSofa.glb"
+ },
+ {
+  "name": "SheenChair",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenChair",
+  "author": "Wayfair / Khronos",
+  "license": "CC0-1.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/SheenChair.glb"
+ },
+ {
+  "name": "SpecularSilkPouf",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SpecularSilkPouf",
+  "author": "2023 Wayfair, LLC",
+  "license": "CC-BY-4.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/SpecularSilkPouf.glb"
+ },
+ {
+  "name": "GlassVaseFlowers",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlassVaseFlowers",
+  "author": "Wayfair / Khronos",
+  "license": "CC0-1.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/GlassVaseFlowers.glb"
+ },
+ {
+  "name": "DiffuseTransmissionPlant",
+  "type": "3D model (product)",
+  "source": "Khronos glTF-Sample-Assets",
+  "url": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DiffuseTransmissionPlant",
+  "author": "Darmstadt Graphics Group GmbH",
+  "license": "CC-BY-4.0",
+  "modifications": "Scaled to real-world size, placed & validated in the apartment / villa interiors; textures re-encoded (8-bit WebP, ≤1K).",
+  "path": "assets/cache/khronos/DiffuseTransmissionPlant.glb"
+ },
+ {
+  "name": "Female_Adult_01",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_01.glb"
+ },
+ {
+  "name": "Female_Adult_02",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_02.glb"
+ },
+ {
+  "name": "Female_Adult_03",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_03.glb"
+ },
+ {
+  "name": "Female_Adult_05",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_05.glb"
+ },
+ {
+  "name": "Female_Adult_08",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_08.glb"
+ },
+ {
+  "name": "Female_Adult_13",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_13.glb"
+ },
+ {
+  "name": "Female_Adult_17",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Adult_17.glb"
+ },
+ {
+  "name": "Male_Adult_01",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_01.glb"
+ },
+ {
+  "name": "Male_Adult_02",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_02.glb"
+ },
+ {
+  "name": "Male_Adult_06",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_06.glb"
+ },
+ {
+  "name": "Male_Adult_08",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_08.glb"
+ },
+ {
+  "name": "Male_Adult_09",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_09.glb"
+ },
+ {
+  "name": "Male_Adult_14",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_14.glb"
+ },
+ {
+  "name": "Male_Adult_16",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Adult_16.glb"
+ },
+ {
+  "name": "Female_Child_01",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Child_01.glb"
+ },
+ {
+  "name": "Female_Child_02",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Female_Child_02.glb"
+ },
+ {
+  "name": "Male_Child_01",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Child_01.glb"
+ },
+ {
+  "name": "Male_Child_02",
+  "type": "Rigged human (81-bone Biped)",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "FBX → GLB in Blender, materials rebuilt from 2K TGA maps (1K/512 WebP), hair/eyelash alpha cards.",
+  "path": "models/people/Male_Child_02.glb"
+ },
+ {
+  "name": "21 motion-capture clips",
+  "type": "Animation",
+  "source": "Microsoft Rocketbox Avatar Library",
+  "url": "https://github.com/microsoft/Microsoft-Rocketbox/tree/master/Assets/Animations",
+  "author": "Microsoft / Rocketbox Studios",
+  "license": "MIT",
+  "modifications": "Scale & finger/face channels stripped, long idles trimmed to 16 s, root motion removed (speed measured for foot-locked walking).",
+  "path": "public/models/people/anims/"
+ },
+ {
+  "name": "cypress_a",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Cards use the CC0 Poly Haven fir_tree_01 twig texture.",
+  "path": "models/vegetation/cypress_a.webp"
+ },
+ {
+  "name": "palm_a",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/palm_a.webp"
+ },
+ {
+  "name": "shrub_round",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/shrub_round.webp"
+ },
+ {
+  "name": "cypress_b",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Cards use the CC0 Poly Haven fir_tree_01 twig texture.",
+  "path": "models/vegetation/cypress_b.webp"
+ },
+ {
+  "name": "palm_b",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/palm_b.webp"
+ },
+ {
+  "name": "shrub_wide",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/shrub_wide.webp"
+ },
+ {
+  "name": "pampas",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/pampas.webp"
+ },
+ {
+  "name": "lavender",
+  "type": "Procedural plant (impostor)",
+  "source": "Generated by blender/build_vegetation.py",
+  "url": "—",
+  "author": "This project",
+  "license": "Project-owned",
+  "modifications": "Fully procedural geometry & materials.",
+  "path": "models/vegetation/lavender.webp"
+ },
+ {
+  "name": "Map tiles",
+  "type": "Basemap",
+  "source": "CARTO / OpenStreetMap",
+  "url": "https://carto.com/attributions",
+  "author": "OpenStreetMap contributors, CARTO",
+  "license": "ODbL (data) / CARTO terms",
+  "modifications": "None — attribution shown on the map. Use your own tile provider in production.",
+  "path": "runtime"
+ }
+]

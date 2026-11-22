@@ -78,6 +78,7 @@ export function CameraRig({ shadowFocus }: { shadowFocus: React.MutableRefObject
   const flight = useRef<Flight | null>(null)
   const lastPos = useRef(new THREE.Vector3())
   const idle = useRef(0)
+  if (import.meta.env.DEV) (window as unknown as Record<string, unknown>).__controls = controls
 
   const flyTo = (pos: THREE.Vector3, target: THREE.Vector3, opts: { dur?: number; arc?: number; onDone?: () => void } = {}) => {
     const c = controls.current
@@ -114,11 +115,17 @@ export function CameraRig({ shadowFocus }: { shadowFocus: React.MutableRefObject
         const jump = q.get('shot') as ShotId | null
         if (q.has('t')) useStore.setState({ timeOfDay: +q.get('t')!, timeTarget: +q.get('t')! })
         const { pos, target } = shotPose(jump ?? 'masterplan')
-        if (jump) {
+        const cam = q.get('cam')?.split(',').map(Number)
+        if (cam && cam.length === 6) {
+          // ?cam=ex,ey,ez,tx,ty,tz — exact eye/target for close-up QA screenshots
+          pos.set(cam[0], cam[1], cam[2])
+          target.set(cam[3], cam[4], cam[5])
+        }
+        if (jump || cam) {
           camera.position.copy(pos)
           camera.lookAt(target)
           controls.current?.target.copy(target)
-          useStore.setState({ mode: 'masterplan', shot: jump, status: SHOTS.find((x) => x.id === jump)?.status ?? '' })
+          useStore.setState({ mode: 'masterplan', ...(jump ? { shot: jump } : {}), status: SHOTS.find((x) => x.id === jump)?.status ?? '' })
           return
         }
         flyTo(pos, target, { dur: 6.5, arc: 40 })
@@ -137,7 +144,7 @@ export function CameraRig({ shadowFocus }: { shadowFocus: React.MutableRefObject
       // enter the interior: dolly up to the glass, fade, swap scenes
       if (st.mode === 'entering' && prev.mode !== 'entering' && st.interiorUnit) {
         const { pos, target } = unitPose(st.interiorUnit, true)
-        const ready = loadModel('interior')
+        const ready = loadModel(st.interiorUnit.startsWith('A') ? 'apartment_interior' : 'villa_interior')
         flyTo(pos, target, {
           dur: 2.2,
           arc: 3,

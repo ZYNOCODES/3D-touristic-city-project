@@ -4,6 +4,7 @@
 import * as THREE from 'three'
 import { mergeGeometries, mergeVertices } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
 import layout from '../../data/layout.json'
+import { CELLS, cellBoxOf, cellOf } from '../../data/residenceSpec'
 
 export type PartMap = Map<string, THREE.BufferGeometry>
 
@@ -177,58 +178,25 @@ export function bayX(b: number): [number, number] {
   const x0 = wing === 0 ? -RES_HALF + i * BAY_W : CORE + i * BAY_W
   return [x0, x0 + BAY_W]
 }
-/** Local-space bounds of an apartment cell */
+/** Local-space bounds of an apartment cell (from the Blender-generated residence spec) */
 export function cellBox(f: number, b: number) {
-  const [x0, x1] = bayX(b)
-  const y0 = f * RES.floorHeight + 0.36
-  const y1 = (f + 1) * RES.floorHeight
-  const z1 = facadeZ(f)
-  return new THREE.Box3(new THREE.Vector3(x0 + 0.3, y0, z1 - 11), new THREE.Vector3(x1 - 0.3, y1, z1))
+  return cellBoxOf(cellOf(f, b))
 }
+export const cellGlassZ = (f: number, b: number) => cellOf(f, b).glassZ
+export const cellEdgeZ = (f: number, b: number) => cellOf(f, b).edgeZ
 
 export function residenceParts(): PartMap {
+  // procedural fallback: slabs, glazing and blade walls around every apartment cell
   const P = new Parts()
-  const FH = RES.floorHeight
-  const back = -RES.depth / 2
-  P.box('stone', -RES_HALF - 4, -9, back - 3, RES_HALF + 4, 0, facadeZ(0) + 8)
-  P.box('paving', -RES_HALF - 4, 0, facadeZ(0), RES_HALF + 4, 0.06, facadeZ(0) + 8)
-  for (let f = 0; f < RES.floors; f++) {
-    const zf = facadeZ(f)
-    const y0 = f * FH
-    const slabFront = f === 0 ? zf + 1.2 : facadeZ(f - 1)
-    for (const [xa, xb] of [[-RES_HALF, -CORE], [CORE, RES_HALF]]) {
-      P.box('concrete', xa, y0, back, xb, y0 + 0.36, slabFront)
-      P.box('plaster', xa, y0 + 0.36, back, xb, y0 + FH, back + 0.3)
-      P.box('glass', xa + 0.2, y0 + 0.4, zf - 0.12, xb - 0.2, y0 + FH - 0.05, zf - 0.04)
-      P.box('glow', xa + 0.3, y0 + 0.45, zf - 6, xb - 0.3, y0 + FH - 0.1, zf - 5.95)
-      // bay piers & mullions
-      for (let i = 0; i <= RES.bays / 2; i++) {
-        const x = xa + i * BAY_W
-        P.box('plaster', x - 0.35, y0 + 0.36, zf - 0.5, x + 0.35, y0 + FH, zf + 0.15)
-        for (let m = 1; m < 6 && i < RES.bays / 2; m++) P.box('frame', x + (m * BAY_W) / 6 - 0.04, y0 + 0.4, zf - 0.1, x + (m * BAY_W) / 6 + 0.04, y0 + FH, zf)
-      }
-      // terrace railing + planters on the slab in front of this floor
-      if (f > 0) {
-        const rz = slabFront
-        P.box('glass', xa, y0 + 0.36, rz - 0.06, xb, y0 + 1.45, rz)
-        P.box('frame', xa, y0 + 1.42, rz - 0.08, xb, y0 + 1.5, rz + 0.02)
-        P.box('plaster', xa, y0 - 0.5, rz - 0.9, xb, y0 + 0.36, rz + 0.05)
-      }
-    }
-    // side walls
-    P.box('plaster', -RES_HALF - 0.3, y0, back, -RES_HALF, y0 + FH, zf)
-    P.box('plaster', RES_HALF, y0, back, RES_HALF + 0.3, y0 + FH, zf)
+  for (const c of CELLS) {
+    const [x0, y0, z0] = c.min
+    const [x1, y1, z1] = c.max
+    P.box('concrete', x0 - 0.35, y0 - 0.7, z0, x1 + 0.35, y0 - 0.05, c.edgeZ)
+    P.box('glass', x0, y0, z1 - 0.05, x1, y1 - 0.2, z1)
+    P.box('glow', x0, y0, z1 - 6, x1, y1, z1 - 5.95)
+    P.box('plaster', x0 - 0.35, y0, z0, x0, y1, c.edgeZ - 0.5)
+    P.box('glass', x0, y0, c.edgeZ - 0.1, x1, y0 + 1.1, c.edgeZ)
   }
-  const top = RES.floors * FH
-  for (const [xa, xb] of [[-RES_HALF - 0.3, -CORE], [CORE, RES_HALF + 0.3]]) {
-    P.box('concrete', xa, top, back, xb, top + 0.5, facadeZ(RES.floors - 1))
-    P.box('plaster', xa, top + 0.5, back, xb, top + 1.4, back + 0.25)
-  }
-  // glass atrium core
-  P.box('glass', -CORE + 0.2, 0, back + 6, CORE - 0.2, top + 2.5, back + 6.2)
-  P.box('frame', -CORE, top + 2.5, back, CORE, top + 2.9, back + 6.4)
-  P.box('glow', -CORE + 0.5, 0, back + 2, CORE - 0.5, top + 2, back + 2.1)
-  for (let x = -CORE; x <= CORE; x += 2) P.box('frame', x - 0.05, 0, back + 6.1, x + 0.05, top + 2.5, back + 6.3)
   return P.merged()
 }
 

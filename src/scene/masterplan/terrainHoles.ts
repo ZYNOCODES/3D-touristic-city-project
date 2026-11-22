@@ -3,6 +3,7 @@
 // dynamic rectangle opens the footprint of the interior currently being toured.
 import * as THREE from 'three'
 import layout from '../../data/layout.json'
+import { RESIDENCE_SPEC } from '../../data/residenceSpec'
 
 export const HOLE_BOUNDS = { x0: -560, z0: -620, size: 1120, res: 1120 }
 const VILLA_SCALE: Record<string, number> = { ocean: 1.12, ridge: 1.0, canopy: 0.9 }
@@ -33,6 +34,9 @@ export function buildHoleTexture() {
   }
   const P = layout.amenities.pool
   rect(P.x, P.z, 0, -P.deckW / 2 + 0.4, P.deckW / 2 - 0.4, -P.deckL / 2 + 0.4, P.deckL / 2 - 0.4)
+  // residence: garage ramp and the sunken basement entrance
+  const RH = RESIDENCE_SPEC.rampHole
+  if (RH) rect(layout.residence.x, layout.residence.z, 0, RH.x0, RH.x1, RH.z0, RH.z1)
   const t = new THREE.DataTexture(data, res, res, THREE.RedFormat, THREE.UnsignedByteType)
   t.magFilter = THREE.NearestFilter
   t.minFilter = THREE.NearestFilter

@@ -1,0 +1,179 @@
+{
+ "hotspots": [
+  {
+   "id": "living",
+   "label": "Living Room",
+   "pos": [
+    1.6,
+    1.62,
+    1.9
+   ],
+   "look": [
+    8.5,
+    1.0,
+    -1.2
+   ]
+  },
+  {
+   "id": "dining",
+   "label": "Dining & Kitchen",
+   "pos": [
+    1.0,
+    1.62,
+    1.8
+   ],
+   "look": [
+    -7.0,
+    1.0,
+    -3.0
+   ]
+  },
+  {
+   "id": "stair",
+   "label": "Stair & Gallery",
+   "pos": [
+    -0.6,
+    1.62,
+    -1.5
+   ],
+   "look": [
+    4.2,
+    3.4,
+    -5.0
+   ]
+  },
+  {
+   "id": "terrace",
+   "label": "Pool Terrace",
+   "pos": [
+    -1.0,
+    1.65,
+    4.4
+   ],
+   "look": [
+    7.0,
+    0.0,
+    16.0
+   ]
+  },
+  {
+   "id": "bedroom",
+   "label": "Master Suite",
+   "pos": [
+    3.2,
+    5.37,
+    1.6
+   ],
+   "look": [
+    8.2,
+    4.57,
+    -4.4
+   ]
+  }
+ ],
+ "lights": [
+  {
+   "pos": [
+    -2.7,
+    1.88,
+    -1.0
+   ],
+   "color": "#ffc98a",
+   "power": 35,
+   "distance": 8
+  },
+  {
+   "pos": [
+    -1.3,
+    1.88,
+    -1.0
+   ],
+   "color": "#ffc98a",
+   "power": 35,
+   "distance": 8
+  },
+  {
+   "pos": [
+    -6.6,
+    1.98,
+    -1.5
+   ],
+   "color": "#ffd7a8",
+   "power": 30,
+   "distance": 7
+  },
+  {
+   "pos": [
+    8.0,
+    0.5,
+    -1.2
+   ],
+   "color": "#ff9a4a",
+   "power": 25,
+   "distance": 6
+  },
+  {
+   "pos": [
+    5.0,
+    2.98,
+    -1.0
+   ],
+   "color": "#ffd7a8",
+   "power": 45,
+   "distance": 10
+  },
+  {
+   "pos": [
+    3.9,
+    5.77,
+    -2.4
+   ],
+   "color": "#ffcf96",
+   "power": 35,
+   "distance": 9
+  },
+  {
+   "pos": [
+    -5.0,
+    6.17,
+    -2.8
+   ],
+   "color": "#ffe0b8",
+   "power": 25,
+   "distance": 6
+  },
+  {
+   "pos": [
+    -2.0,
+    2.9,
+    6.0
+   ],
+   "color": "#ffbf7a",
+   "power": 30,
+   "distance": 10
+  }
+ ],
+ "hole": [
+  -12.6,
+  12.6,
+  -9.6,
+  11.6
+ ],
+ "validation": {
+  "assemblies": 58,
+  "contained": 36,
+  "overlaps_fixed": [],
+  "grounded_fixed": [
+   "bed snapped -0.08 m"
+  ],
+  "support_fixed": [
+   "wicker_basket_02 placed on island_top (+0.017 m)"
+  ],
+  "outside_fixed": [
+   "fireplace@living moved (-0.44, +0.00)",
+   "bed@bedroom moved (+0.00, +0.07)",
+   "parasol@terrace moved (-0.10, +0.00)"
+  ],
+  "remaining": []
+ }
+}

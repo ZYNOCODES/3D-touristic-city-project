@@ -55,6 +55,18 @@ TEXTURES = {
     "asphalt": ("clean_asphalt", ["diff", "nor_gl", "rough"]),
     "rubber": ("rubber_tiles", ["diff", "nor_gl", "rough"]),
     "roof": ("grey_roof_01", ["diff", "nor_gl", "rough"]),
+    # phase 3 — Mediterranean architecture & differentiated interiors
+    "stone_wall": ("rustic_stone_wall", ["diff", "nor_gl", "rough"]),
+    "stacked_stone": ("stacked_stone_wall", ["diff", "nor_gl", "rough"]),
+    "terracotta": ("terracotta_floor_tiles", ["diff", "nor_gl", "rough"]),
+    "parquet": ("herringbone_parquet", ["diff", "nor_gl", "rough"]),
+    "stucco": ("white_stucco", ["diff", "nor_gl", "rough"]),
+    "terrazzo": ("terrazzo_tiles", ["diff", "nor_gl", "rough"]),
+    "travertine": ("beige_wall_001", ["diff", "nor_gl", "rough"]),
+    "marble_tiles": ("marble_tiles", ["diff", "nor_gl", "rough"]),
+    "cladding": ("fine_grained_wood", ["diff", "nor_gl", "rough"]),
+    "concrete_smooth": ("smooth_concrete_floor", ["diff", "nor_gl", "rough"]),
+    "lawn": ("leafy_grass", ["diff", "nor_gl", "rough"]),
 }
 
 # Furniture / plant models (glTF, 1k textures) imported into the interior.
@@ -71,4 +83,20 @@ MODELS = [
     "ceramic_vase_03",
     "wicker_basket_01",
     "side_table_01",
+    # phase 3 — scanned trees & shrubs (decimated + impostor-baked by build_vegetation.py)
+    "island_tree_01", "island_tree_02", "island_tree_03", "pine_tree_01", "fir_tree_01",
+    "jacaranda_tree", "tree_small_02", "shrub_01", "shrub_02", "shrub_04", "searsia_lucida",
+    # contemporary furniture & decor
+    "modern_arm_chair_01", "modern_wooden_cabinet", "modern_coffee_table_02", "decorative_book_set_01",
+    "standing_picture_frame_01", "brass_vase_01", "wicker_basket_02", "outdoor_table_chair_set_01",
 ]
+
+# Khronos glTF-Sample-Assets (photoreal product models). name -> licence
+KHRONOS = {
+    "GlamVelvetSofa": "CC-BY-4.0 © Wayfair, LLC",
+    "SheenWoodLeatherSofa": "CC-BY-4.0 © Darmstadt Graphics Group GmbH",
+    "SheenChair": "CC0-1.0 (Wayfair, LLC)",
+    "SpecularSilkPouf": "CC-BY-4.0 © 2023 Wayfair, LLC",
+    "GlassVaseFlowers": "CC0-1.0",
+    "DiffuseTransmissionPlant": "CC-BY-4.0 © Darmstadt Graphics Group GmbH",
+}

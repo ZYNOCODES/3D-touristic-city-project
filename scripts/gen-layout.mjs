@@ -52,7 +52,13 @@ for (const [k, a] of Object.entries(amenitiesD)) {
 // --- Main road (winding, beach -> residence block) ----------------------------
 const roadX = (d) => 150 * Math.sin(d * 0.0115 + 0.4) - 30
 const road = []
-for (let d = 6; d <= 420; d += 12) road.push([round(roadX(d)), round(toZ(roadX(d), d))])
+for (let d = 6; d <= 366; d += 12) road.push([round(roadX(d)), round(toZ(roadX(d), d))])
+// final approach: swing along the residence forecourt to the drop-off loop
+{
+  const last = road[road.length - 1]
+  const zf = -199
+  for (let x = last[0] + 18; x <= -26; x += 14) road.push([round(x), round(last[1] + (zf - last[1]) * Math.min(1, (x - last[0]) / 60))])
+}
 
 // --- Villas along contour rows -------------------------------------------------
 const villas = []
@@ -113,7 +119,7 @@ pads.push({ x: amenities.pool.x, z: amenities.pool.z, rx: 36, rz: 20, rot: 0, fa
 pads.push({ x: amenities.lounge.x, z: amenities.lounge.z, rx: 14, rz: 11, rot: 0, falloff: 8 })
 pads.push({ x: amenities.court.x, z: amenities.court.z, rx: 19, rz: 12, rot: 0, falloff: 9 })
 pads.push({ x: amenities.playground.x, z: amenities.playground.z, rx: 17, rz: 17, rot: 0, falloff: 8 })
-pads.push({ x: residence.x, z: residence.z, rx: 78, rz: 24, rot: 0, falloff: 16 })
+pads.push({ x: residence.x, z: residence.z + 12, rx: 84, rz: 42, rot: 0, falloff: 18 })
 
 const layout = { version: 1, units: 'metres', terrain, amenities, residence, villas, paths, pads }
 writeFileSync(new URL('../src/data/layout.json', import.meta.url), JSON.stringify(layout, null, 1))

@@ -1,0 +1,290 @@
+{
+ "olive_a": {
+  "atlas": "models/vegetation/olive_a.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 7.059,
+  "center": [
+   0.012,
+   3.394,
+   -0.061
+  ],
+  "height": 6.787,
+  "width": 6.504
+ },
+ "cypress_a": {
+  "atlas": "models/vegetation/cypress_a.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 13.342,
+  "center": [
+   0.019,
+   6.414,
+   0.023
+  ],
+  "height": 12.829,
+  "width": 2.157
+ },
+ "palm_a": {
+  "atlas": "models/vegetation/palm_a.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 11.173,
+  "center": [
+   -0.31,
+   5.371,
+   0.135
+  ],
+  "height": 10.743,
+  "width": 7.312
+ },
+ "shrub_round": {
+  "atlas": "models/vegetation/shrub_round.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 1.675,
+  "center": [
+   0.0,
+   0.719,
+   -0.001
+  ],
+  "height": 1.438,
+  "width": 1.61
+ },
+ "olive_b": {
+  "atlas": "models/vegetation/olive_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 6.345,
+  "center": [
+   0.023,
+   2.47,
+   0.415
+  ],
+  "height": 4.94,
+  "width": 6.101
+ },
+ "olive_c": {
+  "atlas": "models/vegetation/olive_c.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 5.255,
+  "center": [
+   0.472,
+   2.223,
+   0.149
+  ],
+  "height": 4.446,
+  "width": 5.053
+ },
+ "pine_a": {
+  "atlas": "models/vegetation/pine_a.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 21.19,
+  "center": [
+   -0.0,
+   10.187,
+   -0.0
+  ],
+  "height": 20.375,
+  "width": 8.314
+ },
+ "pine_b": {
+  "atlas": "models/vegetation/pine_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 15.477,
+  "center": [
+   0.0,
+   7.441,
+   -0.0
+  ],
+  "height": 14.881,
+  "width": 7.597
+ },
+ "pine_c": {
+  "atlas": "models/vegetation/pine_c.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 18.246,
+  "center": [
+   -0.0,
+   8.772,
+   -0.0
+  ],
+  "height": 17.544,
+  "width": 7.855
+ },
+ "broadleaf": {
+  "atlas": "models/vegetation/broadleaf.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 15.744,
+  "center": [
+   0.27,
+   6.035,
+   0.143
+  ],
+  "height": 12.071,
+  "width": 15.139
+ },
+ "ornamental": {
+  "atlas": "models/vegetation/ornamental.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 6.161,
+  "center": [
+   0.045,
+   2.962,
+   0.229
+  ],
+  "height": 5.924,
+  "width": 5.58
+ },
+ "cypress_b": {
+  "atlas": "models/vegetation/cypress_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 10.243,
+  "center": [
+   0.023,
+   4.925,
+   0.054
+  ],
+  "height": 9.849,
+  "width": 1.705
+ },
+ "palm_b": {
+  "atlas": "models/vegetation/palm_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 13.809,
+  "center": [
+   -0.29,
+   6.639,
+   0.464
+  ],
+  "height": 13.278,
+  "width": 7.806
+ },
+ "shrub_wide": {
+  "atlas": "models/vegetation/shrub_wide.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 3.129,
+  "center": [
+   -0.0,
+   0.86,
+   0.001
+  ],
+  "height": 1.72,
+  "width": 3.009
+ },
+ "pampas": {
+  "atlas": "models/vegetation/pampas.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 3.071,
+  "center": [
+   0.057,
+   1.477,
+   0.071
+  ],
+  "height": 2.953,
+  "width": 2.138
+ },
+ "lavender": {
+  "atlas": "models/vegetation/lavender.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 1.056,
+  "center": [
+   0.004,
+   0.411,
+   0.014
+  ],
+  "height": 0.822,
+  "width": 1.015
+ }
+}

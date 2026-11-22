@@ -7,6 +7,7 @@ garden. Instanced ~80× by the web app, so keep it lean (~25k tris).
 
 Run:  blender -b --python blender/villa.py
 """
+import math
 import sys
 from pathlib import Path
 
@@ -18,13 +19,22 @@ import config as C  # noqa: E402
 def build(col=None):
     b = U.box
     # podium, retaining wall with a stone cap, terrace
-    b("podium", "stone", -12.5, -7, -9.5, 12.5, -0.05, 11.5, col, bevel=0.03)
-    b("podium_cap", "stone", -12.6, -0.12, 11.2, 12.6, 0.02, 11.65, col, bevel=0.02)
+    # dry-stone podium, open where the pool is sunk into it
+    b("podium_back", "stone_wall", -12.5, -7, -9.5, 12.5, -0.05, 5.6, col, bevel=0.03)
+    b("podium_front", "stone_wall", -12.5, -7, 10.2, 12.5, -0.05, 11.5, col, bevel=0.03)
+    b("podium_w", "stone_wall", -12.5, -7, 5.6, 2.2, -0.05, 10.2, col)
+    b("podium_e", "stone_wall", 11.2, -7, 5.6, 12.5, -0.05, 10.2, col)
+    b("podium_under_pool", "stone_wall", 2.2, -7, 5.6, 11.2, -1.26, 10.2, col)
+    b("podium_cap", "travertine", -12.6, -0.12, 11.2, 12.6, 0.02, 11.65, col, bevel=0.02)
     b("deck", "deck", -9, -0.05, 3, 1.2, 0.08, 11, col, bevel=0.01)
     for i in range(int(8 / 0.16)):
         z = 3 + i * 0.16
         b(f"deck_gap_{i}", "black", -9, 0.079, z, 1.2, 0.081, z + 0.008, col)
-    b("pool_deck", "stone", 1.2, -0.05, 3, 12, 0.1, 11, col, bevel=0.01)
+    # travertine deck framing the (sunken) pool — the basin itself stays open
+    b("pool_deck_n", "travertine", 1.2, -0.05, 3, 12, 0.1, 5.4, col, bevel=0.005)
+    b("pool_deck_s", "travertine", 1.2, -0.05, 10.4, 12, 0.1, 11, col, bevel=0.005)
+    b("pool_deck_w", "travertine", 1.2, -0.05, 5.4, 2.0, 0.1, 10.4, col, bevel=0.005)
+    b("pool_deck_e", "travertine", 11.4, -0.05, 5.4, 12, 0.1, 10.4, col, bevel=0.005)
     # pool
     b("pool_floor", "pooltile", 2.2, -1.25, 5.6, 11.2, -1.2, 10.2, col)
     b("pool_wall_n", "pooltile", 2.2, -1.25, 5.6, 11.2, -0.02, 5.75, col)
@@ -32,13 +42,14 @@ def build(col=None):
     b("pool_wall_w", "pooltile", 2.2, -1.25, 5.6, 2.35, -0.02, 10.2, col)
     b("pool_wall_e", "pooltile", 11.05, -1.25, 5.6, 11.2, -0.02, 10.2, col)
     U.mesh_from("pool_water", "water", [(2.25, -0.12, 5.65), (11.15, -0.12, 5.65), (11.15, -0.12, 10.15), (2.25, -0.12, 10.15)], [(3, 2, 1, 0)], col)
-    b("pool_coping", "marble", 2.0, -0.02, 5.4, 11.4, 0.14, 5.65, col, bevel=0.02)
+    for nm, a in (("n", (2.0, 5.4, 11.4, 5.65)), ("s", (2.0, 10.15, 11.4, 10.4)), ("w", (2.0, 5.4, 2.25, 10.4)), ("e", (11.15, 5.4, 11.4, 10.4))):
+        b(f"pool_coping_{nm}", "travertine", a[0], -0.02, a[1], a[2], 0.13, a[3], col, bevel=0.015)
     # garden stair down the podium
     for i in range(8):
         b(f"stair_{i}", "stone", 10.6 - 0.0, -0.05 - i * 0.18 - 0.18, 11.65 + i * 0.3, 12.2, -0.05 - i * 0.18, 11.95 + i * 0.3, col)
 
     # ---- ground floor ---------------------------------------------------------
-    b("gf_left", "plaster", -9, 0, -6, -5.5, 3.4, 3, col, bevel=0.02)
+    b("gf_left", "stone_wall", -9, 0, -6, -5.5, 3.4, 3, col, bevel=0.02)
     b("gf_back", "plaster", -5.5, 0, -6, 9, 3.4, -5.6, col, bevel=0.02)
     b("gf_right", "plaster", 8.6, 0, -6, 9, 3.4, 3, col, bevel=0.02)
     b("gf_glass", "glass", -5.4, 0.08, 2.88, 8.5, 3.15, 2.92, col)
@@ -83,21 +94,30 @@ def build(col=None):
     # balcony glass balustrade
     b("balcony_glass", "glass", -7, 3.75, 5.6, 9.4, 4.85 + 0.95, 5.66, col)
     b("balcony_rail", "frame", -7, 5.68, 5.55, 9.4, 5.76, 5.7, col)
-    # hipped standing-seam roof, fascia and gutters
-    U.hip_roof("roof", "roof", -8.6, -7.0, 12.0, 4.0, 7.0, 2.2, col)
-    b("fascia_f", "frame", -8.6, 6.78, 3.95, 12.0, 7.02, 4.08, col)
-    b("fascia_b", "frame", -8.6, 6.78, -7.08, 12.0, 7.02, -6.95, col)
-    b("fascia_l", "frame", -8.72, 6.78, -7.0, -8.6, 7.02, 4.0, col)
-    b("fascia_r", "frame", 12.0, 6.78, -7.0, 12.12, 7.02, 4.0, col)
-    b("roof_soffit", "wood", -8.6, 6.76, -7.0, 12.0, 6.8, 4.0, col)
-    b("upper_slab", "concrete", -7.2, 6.8, -5.7, 10.7, 7.0, 2.7, col)
-    # loungers & a parasol on the pool deck
-    for k, xx in enumerate((3.4, 5.4)):
-        b(f"lounger_{k}", "wood", xx - 0.35, 0.1, 3.4, xx + 0.35, 0.36, 5.2, col, bevel=0.02)
-        b(f"lounger_cushion_{k}", "cushion", xx - 0.32, 0.36, 3.5, xx + 0.32, 0.46, 4.6, col, bevel=0.03)
-    # planters along the deck edge
-    for k, xx in enumerate((-8.4, -6.2, -4.0)):
-        b(f"planter_{k}", "concrete", xx - 0.5, 0.08, 10.2, xx + 0.5, 0.6, 10.9, col, bevel=0.02)
+    # flat roof with a slim white overhang, timber soffit and a travertine band
+    b("roof_slab", "stucco", -8.0, 6.8, -6.6, 11.6, 7.25, 3.6, col, bevel=0.02)
+    b("roof_soffit", "cladding", -7.9, 6.78, -6.5, 11.5, 6.8, 3.5, col)
+    b("roof_parapet_back", "stucco", -8.0, 7.25, -6.6, 11.6, 7.6, -6.35, col)
+    b("roof_gravel", "concrete", -7.7, 7.25, -6.3, 11.3, 7.27, 3.3, col)
+    b("band_upper", "travertine", -7.05, 3.75, -5.55, 10.55, 3.98, 2.55, col, bevel=0.01)
+    # timber pergola over the upper balcony
+    for k in range(13):
+        x = -6.8 + k * 1.35
+        b(f"perg_{k}", "cladding", x, 6.35, 2.5, x + 0.12, 6.55, 5.6, col)
+    b("perg_beam", "cladding", -7.0, 6.2, 5.45, 9.4, 6.4, 5.6, col)
+    for k, x in enumerate((-6.9, 1.2, 9.25)):
+        b(f"perg_post_{k}", "cladding", x, 3.75, 5.45, x + 0.14, 6.2, 5.6, col)
+    # teak loungers + parasol by the pool, planted stone planters along the deck edge
+    import furniture as F
+    from residence import Foliage
+    for xx in (3.6, 5.3):
+        F.lounger(col, "pool", xx, 4.25, rot=math.pi)
+    F.parasol(col, "pool", 7.1, 4.3, r=1.4)
+    fol = Foliage()
+    for k, xx in enumerate((-8.4, -6.0, -3.6)):
+        b(f"planter_{k}", "travertine", xx - 0.75, 0.08, 10.0, xx + 0.75, 0.62, 10.9, col, bevel=0.02)
+        fol.bush(xx, 0.62, 10.45, 0.7, 0.45, 0.35, 380, 0.06)
+    fol.to_object("villa_greenery", col)
 
 
 def main():

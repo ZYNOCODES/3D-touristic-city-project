@@ -1,5 +1,6 @@
 // Mock inventory: villas come from layout.json, apartments from the residence block grid.
 import layout from './layout.json'
+import { CELLS, TOP_FLOOR } from './residenceSpec'
 
 export type UnitStatus = 'available' | 'reserved' | 'sold'
 export type UnitKind = 'villa' | 'apartment'
@@ -69,12 +70,14 @@ export const VILLAS: Unit[] = layout.villas.map((v, i) => {
   }
 })
 
-const R = layout.residence
+const BAYS_TOTAL = Math.max(...CELLS.map((c) => c.bay)) + 1
 export const APARTMENTS: Unit[] = []
-for (let f = 1; f < R.floors; f++) {
-  for (let b = 0; b < R.bays; b++) {
-    const isEnd = b === 0 || b === R.bays - 1
-    const typeId: Unit['typeId'] = f === R.floors - 1 ? 'ph' : isEnd ? 'apt3' : b % 3 === 1 ? 'apt1' : 'apt2'
+for (const cell of CELLS) {
+  {
+    const f = cell.floor
+    const b = cell.bay
+    const isEnd = b === 0 || b === BAYS_TOTAL - 1
+    const typeId: Unit['typeId'] = f === TOP_FLOOR[b] && f >= 4 ? 'ph' : isEnd ? 'apt3' : b % 3 === 1 ? 'apt1' : 'apt2'
     const t = UNIT_TYPES[typeId]
     const i = APARTMENTS.length
     const code = `${f}${String(b + 1).padStart(2, '0')}`

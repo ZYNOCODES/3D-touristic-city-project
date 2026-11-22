@@ -2,11 +2,11 @@
   "models": {
     "villa": {
       "file": "models/villa.glb",
-      "bytes": 158288
+      "bytes": 279560
     },
     "residence": {
       "file": "models/residence.glb",
-      "bytes": 577996
+      "bytes": 3519960
     },
     "amenities": {
       "file": "models/amenities.glb",
@@ -14,11 +14,23 @@
     },
     "props": {
       "file": "models/props.glb",
-      "bytes": 19096
+      "bytes": 47264
     },
     "interior": {
       "file": "models/interior.glb",
       "bytes": 5837932
+    },
+    "people_anims": {
+      "file": "models/people/people_anims.glb",
+      "bytes": 3607268
+    },
+    "villa_interior": {
+      "file": "models/villa_interior.glb",
+      "bytes": 6501368
+    },
+    "apartment_interior": {
+      "file": "models/apartment_interior.glb",
+      "bytes": 5019192
     }
   }
 }

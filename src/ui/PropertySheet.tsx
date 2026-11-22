@@ -12,10 +12,11 @@ import { LocationMap } from './LocationMap'
 
 const BASE = import.meta.env.BASE_URL
 
-function Gallery() {
+function Gallery({ kind }: { kind: 'villa' | 'apartment' }) {
+  const GALLERY_LIST = GALLERY[kind]
   const [ok, setOk] = useState<Record<string, boolean>>({})
   const [i, setI] = useState(0)
-  const items = GALLERY.filter((g) => ok[g.src] !== false)
+  const items = GALLERY_LIST.filter((g) => ok[g.src] !== false)
   useEffect(() => {
     const id = setInterval(() => setI((v) => v + 1), 5200)
     return () => clearInterval(id)
@@ -23,7 +24,7 @@ function Gallery() {
   const cur = items.length ? items[i % items.length] : null
   return (
     <div className="gallery">
-      {GALLERY.map((g) => (
+      {GALLERY_LIST.map((g) => (
         <img
           key={g.src}
           src={BASE + g.src}
@@ -151,7 +152,7 @@ export function PropertySheet() {
         </div>
 
         <section className="hero">
-          <Gallery />
+          <Gallery kind={u.kind} />
           <div className="hero-copy">
             <span className="badge" style={{ background: meta.color }}>{meta.label}</span>
             <div className="eyebrow">{PROJECT.name} · {t.label}</div>

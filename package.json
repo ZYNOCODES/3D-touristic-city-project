@@ -12,7 +12,9 @@
     "blender": "node scripts/blender.mjs all",
     "optimize": "node scripts/optimize-glb.mjs",
     "check:terrain": "node scripts/check-heightfield.mjs",
-    "layout": "node scripts/gen-layout.mjs"
+    "layout": "node scripts/gen-layout.mjs",
+    "validate:site": "node scripts/validate-site.mjs",
+    "assets:manifest": "node scripts/asset-manifest.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

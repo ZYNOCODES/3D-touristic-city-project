@@ -1,0 +1,158 @@
+{
+ "hotspots": [
+  {
+   "id": "living",
+   "label": "Living Room",
+   "pos": [
+    -2.2,
+    1.55,
+    -6.2
+   ],
+   "look": [
+    1.5,
+    0.6,
+    3.0
+   ]
+  },
+  {
+   "id": "dining",
+   "label": "Dining & Kitchen",
+   "pos": [
+    1.2,
+    1.55,
+    -1.4
+   ],
+   "look": [
+    -5.0,
+    0.9,
+    -9.5
+   ]
+  },
+  {
+   "id": "bedroom",
+   "label": "Bedroom",
+   "pos": [
+    1.5,
+    1.55,
+    -0.9
+   ],
+   "look": [
+    4.4,
+    0.7,
+    -5.2
+   ]
+  },
+  {
+   "id": "bath",
+   "label": "Bathroom",
+   "pos": [
+    3.2,
+    1.55,
+    -8.6
+   ],
+   "look": [
+    5.8,
+    1.1,
+    -11.6
+   ]
+  },
+  {
+   "id": "balcony",
+   "label": "Balcony",
+   "pos": [
+    -0.6,
+    1.6,
+    1.6
+   ],
+   "look": [
+    0.0,
+    -8.0,
+    40.0
+   ]
+  }
+ ],
+ "lights": [
+  {
+   "pos": [
+    -4.1,
+    1.64,
+    -2.6
+   ],
+   "color": "#ffd9aa",
+   "power": 30,
+   "distance": 7
+  },
+  {
+   "pos": [
+    -3.9,
+    1.74,
+    -8.3
+   ],
+   "color": "#ffe3c0",
+   "power": 30,
+   "distance": 7
+  },
+  {
+   "pos": [
+    0.2,
+    2.64,
+    -3.0
+   ],
+   "color": "#fff0dc",
+   "power": 40,
+   "distance": 9
+  },
+  {
+   "pos": [
+    4.35,
+    1.94,
+    -3.2
+   ],
+   "color": "#ffcf96",
+   "power": 25,
+   "distance": 6
+  },
+  {
+   "pos": [
+    4.3,
+    2.54,
+    -10.0
+   ],
+   "color": "#fff4e6",
+   "power": 25,
+   "distance": 6
+  },
+  {
+   "pos": [
+    0.0,
+    2.54,
+    -10.5
+   ],
+   "color": "#ffe0b8",
+   "power": 18,
+   "distance": 6
+  }
+ ],
+ "size": [
+  12.549999999999997,
+  2.94,
+  12.0
+ ],
+ "terrace": 3.15,
+ "validation": {
+  "assemblies": 36,
+  "contained": 20,
+  "overlaps_fixed": [],
+  "grounded_fixed": [],
+  "support_fixed": [
+   "GlassVaseFlowers placed on modern_coffee_table_02 (-0.031 m)",
+   "books placed on modern_coffee_table_02 (-0.031 m)",
+   "wicker_basket_02 placed on island_top (+0.015 m)"
+  ],
+  "outside_fixed": [
+   "DiffuseTransmissionPlant@living moved (-0.10, -0.36)",
+   "bed@bedroom moved (+0.00, +0.07)"
+  ],
+  "remaining": []
+ }
+}

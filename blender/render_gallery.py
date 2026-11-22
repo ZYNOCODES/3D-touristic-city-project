@@ -18,16 +18,21 @@ import bl_util as U  # noqa: E402
 
 U.MATERIAL_MODE = "render"
 import config as C  # noqa: E402
-import interior  # noqa: E402
+import interior_apartment  # noqa: E402
+import interior_villa  # noqa: E402
 import villa  # noqa: E402
 
 # (name, hdri, camera pos (web), look-at (web), lens mm)
-SHOTS = [
-    ("living", "golden", (-1.0, 1.45, 3.4), (-8.2, 0.9, -2.2), 20),
-    ("terrace", "golden", (-6.5, 1.55, 6.0), (6.0, 0.0, 14.5), 18),
-    ("kitchen", "day", (6.8, 1.5, 3.2), (2.4, 1.0, -4.8), 20),
-    ("bedroom", "day", (-9.8, 1.5, 3.2), (-13.2, 0.7, -5.2), 20),
-]
+SHOTS = {
+    # name: (builder, hdri, camera pos (web), look-at (web), lens mm)
+    "villa_living": ("villa", "golden", (0.6, 1.5, 2.4), (8.4, 1.0, -1.6), 20),
+    "villa_dining": ("villa", "day", (1.6, 1.5, 2.4), (-7.5, 0.9, -3.5), 20),
+    "villa_terrace": ("villa", "golden", (-7.5, 1.6, 3.6), (8.0, 0.3, 12.0), 18),
+    "villa_bedroom": ("villa", "day", (2.6, 5.35, 1.9), (8.4, 4.4, -4.6), 20),
+    "apt_living": ("apartment", "golden", (-2.6, 1.5, -6.6), (1.8, 0.7, 2.5), 20),
+    "apt_kitchen": ("apartment", "day", (1.4, 1.5, -1.0), (-5.2, 0.9, -9.8), 20),
+    "apt_bedroom": ("apartment", "day", (1.3, 1.5, -0.8), (4.6, 0.6, -5.4), 20),
+}
 EXTERIOR = ("exterior", "golden", (22, 3.2, 30), (0, 3.4, 0), 26)
 
 
@@ -200,14 +205,32 @@ def camera(name, pos, look, lens):
 def main():
     opts = parse()
     C.OUT_RENDERS.mkdir(parents=True, exist_ok=True)
-    scene = U.reset_scene()
-    setup_render(scene, opts["samples"], opts["res"])
-    col = U.collection("interior")
-    interior.build(col, render=True)
-    U.cube_project_uvs([o for o in scene.objects if o.type == "MESH" and o.active_material and o.active_material.name in U.BASE_COLORS])
-    context_landscape(col)
-    interior_lights(col)
-    shots = SHOTS if not opts["only"] else [s for s in SHOTS if s[0] in opts["only"]]
+    for kind in ("villa", "apartment"):
+        shots = [(n, *v[1:]) for n, v in SHOTS.items() if v[0] == kind and (not opts["only"] or n in opts["only"])]
+        if not shots:
+            continue
+        scene = U.reset_scene()
+        setup_render(scene, opts["samples"], opts["res"])
+        col = U.collection("interior")
+        mod = interior_villa if kind == "villa" else interior_apartment
+        mod.shell(col)
+        mod.furnish(col)
+        U.cube_project_uvs([o for o in scene.objects if o.type == "MESH" and o.active_material and o.active_material.name in U.BASE_COLORS])
+        context_landscape(col)
+        for i, l in enumerate(mod.LIGHTS):
+            lamp = bpy.data.lights.new(f"pt_{i}", "POINT")
+            lamp.energy = l["power"] * 3
+            lamp.color = tuple(int(l["color"][k:k + 2], 16) / 255 for k in (1, 3, 5))
+            lamp.shadow_soft_size = 0.15
+            o = bpy.data.objects.new(f"pt_{i}", lamp)
+            col.objects.link(o)
+            o.location = U.W(*l["pos"])
+        render_shots(scene, shots)
+    _render_exterior(opts)
+    U.log("gallery done →", C.OUT_RENDERS.relative_to(C.ROOT))
+
+
+def render_shots(scene, shots):
     for name, key, pos, look, lens in shots:
         for o in [o for o in scene.objects if o.name.startswith("sun")]:
             bpy.data.objects.remove(o)
@@ -217,7 +240,10 @@ def main():
         scene.render.filepath = str(C.OUT_RENDERS / f"{name}.jpg")
         U.log("rendering", name)
         bpy.ops.render.render(write_still=True)
-    # villa exterior on its podium
+
+
+def _render_exterior(opts):
+    scene = bpy.context.scene
     if not opts["only"] or "exterior" in opts["only"]:
         for o in list(scene.objects):
             bpy.data.objects.remove(o)
@@ -251,7 +277,6 @@ def main():
         scene.render.filepath = str(C.OUT_RENDERS / "exterior.jpg")
         U.log("rendering exterior")
         bpy.ops.render.render(write_still=True)
-    U.log("gallery done →", C.OUT_RENDERS.relative_to(C.ROOT))
 
 
 if __name__ == "__main__":

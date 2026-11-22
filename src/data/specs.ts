@@ -26,17 +26,24 @@ export const SPECIFICATIONS = [
     items: [
       ['Private pool', 'Infinity-edge plunge pool with heat pump & LED lighting'],
       ['Terraces', 'Thermo-ash decking, covered outdoor lounge, BBQ station'],
-      ['Landscaping', 'Native tropical planting, drip irrigation, garden lighting'],
+      ['Landscaping', 'Olive, cypress, pine and lavender planting, drip irrigation, garden lighting'],
       ['Community', 'Pool deck, sports court, playground, social lounge, beach club'],
       ['Services', 'Optional rental programme, concierge & housekeeping'],
     ],
   },
 ] as const
 
-export const GALLERY = [
-  { src: 'renders/living.jpg', caption: 'Double-height living room' },
-  { src: 'renders/terrace.jpg', caption: 'Pool terrace at golden hour' },
-  { src: 'renders/kitchen.jpg', caption: 'Dining & kitchen' },
-  { src: 'renders/bedroom.jpg', caption: 'Master suite' },
-  { src: 'renders/exterior.jpg', caption: 'Villa exterior' },
-]
+export const GALLERY = {
+  villa: [
+    { src: 'renders/villa_living.jpg', caption: 'Living room with stone fireplace' },
+    { src: 'renders/villa_terrace.jpg', caption: 'Covered terrace & private pool' },
+    { src: 'renders/villa_dining.jpg', caption: 'Dining & kitchen' },
+    { src: 'renders/villa_bedroom.jpg', caption: 'Master suite' },
+    { src: 'renders/exterior.jpg', caption: 'Villa exterior' },
+  ],
+  apartment: [
+    { src: 'renders/apt_living.jpg', caption: 'Living room facing the bay' },
+    { src: 'renders/apt_kitchen.jpg', caption: 'Kitchen & dining' },
+    { src: 'renders/apt_bedroom.jpg', caption: 'Bedroom behind the glass partition' },
+  ],
+}

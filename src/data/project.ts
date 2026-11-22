@@ -45,7 +45,7 @@ const R = layout.residence
 export const SHOTS: Shot[] = [
   { id: 'masterplan', label: 'Masterplan', icon: 'map', target: [0, -110], lift: 20, distance: 720, azimuth: -8, elevation: 21, status: 'Masterplan overview' },
   { id: 'villas', label: 'Villas', icon: 'villa', target: [-175, -30], lift: 6, distance: 230, azimuth: -18, elevation: 30, status: 'Exploring the villa terraces' },
-  { id: 'residence', label: 'Residence Block', icon: 'building', target: [R.x, R.z], lift: 14, distance: 150, azimuth: 12, elevation: 16, status: 'Residence block · 48 apartments' },
+  { id: 'residence', label: 'Residence Block', icon: 'building', target: [R.x, R.z + 10], lift: 11, distance: 165, azimuth: 14, elevation: 11, status: 'Vellmare Residences · terraced apartments' },
   { id: 'pool', label: 'Swimming Pool', icon: 'pool', target: [A.pool.x, A.pool.z], lift: 1, distance: 46, azimuth: 28, elevation: 22, status: 'Navigating to central pool area' },
   { id: 'court', label: 'Sports Court', icon: 'court', target: [A.court.x, A.court.z], lift: 1, distance: 36, azimuth: -32, elevation: 24, status: 'Sports court · basketball & futsal' },
   { id: 'playground', label: 'Playground', icon: 'play', target: [A.playground.x, A.playground.z], lift: 1, distance: 30, azimuth: 36, elevation: 22, status: "Children's playground" },

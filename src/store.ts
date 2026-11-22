@@ -2,7 +2,8 @@ import { create } from 'zustand'
 import type { ShotId } from './data/project'
 
 export type Mode = 'intro' | 'masterplan' | 'entering' | 'interior' | 'sheet'
-export type HotspotId = 'living' | 'dining' | 'stair' | 'terrace' | 'bedroom'
+export type HotspotId = string
+export interface Spot { id: string; label: string; pos: [number, number, number]; look: [number, number, number] }
 
 interface State {
   mode: Mode
@@ -22,6 +23,7 @@ interface State {
   cutaway: string | null
   interiorUnit: string | null
   hotspot: HotspotId
+  spots: Spot[]
   sheetUnit: string | null
   fade: number
 
@@ -52,6 +54,7 @@ export const useStore = create<State>((set, get) => ({
   cutaway: null,
   interiorUnit: null,
   hotspot: 'living',
+  spots: [],
   sheetUnit: null,
   fade: 0,
 

@@ -205,6 +205,18 @@ def fetch_models(manifest: dict):
     manifest["models"] = out
 
 
+def fetch_khronos(manifest: dict):
+    base = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models"
+    out = {}
+    for name, lic in C.KHRONOS.items():
+        dest = C.CACHE / "khronos" / f"{name}.glb"
+        if not download(f"{base}/{name}/glTF-Binary/{name}.glb", dest):
+            continue
+        out[name] = {"path": str(dest.relative_to(C.ROOT)).replace("\\", "/"), "license": lic,
+                     "source": f"https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/{name}"}
+    manifest["khronos"] = out
+
+
 def main():
     manifest_path = C.PUBLIC / "assets-manifest.json"
     manifest = {"generated": time.strftime("%Y-%m-%dT%H:%M:%S"), "offline": C.OFFLINE}
@@ -215,12 +227,13 @@ def main():
             fetch_hdris(manifest)
             fetch_textures(manifest)
             fetch_models(manifest)
+            fetch_khronos(manifest)
         except Exception as e:  # never break the pipeline
             log("unexpected error, continuing with what we have:", e)
     # keep entries from a previous successful run if this run lost them
     if manifest_path.exists():
         prev = json.loads(manifest_path.read_text())
-        for k in ("hdri", "textures", "models"):
+        for k in ("hdri", "textures", "models", "khronos"):
             merged = dict(prev.get(k) or {})
             merged.update(manifest.get(k) or {})
             manifest[k] = merged

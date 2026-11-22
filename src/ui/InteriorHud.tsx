@@ -1,5 +1,4 @@
 import { UNIT_BY_ID, fmtPrice, STATUS_META } from '../data/units'
-import { HOTSPOTS } from '../scene/interior/interiorSpec'
 import { useStore } from '../store'
 import { TimeOfDay } from './Hud'
 import { Icon } from './icons'
@@ -7,6 +6,7 @@ import { Icon } from './icons'
 export function InteriorHud() {
   const unitId = useStore((s) => s.interiorUnit)
   const hotspot = useStore((s) => s.hotspot)
+  const HOTSPOTS = useStore((s) => s.spots)
   const exit = useStore((s) => s.exitInterior)
   const openSheet = useStore((s) => s.openSheet)
   const u = unitId ? UNIT_BY_ID.get(unitId) : null

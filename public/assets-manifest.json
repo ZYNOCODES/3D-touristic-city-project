@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:26:15",
+  "generated": "2026-11-22T16:02:00",
   "offline": false,
   "hdri": {
     "day": {
@@ -172,6 +172,105 @@
       "nor_gl_cache": "assets/cache/textures/grey_roof_01/grey_roof_01_nor_gl_1k.jpg",
       "rough": "textures/roof/rough.jpg",
       "rough_cache": "assets/cache/textures/grey_roof_01/grey_roof_01_rough_1k.jpg"
+    },
+    "stone_wall": {
+      "id": "rustic_stone_wall",
+      "diff": "textures/stone_wall/diff.jpg",
+      "diff_cache": "assets/cache/textures/rustic_stone_wall/rustic_stone_wall_diff_1k.jpg",
+      "nor_gl": "textures/stone_wall/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/rustic_stone_wall/rustic_stone_wall_nor_gl_1k.jpg",
+      "rough": "textures/stone_wall/rough.jpg",
+      "rough_cache": "assets/cache/textures/rustic_stone_wall/rustic_stone_wall_rough_1k.jpg"
+    },
+    "stacked_stone": {
+      "id": "stacked_stone_wall",
+      "diff": "textures/stacked_stone/diff.jpg",
+      "diff_cache": "assets/cache/textures/stacked_stone_wall/stacked_stone_wall_diff_1k.jpg",
+      "nor_gl": "textures/stacked_stone/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/stacked_stone_wall/stacked_stone_wall_nor_gl_1k.jpg",
+      "rough": "textures/stacked_stone/rough.jpg",
+      "rough_cache": "assets/cache/textures/stacked_stone_wall/stacked_stone_wall_rough_1k.jpg"
+    },
+    "terracotta": {
+      "id": "terracotta_floor_tiles",
+      "diff": "textures/terracotta/diff.jpg",
+      "diff_cache": "assets/cache/textures/terracotta_floor_tiles/terracotta_floor_tiles_diff_1k.jpg",
+      "nor_gl": "textures/terracotta/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/terracotta_floor_tiles/terracotta_floor_tiles_nor_gl_1k.jpg",
+      "rough": "textures/terracotta/rough.jpg",
+      "rough_cache": "assets/cache/textures/terracotta_floor_tiles/terracotta_floor_tiles_rough_1k.jpg"
+    },
+    "parquet": {
+      "id": "herringbone_parquet",
+      "diff": "textures/parquet/diff.jpg",
+      "diff_cache": "assets/cache/textures/herringbone_parquet/herringbone_parquet_diff_1k.jpg",
+      "nor_gl": "textures/parquet/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/herringbone_parquet/herringbone_parquet_nor_gl_1k.jpg",
+      "rough": "textures/parquet/rough.jpg",
+      "rough_cache": "assets/cache/textures/herringbone_parquet/herringbone_parquet_rough_1k.jpg"
+    },
+    "stucco": {
+      "id": "white_stucco",
+      "diff": "textures/stucco/diff.jpg",
+      "diff_cache": "assets/cache/textures/white_stucco/white_stucco_diff_1k.jpg",
+      "nor_gl": "textures/stucco/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/white_stucco/white_stucco_nor_gl_1k.jpg",
+      "rough": "textures/stucco/rough.jpg",
+      "rough_cache": "assets/cache/textures/white_stucco/white_stucco_rough_1k.jpg"
+    },
+    "terrazzo": {
+      "id": "terrazzo_tiles",
+      "diff": "textures/terrazzo/diff.jpg",
+      "diff_cache": "assets/cache/textures/terrazzo_tiles/terrazzo_tiles_diff_1k.jpg",
+      "nor_gl": "textures/terrazzo/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/terrazzo_tiles/terrazzo_tiles_nor_gl_1k.jpg",
+      "rough": "textures/terrazzo/rough.jpg",
+      "rough_cache": "assets/cache/textures/terrazzo_tiles/terrazzo_tiles_rough_1k.jpg"
+    },
+    "travertine": {
+      "id": "beige_wall_001",
+      "diff": "textures/travertine/diff.jpg",
+      "diff_cache": "assets/cache/textures/beige_wall_001/beige_wall_001_diff_1k.jpg",
+      "nor_gl": "textures/travertine/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/beige_wall_001/beige_wall_001_nor_gl_1k.jpg",
+      "rough": "textures/travertine/rough.jpg",
+      "rough_cache": "assets/cache/textures/beige_wall_001/beige_wall_001_rough_1k.jpg"
+    },
+    "marble_tiles": {
+      "id": "marble_tiles",
+      "diff": "textures/marble_tiles/diff.jpg",
+      "diff_cache": "assets/cache/textures/marble_tiles/marble_tiles_diff_1k.jpg",
+      "nor_gl": "textures/marble_tiles/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/marble_tiles/marble_tiles_nor_gl_1k.jpg",
+      "rough": "textures/marble_tiles/rough.jpg",
+      "rough_cache": "assets/cache/textures/marble_tiles/marble_tiles_rough_1k.jpg"
+    },
+    "cladding": {
+      "id": "fine_grained_wood",
+      "diff": "textures/cladding/diff.jpg",
+      "diff_cache": "assets/cache/textures/fine_grained_wood/fine_grained_wood_diff_1k.jpg",
+      "nor_gl": "textures/cladding/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/fine_grained_wood/fine_grained_wood_nor_gl_1k.jpg",
+      "rough": "textures/cladding/rough.jpg",
+      "rough_cache": "assets/cache/textures/fine_grained_wood/fine_grained_wood_rough_1k.jpg"
+    },
+    "concrete_smooth": {
+      "id": "smooth_concrete_floor",
+      "diff": "textures/concrete_smooth/diff.jpg",
+      "diff_cache": "assets/cache/textures/smooth_concrete_floor/smooth_concrete_floor_diff_1k.jpg",
+      "nor_gl": "textures/concrete_smooth/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/smooth_concrete_floor/smooth_concrete_floor_nor_gl_1k.jpg",
+      "rough": "textures/concrete_smooth/rough.jpg",
+      "rough_cache": "assets/cache/textures/smooth_concrete_floor/smooth_concrete_floor_rough_1k.jpg"
+    },
+    "lawn": {
+      "id": "leafy_grass",
+      "diff": "textures/lawn/diff.jpg",
+      "diff_cache": "assets/cache/textures/leafy_grass/leafy_grass_diff_1k.jpg",
+      "nor_gl": "textures/lawn/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+      "rough": "textures/lawn/rough.jpg",
+      "rough_cache": "assets/cache/textures/leafy_grass/leafy_grass_rough_1k.jpg"
     }
   },
   "models": {
@@ -186,6 +285,54 @@
     "ceramic_vase_03": "assets/cache/models/ceramic_vase_03/ceramic_vase_03_1k.gltf",
     "wicker_basket_01": "assets/cache/models/wicker_basket_01/wicker_basket_01_1k.gltf",
     "side_table_01": "assets/cache/models/side_table_01/side_table_01_1k.gltf",
-    "potted_plant_01": "assets/cache/models/potted_plant_01/potted_plant_01_1k.gltf"
+    "potted_plant_01": "assets/cache/models/potted_plant_01/potted_plant_01_1k.gltf",
+    "island_tree_01": "assets/cache/models/island_tree_01/island_tree_01_1k.gltf",
+    "island_tree_02": "assets/cache/models/island_tree_02/island_tree_02_1k.gltf",
+    "island_tree_03": "assets/cache/models/island_tree_03/island_tree_03_1k.gltf",
+    "pine_tree_01": "assets/cache/models/pine_tree_01/pine_tree_01_1k.gltf",
+    "fir_tree_01": "assets/cache/models/fir_tree_01/fir_tree_01_1k.gltf",
+    "jacaranda_tree": "assets/cache/models/jacaranda_tree/jacaranda_tree_1k.gltf",
+    "tree_small_02": "assets/cache/models/tree_small_02/tree_small_02_1k.gltf",
+    "shrub_01": "assets/cache/models/shrub_01/shrub_01_1k.gltf",
+    "shrub_04": "assets/cache/models/shrub_04/shrub_04_1k.gltf",
+    "modern_arm_chair_01": "assets/cache/models/modern_arm_chair_01/modern_arm_chair_01_1k.gltf",
+    "modern_wooden_cabinet": "assets/cache/models/modern_wooden_cabinet/modern_wooden_cabinet_1k.gltf",
+    "modern_coffee_table_02": "assets/cache/models/modern_coffee_table_02/modern_coffee_table_02_1k.gltf",
+    "standing_picture_frame_01": "assets/cache/models/standing_picture_frame_01/standing_picture_frame_01_1k.gltf",
+    "brass_vase_01": "assets/cache/models/brass_vase_01/brass_vase_01_1k.gltf",
+    "wicker_basket_02": "assets/cache/models/wicker_basket_02/wicker_basket_02_1k.gltf",
+    "outdoor_table_chair_set_01": "assets/cache/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01_1k.gltf"
+  },
+  "khronos": {
+    "GlamVelvetSofa": {
+      "path": "assets/cache/khronos/GlamVelvetSofa.glb",
+      "license": "CC-BY-4.0 \u00a9 Wayfair, LLC",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlamVelvetSofa"
+    },
+    "SheenWoodLeatherSofa": {
+      "path": "assets/cache/khronos/SheenWoodLeatherSofa.glb",
+      "license": "CC-BY-4.0 \u00a9 Darmstadt Graphics Group GmbH",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenWoodLeatherSofa"
+    },
+    "SheenChair": {
+      "path": "assets/cache/khronos/SheenChair.glb",
+      "license": "CC0-1.0 (Wayfair, LLC)",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenChair"
+    },
+    "SpecularSilkPouf": {
+      "path": "assets/cache/khronos/SpecularSilkPouf.glb",
+      "license": "CC-BY-4.0 \u00a9 2023 Wayfair, LLC",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SpecularSilkPouf"
+    },
+    "GlassVaseFlowers": {
+      "path": "assets/cache/khronos/GlassVaseFlowers.glb",
+      "license": "CC0-1.0",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/GlassVaseFlowers"
+    },
+    "DiffuseTransmissionPlant": {
+      "path": "assets/cache/khronos/DiffuseTransmissionPlant.glb",
+      "license": "CC-BY-4.0 \u00a9 Darmstadt Graphics Group GmbH",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DiffuseTransmissionPlant"
+    }
   }
 }

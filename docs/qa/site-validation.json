@@ -1,0 +1,33 @@
+{
+ "plants": 31858,
+ "species": {
+  "olive_c": 2098,
+  "pine_b": 4069,
+  "broadleaf": 4774,
+  "pine_a": 4046,
+  "pine_c": 4101,
+  "cypress_b": 1559,
+  "cypress_a": 1605,
+  "olive_b": 2060,
+  "olive_a": 2005,
+  "shrub_wide": 1962,
+  "shrub_round": 2708,
+  "lavender": 686,
+  "palm_a": 52,
+  "pampas": 80,
+  "palm_b": 52,
+  "ornamental": 1
+ },
+ "rejectedAtPlanTime": {
+  "too close to another trunk": 100,
+  "path": 254,
+  "villa (villas)": 63,
+  "pool deck": 10,
+  "social lounge": 1,
+  "playground": 4
+ },
+ "violations": [],
+ "warnings": [],
+ "footprints": 86,
+ "villas": 79
+}

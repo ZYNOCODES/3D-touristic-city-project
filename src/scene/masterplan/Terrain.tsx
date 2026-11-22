@@ -112,7 +112,7 @@ vec3 tri(sampler2D t, vec2 p){ return mix(texture2D(t, p*0.045).rgb, texture2D(t
         float macro = vfbm(wp * 0.004);
         float micro = vnoise(wp * 0.15);
         vec3 grass = tri(tGrass, wp) * mix(vec3(0.62,0.86,0.46), vec3(0.78,0.92,0.55), macro);
-        vec3 forest = tri(tForest, wp) * vec3(0.22, 0.3, 0.16);
+        vec3 forest = mix(tri(tForest, wp) * vec3(0.3, 0.36, 0.2), tri(tGrass, wp) * vec3(0.55, 0.62, 0.38), 0.45);
         vec3 rock = tri(tRock, wp) * vec3(0.95, 0.92, 0.86);
         vec3 sand = mix(texture2D(tSand, wp*0.08).rgb, texture2D(tSand, wp*0.017).rgb, 0.5) * vec3(1.04,1.0,0.94);
         if (uHasTex < 0.5) { grass *= 0.9 + 0.2*micro; forest *= 0.85 + 0.3*micro; rock *= 0.85 + 0.3*micro; sand *= 0.95 + 0.1*micro; }

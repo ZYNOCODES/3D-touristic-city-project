@@ -9,7 +9,8 @@ export type MatName =
   | 'plaster' | 'roof' | 'glass' | 'wood' | 'deck' | 'stone' | 'frame' | 'water' | 'glow'
   | 'concrete' | 'paving' | 'asphalt' | 'fabric' | 'metal' | 'court' | 'rubber' | 'plastic_red'
   | 'plastic_yellow' | 'plastic_teal' | 'umbrella' | 'lamp' | 'marble' | 'walnut' | 'floor' | 'pooltile'
-  | 'ceiling' | 'black' | 'cushion' | 'rope'
+  | 'ceiling' | 'black' | 'cushion' | 'rope' | 'stucco' | 'travertine' | 'cladding' | 'stone_wall'
+  | 'terracotta' | 'parquet' | 'terrazzo' | 'lawn' | 'foliage' | 'curtain' | 'dark_metal' | 'brass'
 
 const cache = new Map<string, THREE.Material>()
 
@@ -63,8 +64,83 @@ export function getMaterial(name: MatName | string, variant = ''): THREE.Materia
       m = s
       break
     }
-    case 'glass':
-      m = new THREE.MeshPhysicalMaterial({ color: '#9fb7bd', metalness: 0, roughness: 0.04, transmission: 0, transparent: true, opacity: 0.55, envMapIntensity: 1.6, specularIntensity: 1, ior: 1.5, depthWrite: false })
+    case 'glass': {
+      // architectural low-iron glazing: see-through face-on, mirror-like at grazing angles
+      const g = new THREE.MeshPhysicalMaterial({ color: '#6f8a90', metalness: 0.05, roughness: 0.015, transparent: true, opacity: 0.3, envMapIntensity: 1.9, specularIntensity: 1, ior: 1.52, depthWrite: false, side: THREE.DoubleSide })
+      g.onBeforeCompile = (sh) => {
+        sh.fragmentShader = sh.fragmentShader.replace(
+          '#include <opaque_fragment>',
+          `float fres = pow(1.0 - clamp(abs(dot(normal, normalize(vViewPosition))), 0.0, 1.0), 3.0);
+          diffuseColor.a = mix(diffuseColor.a, 0.96, fres);
+          #include <opaque_fragment>`,
+        )
+      }
+      g.customProgramCacheKey = () => 'glass-fresnel'
+      m = g
+      break
+    }
+    case 'stucco': {
+      const s2 = std({ color: '#f2efe9', roughness: 0.9 })
+      applyPBR(s2, 'stucco', 0.5, 0.5).then(() => {
+        s2.map = null
+        s2.needsUpdate = true
+      })
+      m = s2
+      break
+    }
+    case 'travertine': {
+      const s2 = std({ color: '#efe4d2', roughness: 0.75 })
+      applyPBR(s2, 'travertine', 0.35, 0.6)
+      m = s2
+      break
+    }
+    case 'cladding': {
+      const s2 = std({ color: '#e8c9a6', roughness: 0.55 })
+      applyPBR(s2, 'cladding', 0.5, 0.6)
+      m = s2
+      break
+    }
+    case 'stone_wall': {
+      const s2 = std({ color: '#f0e6d8', roughness: 0.85 })
+      applyPBR(s2, 'stone_wall', 0.35, 1.0)
+      m = s2
+      break
+    }
+    case 'terracotta': {
+      const s2 = std({ color: '#ffd2b8', roughness: 0.6 })
+      applyPBR(s2, 'terracotta', 0.5, 0.6)
+      m = s2
+      break
+    }
+    case 'parquet': {
+      const s2 = std({ color: '#f2e2cf', roughness: 0.45 })
+      applyPBR(s2, 'parquet', 0.5, 0.5)
+      m = s2
+      break
+    }
+    case 'terrazzo': {
+      const s2 = std({ color: '#ffffff', roughness: 0.3 })
+      applyPBR(s2, 'terrazzo', 0.5, 0.4)
+      m = s2
+      break
+    }
+    case 'lawn': {
+      const s2 = std({ color: '#b7cf9a', roughness: 0.95 })
+      applyPBR(s2, 'lawn', 0.3, 0.8)
+      m = s2
+      break
+    }
+    case 'foliage':
+      m = std({ color: '#2f5222', roughness: 0.6, side: THREE.DoubleSide })
+      break
+    case 'curtain':
+      m = std({ color: '#efe6d6', roughness: 1, side: THREE.DoubleSide, transparent: true, opacity: 0.5, depthWrite: false })
+      break
+    case 'dark_metal':
+      m = std({ color: '#1d1f21', roughness: 0.35, metalness: 0.8 })
+      break
+    case 'brass':
+      m = std({ color: '#c9a15e', roughness: 0.25, metalness: 1 })
       break
     case 'wood': {
       const s = std({ color: '#d9b38a', roughness: 0.6 })
@@ -197,11 +273,13 @@ export function getMaterial(name: MatName | string, variant = ''): THREE.Materia
   return m
 }
 
-const KNOWN = ['plaster', 'roof', 'glass', 'wood', 'deck', 'stone', 'frame', 'water', 'glow', 'concrete', 'paving', 'asphalt', 'fabric', 'metal', 'court', 'rubber', 'plastic_red', 'plastic_yellow', 'plastic_teal', 'umbrella', 'lamp', 'marble', 'walnut', 'floor', 'pooltile', 'ceiling', 'black', 'cushion', 'rope']
+const KNOWN = ['plaster', 'roof', 'glass', 'wood', 'deck', 'stone', 'frame', 'water', 'glow', 'concrete', 'paving', 'asphalt', 'fabric', 'metal', 'court', 'rubber', 'plastic_red', 'plastic_yellow', 'plastic_teal', 'umbrella', 'lamp', 'marble', 'walnut', 'floor', 'pooltile', 'ceiling', 'black', 'cushion', 'rope', 'stucco', 'travertine', 'cladding', 'stone_wall', 'terracotta', 'parquet', 'terrazzo', 'lawn', 'foliage', 'curtain', 'dark_metal', 'brass']
 
 export function normalizeName(n: string) {
   const s = n.toLowerCase().replace(/^m_/, '').replace(/\.\d+$/, '')
-  for (const k of KNOWN) if (s === k || s.startsWith(k)) return k
-  return s
+  if (KNOWN.includes(s)) return s
+  let best = ''
+  for (const k of KNOWN) if (s.startsWith(k) && k.length > best.length) best = k
+  return best || s
 }
 export const isKnownMaterial = (n: string) => KNOWN.includes(normalizeName(n))

@@ -98,6 +98,19 @@ BASE_COLORS = {
     "plastic_teal": ((0.03, 0.4, 0.33), 0.35, 0.0),
     "rubber": ((0.75, 0.35, 0.2), 0.95, 0.0),
     "court": ((0.07, 0.3, 0.14), 0.8, 0.0),
+    "stucco": ((0.93, 0.91, 0.87), 0.9, 0.0),
+    "travertine": ((0.86, 0.8, 0.7), 0.7, 0.0),
+    "cladding": ((0.55, 0.36, 0.2), 0.55, 0.0),
+    "foliage": ((0.08, 0.2, 0.05), 0.75, 0.0),
+    "curtain": ((0.95, 0.94, 0.9), 0.95, 0.0),
+    "dark_metal": ((0.04, 0.04, 0.045), 0.35, 0.85),
+    "asphalt": ((0.12, 0.12, 0.12), 0.9, 0.0),
+    "terracotta": ((0.55, 0.28, 0.16), 0.6, 0.0),
+    "parquet": ((0.6, 0.45, 0.3), 0.45, 0.0),
+    "terrazzo": ((0.85, 0.83, 0.8), 0.3, 0.0),
+    "stone_wall": ((0.7, 0.62, 0.5), 0.85, 0.0),
+    "brass": ((0.8, 0.6, 0.3), 0.25, 1.0),
+    "lawn": ((0.1, 0.2, 0.05), 0.95, 0.0),
 }
 # library name -> manifest texture set used in render mode
 TEX_FOR = {
@@ -105,6 +118,9 @@ TEX_FOR = {
     "paving": ("paving", 0.25), "pooltile": ("pool_tiles", 0.5), "fabric": ("linen", 1.2), "cushion": ("linen", 1.2),
     "walnut": ("walnut", 0.8), "marble": ("marble", 0.6), "floor": ("stone_floor", 0.4), "roof": ("roof", 0.6),
     "rubber": ("rubber", 0.3),
+    "stucco": ("stucco", 0.5), "travertine": ("travertine", 0.35), "cladding": ("cladding", 0.5),
+    "terracotta": ("terracotta", 0.5), "parquet": ("parquet", 0.5), "terrazzo": ("terrazzo", 0.5),
+    "stone_wall": ("stone_wall", 0.35), "lawn": ("lawn", 0.3), "asphalt": ("asphalt", 0.15),
 }
 
 
@@ -150,7 +166,7 @@ def material(name: str):
         if entry.get("diff_cache") and (C.ROOT / entry["diff_cache"]).exists():
             d = _tex_node(nt, C.ROOT / entry["diff_cache"], "sRGB")
             nt.links.new(mapping.outputs["Vector"], d.inputs["Vector"])
-            if name in ("roof", "plaster", "fabric", "cushion"):
+            if name in ("roof", "plaster", "fabric", "cushion", "stucco"):
                 pass  # keep the painted colour; use the maps for relief/roughness only
             else:
                 nt.links.new(d.outputs["Color"], bsdf.inputs["Base Color"])
@@ -322,8 +338,41 @@ def import_polyhaven(pid: str, loc=(0, 0, 0), rot_y=0.0, scale=1.0, col=None, de
 # ---------------------------------------------------------------------------
 # export
 # ---------------------------------------------------------------------------
-def export_glb(path: Path, objects=None, draco=True, images="WEBP"):
+def export_glb(path: Path, objects=None, draco=True, images="WEBP", max_tex=1024):
     path.parent.mkdir(parents=True, exist_ok=True)
+    # make every texture an 8-bit RGBA image the WebP encoder accepts (16-bit / float maps
+    # from some sources otherwise fail to encode and leave dangling texture references)
+    import numpy as _np
+    for mat in bpy.data.materials:
+        if not mat.node_tree:
+            continue
+        for n in mat.node_tree.nodes:
+            img = getattr(n, "image", None)
+            if n.type != "TEX_IMAGE" or img is None or not img.has_data and not img.pixels:
+                continue
+            try:
+                if img.is_float or img.depth not in (24, 32) or img.channels != 4:
+                    w, h = img.size
+                    if w == 0 or h == 0:
+                        continue
+                    px = _np.array(img.pixels[:], dtype=_np.float32)
+                    if img.channels != 4:
+                        px = px.reshape(-1, img.channels)
+                        px = _np.concatenate([px[:, :3] if px.shape[1] >= 3 else _np.repeat(px[:, :1], 3, axis=1), _np.ones((px.shape[0], 1), _np.float32)], axis=1).ravel()
+                    new = bpy.data.images.new(img.name + "_8b", w, h, alpha=True, float_buffer=False)
+                    new.pixels = _np.clip(px, 0, 1).tolist()
+                    new.colorspace_settings.name = img.colorspace_settings.name
+                    n.image = new
+            except Exception as e:  # noqa: BLE001
+                log("texture sanitize failed", img.name, e)
+    # cap texture resolution for the web (scanned assets ship 2K–8K maps)
+    for img in bpy.data.images:
+        try:
+            w, h = img.size
+            if max(w, h) > max_tex:
+                img.scale(max(1, w * max_tex // max(w, h)), max(1, h * max_tex // max(w, h)))
+        except Exception:
+            pass
     bpy.ops.object.select_all(action="DESELECT")
     objs = objects or [o for o in bpy.context.scene.objects]
     for o in objs:
