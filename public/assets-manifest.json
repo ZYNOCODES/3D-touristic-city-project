@@ -1,0 +1,191 @@
+{
+  "generated": "2026-11-22T14:26:15",
+  "offline": false,
+  "hdri": {
+    "day": {
+      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "file": "hdri/day.hdr",
+      "cachePath": "assets/cache/hdri/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "sun": {
+        "azimuth": 0.602854449639057,
+        "elevation": 0.8329515678219032,
+        "peak": 31564.0832
+      },
+      "license": "CC0 (Poly Haven)"
+    },
+    "golden": {
+      "id": "qwantani_sunset_puresky",
+      "file": "hdri/golden.hdr",
+      "cachePath": "assets/cache/hdri/qwantani_sunset_puresky_2k.hdr",
+      "sun": {
+        "azimuth": 0.6273981422452273,
+        "elevation": 0.10891263593988053,
+        "peak": 44740.3008
+      },
+      "license": "CC0 (Poly Haven)"
+    },
+    "night": {
+      "id": "qwantani_night_puresky",
+      "file": "hdri/night.hdr",
+      "cachePath": "assets/cache/hdri/qwantani_night_puresky_2k.hdr",
+      "sun": {
+        "azimuth": -2.2442138926766932,
+        "elevation": 0.5875146417602005,
+        "peak": 41.52065
+      },
+      "license": "CC0 (Poly Haven)"
+    }
+  },
+  "textures": {
+    "terrain_grass": {
+      "id": "aerial_grass_rock",
+      "diff": "textures/terrain_grass/diff.jpg",
+      "diff_cache": "assets/cache/textures/aerial_grass_rock/aerial_grass_rock_diff_1k.jpg",
+      "nor_gl": "textures/terrain_grass/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/aerial_grass_rock/aerial_grass_rock_nor_gl_1k.jpg"
+    },
+    "terrain_forest": {
+      "id": "forest_ground_04",
+      "diff": "textures/terrain_forest/diff.jpg",
+      "diff_cache": "assets/cache/textures/forest_ground_04/forest_ground_04_diff_1k.jpg",
+      "nor_gl": "textures/terrain_forest/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/forest_ground_04/forest_ground_04_nor_gl_1k.jpg"
+    },
+    "terrain_rock": {
+      "id": "aerial_rocks_02",
+      "diff": "textures/terrain_rock/diff.jpg",
+      "diff_cache": "assets/cache/textures/aerial_rocks_02/aerial_rocks_02_diff_1k.jpg",
+      "nor_gl": "textures/terrain_rock/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/aerial_rocks_02/aerial_rocks_02_nor_gl_1k.jpg"
+    },
+    "terrain_sand": {
+      "id": "coast_sand_01",
+      "diff": "textures/terrain_sand/diff.jpg",
+      "diff_cache": "assets/cache/textures/coast_sand_01/coast_sand_01_diff_1k.jpg",
+      "nor_gl": "textures/terrain_sand/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/coast_sand_01/coast_sand_01_nor_gl_1k.jpg"
+    },
+    "paving": {
+      "id": "patterned_paving",
+      "diff": "textures/paving/diff.jpg",
+      "diff_cache": "assets/cache/textures/patterned_paving/patterned_paving_diff_1k.jpg",
+      "nor_gl": "textures/paving/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/patterned_paving/patterned_paving_nor_gl_1k.jpg",
+      "rough": "textures/paving/rough.jpg",
+      "rough_cache": "assets/cache/textures/patterned_paving/patterned_paving_rough_1k.jpg"
+    },
+    "plaster": {
+      "id": "white_plaster_02",
+      "diff": "textures/plaster/diff.jpg",
+      "diff_cache": "assets/cache/textures/white_plaster_02/white_plaster_02_diff_1k.jpg",
+      "nor_gl": "textures/plaster/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/white_plaster_02/white_plaster_02_nor_gl_1k.jpg",
+      "rough": "textures/plaster/rough.jpg",
+      "rough_cache": "assets/cache/textures/white_plaster_02/white_plaster_02_rough_1k.jpg"
+    },
+    "oak": {
+      "id": "oak_veneer_01",
+      "diff": "textures/oak/diff.jpg",
+      "diff_cache": "assets/cache/textures/oak_veneer_01/oak_veneer_01_diff_1k.jpg",
+      "nor_gl": "textures/oak/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/oak_veneer_01/oak_veneer_01_nor_gl_1k.jpg",
+      "rough": "textures/oak/rough.jpg",
+      "rough_cache": "assets/cache/textures/oak_veneer_01/oak_veneer_01_rough_1k.jpg"
+    },
+    "deck": {
+      "id": "wood_floor_deck",
+      "diff": "textures/deck/diff.jpg",
+      "diff_cache": "assets/cache/textures/wood_floor_deck/wood_floor_deck_diff_1k.jpg",
+      "nor_gl": "textures/deck/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/wood_floor_deck/wood_floor_deck_nor_gl_1k.jpg",
+      "rough": "textures/deck/rough.jpg",
+      "rough_cache": "assets/cache/textures/wood_floor_deck/wood_floor_deck_rough_1k.jpg"
+    },
+    "stone_floor": {
+      "id": "large_floor_tiles_02",
+      "diff": "textures/stone_floor/diff.jpg",
+      "diff_cache": "assets/cache/textures/large_floor_tiles_02/large_floor_tiles_02_diff_1k.jpg",
+      "nor_gl": "textures/stone_floor/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/large_floor_tiles_02/large_floor_tiles_02_nor_gl_1k.jpg",
+      "rough": "textures/stone_floor/rough.jpg",
+      "rough_cache": "assets/cache/textures/large_floor_tiles_02/large_floor_tiles_02_rough_1k.jpg"
+    },
+    "pool_tiles": {
+      "id": "blue_floor_tiles_01",
+      "diff": "textures/pool_tiles/diff.jpg",
+      "diff_cache": "assets/cache/textures/blue_floor_tiles_01/blue_floor_tiles_01_diff_1k.jpg",
+      "nor_gl": "textures/pool_tiles/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/blue_floor_tiles_01/blue_floor_tiles_01_nor_gl_1k.jpg",
+      "rough": "textures/pool_tiles/rough.jpg",
+      "rough_cache": "assets/cache/textures/blue_floor_tiles_01/blue_floor_tiles_01_rough_1k.jpg"
+    },
+    "linen": {
+      "id": "rough_linen",
+      "diff": "textures/linen/diff.jpg",
+      "diff_cache": "assets/cache/textures/rough_linen/rough_linen_diff_1k.jpg",
+      "nor_gl": "textures/linen/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/rough_linen/rough_linen_nor_gl_1k.jpg",
+      "rough": "textures/linen/rough.jpg",
+      "rough_cache": "assets/cache/textures/rough_linen/rough_linen_rough_1k.jpg"
+    },
+    "marble": {
+      "id": "marble_01",
+      "diff": "textures/marble/diff.jpg",
+      "diff_cache": "assets/cache/textures/marble_01/marble_01_diff_1k.jpg",
+      "nor_gl": "textures/marble/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/marble_01/marble_01_nor_gl_1k.jpg",
+      "rough": "textures/marble/rough.jpg",
+      "rough_cache": "assets/cache/textures/marble_01/marble_01_rough_1k.jpg"
+    },
+    "walnut": {
+      "id": "walnut_veneer",
+      "diff": "textures/walnut/diff.jpg",
+      "diff_cache": "assets/cache/textures/walnut_veneer/walnut_veneer_diff_1k.jpg",
+      "nor_gl": "textures/walnut/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/walnut_veneer/walnut_veneer_nor_gl_1k.jpg",
+      "rough": "textures/walnut/rough.jpg",
+      "rough_cache": "assets/cache/textures/walnut_veneer/walnut_veneer_rough_1k.jpg"
+    },
+    "asphalt": {
+      "id": "clean_asphalt",
+      "diff": "textures/asphalt/diff.jpg",
+      "diff_cache": "assets/cache/textures/clean_asphalt/clean_asphalt_diff_1k.jpg",
+      "nor_gl": "textures/asphalt/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/clean_asphalt/clean_asphalt_nor_gl_1k.jpg",
+      "rough": "textures/asphalt/rough.jpg",
+      "rough_cache": "assets/cache/textures/clean_asphalt/clean_asphalt_rough_1k.jpg"
+    },
+    "rubber": {
+      "id": "rubber_tiles",
+      "diff": "textures/rubber/diff.jpg",
+      "diff_cache": "assets/cache/textures/rubber_tiles/rubber_tiles_diff_1k.jpg",
+      "nor_gl": "textures/rubber/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/rubber_tiles/rubber_tiles_nor_gl_1k.jpg",
+      "rough": "textures/rubber/rough.jpg",
+      "rough_cache": "assets/cache/textures/rubber_tiles/rubber_tiles_rough_1k.jpg"
+    },
+    "roof": {
+      "id": "grey_roof_01",
+      "diff": "textures/roof/diff.jpg",
+      "diff_cache": "assets/cache/textures/grey_roof_01/grey_roof_01_diff_1k.jpg",
+      "nor_gl": "textures/roof/nor_gl.jpg",
+      "nor_gl_cache": "assets/cache/textures/grey_roof_01/grey_roof_01_nor_gl_1k.jpg",
+      "rough": "textures/roof/rough.jpg",
+      "rough_cache": "assets/cache/textures/grey_roof_01/grey_roof_01_rough_1k.jpg"
+    }
+  },
+  "models": {
+    "potted_plant_02": "assets/cache/models/potted_plant_02/potted_plant_02_1k.gltf",
+    "potted_plant_04": "assets/cache/models/potted_plant_04/potted_plant_04_1k.gltf",
+    "pachira_aquatica_01": "assets/cache/models/pachira_aquatica_01/pachira_aquatica_01_1k.gltf",
+    "calathea_orbifolia_01": "assets/cache/models/calathea_orbifolia_01/calathea_orbifolia_01_1k.gltf",
+    "dining_chair_02": "assets/cache/models/dining_chair_02/dining_chair_02_1k.gltf",
+    "mid_century_lounge_chair": "assets/cache/models/mid_century_lounge_chair/mid_century_lounge_chair_1k.gltf",
+    "modern_ceiling_lamp_01": "assets/cache/models/modern_ceiling_lamp_01/modern_ceiling_lamp_01_1k.gltf",
+    "ceramic_vase_01": "assets/cache/models/ceramic_vase_01/ceramic_vase_01_1k.gltf",
+    "ceramic_vase_03": "assets/cache/models/ceramic_vase_03/ceramic_vase_03_1k.gltf",
+    "wicker_basket_01": "assets/cache/models/wicker_basket_01/wicker_basket_01_1k.gltf",
+    "side_table_01": "assets/cache/models/side_table_01/side_table_01_1k.gltf",
+    "potted_plant_01": "assets/cache/models/potted_plant_01/potted_plant_01_1k.gltf"
+  }
+}

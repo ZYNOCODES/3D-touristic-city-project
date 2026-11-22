@@ -1,0 +1,24 @@
+{
+  "models": {
+    "villa": {
+      "file": "models/villa.glb",
+      "bytes": 158288
+    },
+    "residence": {
+      "file": "models/residence.glb",
+      "bytes": 577996
+    },
+    "amenities": {
+      "file": "models/amenities.glb",
+      "bytes": 238128
+    },
+    "props": {
+      "file": "models/props.glb",
+      "bytes": 19096
+    },
+    "interior": {
+      "file": "models/interior.glb",
+      "bytes": 5837932
+    }
+  }
+}

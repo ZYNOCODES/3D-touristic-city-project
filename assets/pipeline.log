@@ -1,0 +1,1877 @@
+[blender] === interior ===
+15:13:22 | INFO: Data are loaded, start creating Blender stuff
+15:13:22 | INFO: Blender create Mesh node lounge_chair
+15:13:22 | INFO: glTF import finished in 0.09s
+15:13:22 | INFO: Data are loaded, start creating Blender stuff
+15:13:22 | INFO: Blender create Mesh node lounge_chair
+15:13:22 | INFO: glTF import finished in 0.04s
+15:13:22 | INFO: Data are loaded, start creating Blender stuff
+15:13:22 | INFO: Blender create Mesh node Cube.011
+15:13:22 | INFO: glTF import finished in 0.09s
+15:13:22 | INFO: Data are loaded, start creating Blender stuff
+15:13:22 | INFO: Blender create Mesh node Cylinder.009
+15:13:22 | INFO: glTF import finished in 0.10s
+15:13:22 | INFO: Data are loaded, start creating Blender stuff
+15:13:22 | INFO: Blender create Mesh node Circle
+15:13:22 | INFO: Blender create Mesh node Circle.001
+15:13:22 | INFO: Blender create Mesh node low.008
+15:13:23 | INFO: glTF import finished in 0.25s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Vert.001
+15:13:23 | INFO: glTF import finished in 0.13s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.001
+15:13:23 | INFO: glTF import finished in 0.10s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.054
+15:13:23 | INFO: glTF import finished in 0.10s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.054
+15:13:23 | INFO: glTF import finished in 0.06s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.054
+15:13:23 | INFO: glTF import finished in 0.06s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.054
+15:13:23 | INFO: glTF import finished in 0.07s
+15:13:23 | INFO: Data are loaded, start creating Blender stuff
+15:13:23 | INFO: Blender create Mesh node Cube.054
+15:13:23 | INFO: glTF import finished in 0.06s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cube.054
+15:13:24 | INFO: glTF import finished in 0.06s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cube.054
+15:13:24 | INFO: glTF import finished in 0.07s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cube.054
+15:13:24 | INFO: glTF import finished in 0.08s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cylinder.003
+15:13:24 | INFO: glTF import finished in 0.13s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cylinder.003
+15:13:24 | INFO: glTF import finished in 0.07s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cylinder.003
+15:13:24 | INFO: glTF import finished in 0.04s
+15:13:24 | INFO: Data are loaded, start creating Blender stuff
+15:13:24 | INFO: Blender create Mesh node Cube.001
+15:13:25 | INFO: glTF import finished in 0.08s
+15:13:25 | INFO: Data are loaded, start creating Blender stuff
+15:13:25 | INFO: Blender create Mesh node HaworthiaScan_Model_2.001
+15:13:25 | INFO: Blender create Mesh node Plane.118
+15:13:25 | INFO: Blender create Mesh node Plane.116
+15:13:25 | INFO: Blender create Mesh node Mesh
+15:13:25 | INFO: glTF import finished in 0.11s
+15:13:25 | INFO: Data are loaded, start creating Blender stuff
+15:13:25 | INFO: Blender create Mesh node lounge_chair
+15:13:25 | INFO: glTF import finished in 0.07s
+15:13:25 | INFO: Data are loaded, start creating Blender stuff
+15:13:25 | INFO: Blender create Mesh node HaworthiaScan_Model_2.001
+15:13:25 | INFO: Blender create Mesh node Plane.118
+15:13:25 | INFO: Blender create Mesh node Plane.116
+15:13:25 | INFO: Blender create Mesh node Mesh
+15:13:25 | INFO: glTF import finished in 0.08s
+15:13:25 | INFO: Data are loaded, start creating Blender stuff
+15:13:25 | INFO: Blender create Mesh node Circle
+15:13:25 | INFO: Blender create Mesh node Circle.001
+15:13:25 | INFO: Blender create Mesh node low.008
+15:13:26 | INFO: glTF import finished in 0.22s
+15:13:26 | INFO: Data are loaded, start creating Blender stuff
+15:13:26 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:13:26 | INFO: Blender create Mesh node Circle.008
+15:13:26 | INFO: Blender create Mesh node Circle.002
+15:13:26 | INFO: Blender create Mesh node Plane.070
+15:13:26 | INFO: glTF import finished in 0.57s
+15:13:27 | INFO: Data are loaded, start creating Blender stuff
+15:13:27 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:13:27 | INFO: Blender create Mesh node Circle.008
+15:13:27 | INFO: Blender create Mesh node Circle.002
+15:13:27 | INFO: Blender create Mesh node Plane.070
+15:13:28 | INFO: glTF import finished in 0.66s
+15:13:28 | INFO: Data are loaded, start creating Blender stuff
+15:13:28 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:13:28 | INFO: Blender create Mesh node Circle.008
+15:13:29 | INFO: Blender create Mesh node Circle.002
+15:13:29 | INFO: Blender create Mesh node Plane.070
+15:13:29 | INFO: glTF import finished in 0.41s
+15:13:30 | INFO: Data are loaded, start creating Blender stuff
+15:13:30 | INFO: Blender create Mesh node Circle
+15:13:30 | INFO: Blender create Mesh node Circle.001
+15:13:30 | INFO: Blender create Mesh node low.008
+15:13:30 | INFO: glTF import finished in 0.23s
+15:13:30 | INFO: Data are loaded, start creating Blender stuff
+15:13:30 | INFO: Blender create Mesh node Plane.014
+15:13:30 | INFO: Blender create Mesh node Plane.003
+15:13:30 | INFO: Blender create Mesh node Cylinder.012
+15:13:30 | INFO: Blender create Mesh node Plane.019
+15:13:30 | INFO: Blender create Mesh node Cylinder.015
+15:13:30 | INFO: glTF import finished in 0.15s
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.3\blender.shared\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.3\blender.shared\bf_intern_meshopt_bridge.dll
+15:13:45 | INFO: Starting glTF 2.0 export
+15:13:45 | INFO: Extracting primitive: backsplash
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: balustrade_e
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: balustrade_s
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: balustrade_w
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: bed_bench
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: bed_frame
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: Cone.024
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: Cone.025
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: bulkhead
+15:13:45 | INFO: Primitives created: 1
+15:13:45 | INFO: Extracting primitive: Plane.014
+15:13:45 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Plane.005
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Cylinder.012
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Plane.019
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Cylinder.015
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: ceiling
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: ceiling_tall
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Cylinder.009
+15:13:46 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:46 | INFO: Primitives created: 1
+15:13:46 | INFO: Extracting primitive: Cube.001
+15:13:47 | INFO: Primitives created: 1
+15:13:47 | INFO: Extracting primitive: Cube.009
+15:13:48 | INFO: Primitives created: 1
+15:13:48 | INFO: Extracting primitive: Cone.013
+15:13:48 | INFO: Primitives created: 1
+15:13:48 | INFO: Extracting primitive: Cone.014
+15:13:48 | INFO: Primitives created: 1
+15:13:48 | INFO: Extracting primitive: cove
+15:13:48 | INFO: Primitives created: 1
+15:13:48 | INFO: Extracting primitive: Cube.054
+15:13:48 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:48 | INFO: Primitives created: 1
+15:13:48 | INFO: Extracting primitive: Cube.002
+15:13:49 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:49 | INFO: Primitives created: 1
+15:13:49 | INFO: Extracting primitive: Cube.003
+15:13:50 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:50 | INFO: Primitives created: 1
+15:13:50 | INFO: Extracting primitive: Cube.004
+15:13:51 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:51 | INFO: Primitives created: 1
+15:13:51 | INFO: Extracting primitive: Cube.005
+15:13:51 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:51 | INFO: Primitives created: 1
+15:13:51 | INFO: Extracting primitive: Cube.006
+15:13:52 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:52 | INFO: Primitives created: 1
+15:13:52 | INFO: Extracting primitive: Cube.007
+15:13:52 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:52 | INFO: Primitives created: 1
+15:13:52 | INFO: Extracting primitive: Cube.008
+15:13:53 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: dining_leg_a
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: dining_leg_b
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: dining_top
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.001
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.002
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.003
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.004
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.005
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.006
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: Cone.007
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: feature_wall
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: floor
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: glaze_head
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: glaze_sill
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: glazing
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: headboard
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: island
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: island_top
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: lounger_0
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: lounger_1
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: lounger_mat_0
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: lounger_mat_1
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: mattress
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_back
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_console
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_0
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_1
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_2
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_3
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_4
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_5
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_6
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_7
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_8
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_9
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_10
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_11
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_12
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_13
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_14
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_15
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_16
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_17
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_18
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_19
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_20
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_21
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_22
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_23
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_24
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_25
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_26
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_27
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_28
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_29
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_30
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_31
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_32
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_33
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_34
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_35
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_36
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_37
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_38
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_39
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: media_slat_40
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: mezz_floor
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: mezz_glass
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: mezz_slab
+15:13:53 | INFO: Primitives created: 1
+15:13:53 | INFO: Extracting primitive: lounge_chair
+15:13:54 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:54 | INFO: Primitives created: 1
+15:13:54 | INFO: Extracting primitive: lounge_chair.001
+15:13:55 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:55 | INFO: Primitives created: 1
+15:13:55 | INFO: Extracting primitive: lounge_chair.002
+15:13:55 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:55 | INFO: Primitives created: 1
+15:13:56 | INFO: Extracting primitive: Cylinder.003
+15:13:56 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:57 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:58 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:58 | INFO: Primitives created: 3
+15:13:58 | INFO: Extracting primitive: Cylinder.001
+15:13:58 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:59 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:59 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:13:59 | INFO: Primitives created: 3
+15:13:59 | INFO: Extracting primitive: Cylinder.002
+15:14:00 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:01 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:01 | INFO: Primitives created: 3
+15:14:01 | INFO: Extracting primitive: mullion_0
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_1
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_2
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_3
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_4
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_5
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_6
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_7
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_8
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_9
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: mullion_10
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: nightstand_0
+15:14:01 | INFO: Primitives created: 1
+15:14:01 | INFO: Extracting primitive: nightstand_1
+15:14:01 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: out_sofa
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: out_sofa_back
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: out_sofa_seat
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Cone.026
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: oven
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: oven2
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: partition_a
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: partition_b
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: partition_head
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pebbles
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Cone.015
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Cone.016
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Cone.017
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_0
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_1
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_2
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_3
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_l
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pillow_r
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: podium
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_floor
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_wall_e
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_wall_n
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_wall_w
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_water
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: pool_weir
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Plane.070
+15:14:02 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:02 | INFO: Primitives created: 1
+15:14:02 | INFO: Extracting primitive: Plane.003
+15:14:03 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:03 | INFO: Primitives created: 1
+15:14:03 | INFO: Extracting primitive: Plane.004
+15:14:04 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:04 | INFO: Primitives created: 1
+15:14:04 | INFO: Extracting primitive: Circle.008
+15:14:04 | INFO: Primitives created: 1
+15:14:04 | INFO: Extracting primitive: Circle.005
+15:14:05 | INFO: Primitives created: 1
+15:14:05 | INFO: Extracting primitive: Circle.007
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: Circle.004
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: Circle.006
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: Circle.009
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: potted_plant_01_base_low
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: potted_plant_01_base_low.001
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: potted_plant_01_base_low.002
+15:14:07 | INFO: Primitives created: 1
+15:14:07 | INFO: Extracting primitive: low.008
+15:14:08 | INFO: Primitives created: 1
+15:14:08 | INFO: Extracting primitive: low.001
+15:14:09 | INFO: Primitives created: 1
+15:14:09 | INFO: Extracting primitive: low.002
+15:14:10 | INFO: Primitives created: 1
+15:14:10 | INFO: Extracting primitive: Circle.001
+15:14:11 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:11 | INFO: Primitives created: 1
+15:14:11 | INFO: Extracting primitive: Circle.003
+15:14:12 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:12 | INFO: Primitives created: 1
+15:14:12 | INFO: Extracting primitive: Circle.011
+15:14:12 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:13 | INFO: Primitives created: 1
+15:14:13 | INFO: Extracting primitive: Circle
+15:14:13 | INFO: Primitives created: 1
+15:14:13 | INFO: Extracting primitive: Circle.002
+15:14:13 | INFO: Primitives created: 1
+15:14:13 | INFO: Extracting primitive: Circle.010
+15:14:13 | INFO: Primitives created: 1
+15:14:13 | INFO: Extracting primitive: Plane.118
+15:14:14 | INFO: Primitives created: 1
+15:14:14 | INFO: Extracting primitive: Plane.001
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: HaworthiaScan_Model_2.001
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: HaworthiaScan_Model_2.002
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: Plane.116
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: Plane.002
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: Mesh
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: Mesh.001
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: rug_bed
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: rug_living
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_a_0
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_a_1
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_a_2
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_b_0
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_b_1
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: seat_b_2
+15:14:15 | INFO: Primitives created: 1
+15:14:15 | INFO: Extracting primitive: Cube.011
+15:14:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_0
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_1
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_2
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_3
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_4
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_5
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_6
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_7
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_8
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_9
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_10
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_11
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_12
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_13
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_14
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_15
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_16
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_17
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_18
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_19
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_20
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_21
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_22
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_23
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_24
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_25
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_26
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_27
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_28
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_29
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_30
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_31
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_32
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_33
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_34
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_35
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_36
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_37
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_38
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_39
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_40
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_41
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_42
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_43
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_44
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_45
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_46
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_47
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_48
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_49
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_50
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_51
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_52
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_53
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_54
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_55
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_56
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_57
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: slat_58
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: sofa_back_a
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: sofa_back_b
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: sofa_base_a
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: sofa_base_b
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: stair_glass
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.012
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.018
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.020
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.022
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.019
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.021
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.023
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tall_units
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.008
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.009
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.010
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Cone.011
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: terrace_cov
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: terrace_e
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: terrace_roof
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: terrace_soffit
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: terrace_w
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: throw
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_0
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_1
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_2
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_3
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_4
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_5
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_6
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_7
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_8
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_9
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_10
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_11
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_12
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_13
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_14
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_15
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_16
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_17
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_0
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_1
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_2
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_3
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_4
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_5
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_6
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_7
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_8
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_9
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_10
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_11
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_12
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_13
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_14
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_15
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_16
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tread_led_17
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: tv
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_0
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_1
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_2
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_3
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_4
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_5
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_6
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_7
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_8
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: unit_gap_9
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: wall_back
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: wall_back_tall
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: wall_e
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: wall_w
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: wardrobe
+15:14:16 | INFO: Primitives created: 1
+15:14:16 | INFO: Extracting primitive: Vert.001
+15:14:17 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+15:14:17 | INFO: Primitives created: 1
+15:14:19 | INFO: Draco encoder: Encoding mesh backsplash.
+15:14:19 | INFO: Draco encoder: Encoding mesh balustrade_e.
+15:14:19 | INFO: Draco encoder: Encoding mesh balustrade_s.
+15:14:19 | INFO: Draco encoder: Encoding mesh balustrade_w.
+15:14:19 | INFO: Draco encoder: Encoding mesh bed_bench.
+15:14:19 | INFO: Draco encoder: Encoding mesh bed_frame.
+15:14:19 | INFO: Draco encoder: Encoding mesh bedlamp_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh bedlamp_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh bulkhead.
+15:14:19 | INFO: Draco encoder: Encoding mesh calathea_orbifolia_01_a.
+15:14:19 | INFO: Draco encoder: Encoding mesh calathea_orbifolia_01_b.
+15:14:19 | INFO: Draco encoder: Encoding mesh calathea_orbifolia_01_c.
+15:14:19 | INFO: Draco encoder: Encoding mesh calathea_orbifolia_01_d.
+15:14:19 | INFO: Draco encoder: Encoding mesh calathea_orbifolia_01_e.
+15:14:19 | INFO: Draco encoder: Encoding mesh ceiling.
+15:14:19 | INFO: Draco encoder: Encoding mesh ceiling_tall.
+15:14:19 | INFO: Draco encoder: Encoding mesh ceramic_vase_01.
+15:14:19 | INFO: Draco encoder: Encoding mesh ceramic_vase_03.
+15:14:19 | INFO: Draco encoder: Encoding mesh ceramic_vase_03.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh coffee_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh coffee_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh cove.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.003.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.004.
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:33:43)
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 331, compression ratio: 2.54
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 330, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 315, compression ratio: 2.67
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 329, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 142 vertices, 324 indices, raw size: 4648, encoded size: 1056, compression ratio: 4.40
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 155 vertices, 324 indices, raw size: 4776, encoded size: 1064, compression ratio: 4.49
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 756, compression ratio: 3.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 762, compression ratio: 3.50
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 343, compression ratio: 2.45
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 3388 vertices, 17712 indices, raw size: 143840, encoded size: 22214, compression ratio: 6.48
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1990 vertices, 10338 indices, raw size: 84356, encoded size: 13932, compression ratio: 6.05
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2042 vertices, 10626 indices, raw size: 86596, encoded size: 14094, compression ratio: 6.14
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1048 vertices, 5406 indices, raw size: 44348, encoded size: 7909, compression ratio: 5.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1152 vertices, 5982 indices, raw size: 48828, encoded size: 8459, compression ratio: 5.77
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 320, compression ratio: 2.62
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 335, compression ratio: 2.51
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6972 vertices, 30888 indices, raw size: 276272, encoded size: 36211, compression ratio: 7.63
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7567 vertices, 33408 indices, raw size: 301408, encoded size: 36274, compression ratio: 8.31
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7567 vertices, 33408 indices, raw size: 301408, encoded size: 36274, compression ratio: 8.31
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1406 vertices, 7200 indices, raw size: 59392, encoded size: 9106, compression ratio: 6.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1406 vertices, 7200 indices, raw size: 59392, encoded size: 9126, compression ratio: 6.51
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve 15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.005.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.006.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_chair_02.007.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_leg_a.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_leg_b.
+15:14:19 | INFO: Draco encoder: Encoding mesh dining_top.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_2.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_3.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_4.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_5.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_6.
+15:14:19 | INFO: Draco encoder: Encoding mesh downlight_7.
+15:14:19 | INFO: Draco encoder: Encoding mesh feature_wall.
+15:14:19 | INFO: Draco encoder: Encoding mesh floor.
+15:14:19 | INFO: Draco encoder: Encoding mesh glaze_head.
+15:14:19 | INFO: Draco encoder: Encoding mesh glaze_sill.
+15:14:19 | INFO: Draco encoder: Encoding mesh glazing.
+15:14:19 | INFO: Draco encoder: Encoding mesh headboard.
+15:14:19 | INFO: Draco encoder: Encoding mesh island.
+15:14:19 | INFO: Draco encoder: Encoding mesh island_top.
+15:14:19 | INFO: Draco encoder: Encoding mesh lounger_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh lounger_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh lounger_mat_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh lounger_mat_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh mattress.
+triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 6892 vertices, 33015 indices, raw size: 286574, encoded size: 51953, compression ratio: 5.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 329, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 327, compression ratio: 2.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 140 vertices, 324 indices, raw size: 4456, encoded size: 1077, compression ratio: 4.14
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 676, compression ratio: 3.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 692, compression ratio: 3.85
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 688, compression ratio: 3.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 690, compression ratio: 3.86
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 689, compression ratio: 3.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 658, compression ratio: 4.05
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 662, compression ratio: 4.02
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 72 vertices, 180 indices, raw size: 2664, encoded size: 667, compression ratio: 3.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 345, compression ratio: 2.43
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 322, compression ratio: 2.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 265, compression ratio: 3.17
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 268, compression ratio: 3.13
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 325, compression ratio: 2.58
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 174 vertices, 324 indices, raw size: 5736, encoded size: 1203, compression ratio: 4.77
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 137 vertices, 324 indices, raw size: 4584, encoded size: 1059, compression ratio: 4.33
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 156 vertices, 324 indices, raw size: 5064, encoded size: 1130, compression ratio: 4.48
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 151 vertices, 324 indices, raw size: 4872, encoded size: 1146, compression ratio: 4.25
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 142 vertices, 324 indices, raw size: 4520, encoded size: 1132, compression ratio: 3.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 486 vertices, 2304 indices, raw size: 20160, encoded size: 3470, compression ratio: 5.81
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 486 vertices, 2304 indices, raw size: 20160, encoded size: 3482, compression ratio: 5.79
+Draco15:14:19 | INFO: Draco encoder: Encoding mesh media_back.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_console.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_2.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_3.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_4.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_5.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_6.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_7.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_8.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_9.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_10.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_11.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_12.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_13.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_14.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_15.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_16.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_17.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_18.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_19.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_20.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_21.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_22.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_23.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_24.
+Encoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8178, compression ratio: 9.04
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 348, compression ratio: 2.41
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 154 vertices, 324 indices, raw size: 5000, encoded size: 1067, compression ratio: 4.69
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 285, compression ratio: 2.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 285, compression ratio: 2.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 288, compression ratio: 2.92
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 288, compression ratio: 2.92
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 285, compression ratio: 2.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 283, compression ratio: 2.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 285, compression ratio: 2.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 215:14:19 | INFO: Draco encoder: Encoding mesh media_slat_25.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_26.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_27.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_28.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_29.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_30.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_31.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_32.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_33.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_34.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_35.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_36.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_37.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_38.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_39.
+15:14:19 | INFO: Draco encoder: Encoding mesh media_slat_40.
+15:14:19 | INFO: Draco encoder: Encoding mesh mezz_floor.
+15:14:19 | INFO: Draco encoder: Encoding mesh mezz_glass.
+15:14:19 | INFO: Draco encoder: Encoding mesh mezz_slab.
+15:14:19 | INFO: Draco encoder: Encoding mesh mid_century_lounge_chair.
+15:14:19 | INFO: Draco encoder: Encoding mesh mid_century_lounge_chair.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh mid_century_lounge_chair.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh modern_ceiling_lamp_01.
+15:14:19 | INFO: Draco encoder: Encoding mesh modern_ceiling_lamp_01.001.
+4 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 284, compression ratio: 2.96
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 286, compression ratio: 2.94
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 318, compression ratio: 2.64
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 342, compression ratio: 2.46
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 331, compression ratio: 2.54
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4227 vertices, 18444 indices, raw size: 172088, encoded size: 30702, compression ratio: 5.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4227 vertices, 18444 indices, raw size: 172088, encoded size: 30702, compression ratio: 5.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4227 vertices, 18444 indices, raw size: 172088, encoded size: 30702, compression ratio: 5.61
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1642 vertices, 8832 indices, raw size: 70208, encoded size: 9719, compression ratio: 7.22
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1714 vertices, 7062 indices, raw size: 68972, encoded size: 11744, compression ratio: 5.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 912 indices, raw size: 7648, encoded size: 1764, compression ratio: 4.34
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1642 vertices, 8832 indices, raw size: 70208, encoded size: 9719, compression ratio: 7.22
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1714 vertices, 70615:14:19 | INFO: Draco encoder: Encoding mesh modern_ceiling_lamp_01.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_2.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_3.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_4.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_5.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_6.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_7.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_8.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_9.
+15:14:19 | INFO: Draco encoder: Encoding mesh mullion_10.
+15:14:19 | INFO: Draco encoder: Encoding mesh nightstand_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh nightstand_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh out_sofa.
+15:14:19 | INFO: Draco encoder: Encoding mesh out_sofa_back.
+15:14:19 | INFO: Draco encoder: Encoding mesh out_sofa_seat.
+15:14:19 | INFO: Draco encoder: Encoding mesh out_table.
+15:14:19 | INFO: Draco encoder: Encoding mesh oven.
+15:14:19 | INFO: Draco encoder: Encoding mesh oven2.
+15:14:19 | INFO: Draco encoder: Encoding mesh partition_a.
+15:14:19 | INFO: Draco encoder: Encoding mesh partition_b.
+15:14:19 | INFO: Draco encoder: Encoding mesh partition_head.
+15:14:19 | INFO: Draco encoder: Encoding mesh pebbles.
+2 indices, raw size: 68972, encoded size: 11744, compression ratio: 5.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 912 indices, raw size: 7648, encoded size: 1764, compression ratio: 4.34
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1642 vertices, 8832 indices, raw size: 70208, encoded size: 9719, compression ratio: 7.22
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1714 vertices, 7062 indices, raw size: 68972, encoded size: 11744, compression ratio: 5.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 912 indices, raw size: 7648, encoded size: 1764, compression ratio: 4.34
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 300, compression ratio: 2.80
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 298, compression ratio: 2.82
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 300, compression ratio: 2.80
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 297, compression ratio: 2.83
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 298, compression ratio: 2.82
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 167 vertices, 324 indices, raw size: 5288, encoded size: 1134, compression ratio: 4.66
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 142 vertices, 324 indices, raw size: 4744, encoded size: 1037, compression ratio: 4.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 486 vertices, 2304 indices, raw size: 20160, encoded size: 3375, compression ratio: 5.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 7830, compression ratio: 9.44
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 7885, compression ratio: 9.37
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 464 vertices, 1140 indices, raw size: 17128, encoded size: 3157, compression ratio: 5.43
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 328, compression ratio: 2.56
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 334, compression ratio: 2.51
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 329, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 347, compression ratio: 2.42
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 341, compression ratio: 2.46
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, r15:14:19 | INFO: Draco encoder: Encoding mesh pendant_glow_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh pendant_glow_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh pendant_glow_2.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_0.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_1.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_2.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_3.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_l.
+15:14:19 | INFO: Draco encoder: Encoding mesh pillow_r.
+15:14:19 | INFO: Draco encoder: Encoding mesh podium.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_floor.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_wall_e.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_wall_n.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_wall_w.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_water.
+15:14:19 | INFO: Draco encoder: Encoding mesh pool_weir.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_leaves.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_leaves.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_leaves.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pebbles.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pebbles.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pebbles.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pot.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pot.001.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_pot.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_stem.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_stem.001.
+aw size: 840, encoded size: 327, compression ratio: 2.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 799, compression ratio: 4.10
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 803, compression ratio: 4.07
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 794, compression ratio: 4.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9623, compression ratio: 7.68
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9722, compression ratio: 7.60
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9839, compression ratio: 7.51
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9828, compression ratio: 7.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8987, compression ratio: 8.23
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9053, compression ratio: 8.17
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 336, compression ratio: 2.50
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 328, compression ratio: 2.56
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 345, compression ratio: 2.43
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 329, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 345, compression ratio: 2.43
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 4 vertices, 6 indices, raw size: 140, encoded size: 186, compression ratio: 0.75
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 329, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34215 vertices, 112242 indices, raw size: 1319140, encoded size: 263557, compression ratio: 5.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34215 vertices, 112242 indices, raw size: 1319140, encoded size: 263557, compression ratio: 5.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34215 vertices, 112242 indices, raw size: 1319140, encoded size: 263557, compression ratio: 5.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 16085 vertices, 59721 indices, raw size: 634162, encoded size: 136954, compression ratio: 4.63
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 16085 vertices, 59721 indices, raw size: 634162, encoded size: 136954, compression ratio: 4.63
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 16085 vertices, 59721 indices, raw size: 634162, encoded size: 136954, compression ratio: 4.63
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1388 vertices, 5712 indices, raw size: 55840, encoded size: 11058, compression ratio: 5.05
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1388 vertices, 5712 indices, raw size: 55840, encoded size: 11058, compression ratio: 5.05
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1388 vertices, 5712 indices, raw size: 55840, encoded size: 11058, compression ratio: 5.05
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1779 vertices, 7353 indices, raw size: 71634, encoded size: 15045, compression ratio: 4.76
+DracoEnco15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_01_stem.002.
+15:14:19 | INFO: Draco encoder: Encoding mesh potted_plant_02_dirt.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_dirt.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_dirt.002.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_leaves.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_leaves.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_leaves.002.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_pot.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_pot.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_02_pot.002.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_dirt.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_dirt.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_ground.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_ground.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_plant.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_plant.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_pot.
+15:14:20 | INFO: Draco encoder: Encoding mesh potted_plant_04_pot.001.
+15:14:20 | INFO: Draco encoder: Encoding mesh rug_bed.
+15:14:20 | INFO: Draco encoder: Encoding mesh rug_living.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_a_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_a_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_a_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_b_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_b_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh seat_b_2.
+der | Preserve triangle order: no
+DracoEncoder | Encoded 1779 vertices, 7353 indices, raw size: 71634, encoded size: 15045, compression ratio: 4.76
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1779 vertices, 7353 indices, raw size: 71634, encoded size: 15045, compression ratio: 4.76
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34606 vertices, 161790 indices, raw size: 1430972, encoded size: 274826, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34606 vertices, 161790 indices, raw size: 1430972, encoded size: 274826, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 34606 vertices, 161790 indices, raw size: 1430972, encoded size: 274826, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7633 vertices, 32076 indices, raw size: 303704, encoded size: 52391, compression ratio: 5.80
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7633 vertices, 32076 indices, raw size: 303704, encoded size: 52391, compression ratio: 5.80
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 7633 vertices, 32076 indices, raw size: 303704, encoded size: 52391, compression ratio: 5.80
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2840 vertices, 15552 indices, raw size: 121984, encoded size: 17611, compression ratio: 6.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2840 vertices, 15552 indices, raw size: 121984, encoded size: 17611, compression ratio: 6.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2840 vertices, 15552 indices, raw size: 121984, encoded size: 17611, compression ratio: 6.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 320 vertices, 1233 indices, raw size: 12706, encoded size: 3156, compression ratio: 4.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 320 vertices, 1233 indices, raw size: 12706, encoded size: 3156, compression ratio: 4.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 848 vertices, 4140 indices, raw size: 35384, encoded size: 8016, compression ratio: 4.41
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 848 vertices, 4140 indices, raw size: 35384, encoded size: 8016, compression ratio: 4.41
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2241 vertices, 10182 indices, raw size: 92076, encoded size: 19139, compression ratio: 4.81
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2241 vertices, 10182 indices, raw size: 92076, encoded size: 19139, compression ratio: 4.81
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2611 vertices, 11232 indices, raw size: 102208, encoded size: 15782, compression ratio: 6.48
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 2611 vertices, 11232 indices, raw size: 102208, encoded size: 15782, compression ratio: 6.48
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 311, compression ratio: 2.70
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 317, compression ratio: 2.65
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9020, compression ratio: 8.20
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9120, compression ratio: 8.11
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9206, compression ratio: 8.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8973, compression ratio: 8.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8996, compression ratio: 8.22
+DracoEncoder | P15:14:20 | INFO: Draco encoder: Encoding mesh side_table_01.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_3.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_4.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_5.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_6.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_7.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_8.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_9.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_10.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_11.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_12.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_13.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_14.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_15.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_16.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_17.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_18.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_19.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_20.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_21.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_22.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_23.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_24.
+reserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 9049, compression ratio: 8.17
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 3280 vertices, 8268 indices, raw size: 120856, encoded size: 16978, compression ratio: 7.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5832, encoded size: 1103, compression ratio: 5.29
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5704, encoded size: 1074, compression ratio: 5.31
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5800, encoded size: 1097, compression ratio: 5.29
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5864, encoded size: 1089, compression ratio: 5.38
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5864, encoded size: 1096, compression ratio: 5.35
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5896, encoded size: 1118, compression ratio: 5.27
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 190 vertices, 324 indices, raw size: 5672, encoded size: 1112, compression ratio: 5.10
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5736, encoded size: 1107, compression ratio: 5.18
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5512, encoded size: 1077, compression ratio: 5.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 192 vertices, 324 indices, raw size: 5992, encoded size: 1145, compression ratio: 5.23
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 176 vertices, 324 indices, raw size: 5576, encoded size: 1062, compression ratio: 5.25
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5640, encoded size: 1110, compression ratio: 5.08
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 172 vertices, 324 indices, raw size: 5320, encoded size: 1080, compression ratio: 4.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5384, encoded size: 1082, compression ratio: 4.98
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5512, encoded size: 1093, compression ratio: 5.04
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5480, encoded size: 1082, compression ratio: 5.06
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 172 vertices, 324 indices, raw size: 5352, encoded size: 1074, compression ratio: 4.98
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5512, encoded size: 1110, compression ratio: 4.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 188 vertices, 324 indices, raw size: 5832, encoded size: 1139, compression ratio: 5.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5512, encoded size: 1131, compression ratio: 4.87
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5544, encoded size: 1129, compression ratio: 4.91
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5480, encoded size: 1092, compression ratio: 5.02
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 172 vertices, 324 indices, raw size: 5416, encoded size: 1056, compression ratio: 5.13
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 176 vertices, 324 indices, raw size: 5352, encoded size: 1068, compression ratio: 5.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5480, encoded size: 10915:14:20 | INFO: Draco encoder: Encoding mesh slat_25.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_26.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_27.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_28.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_29.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_30.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_31.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_32.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_33.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_34.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_35.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_36.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_37.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_38.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_39.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_40.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_41.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_42.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_43.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_44.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_45.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_46.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_47.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_48.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_49.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_50.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_51.
+5, compression ratio: 5.00
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5544, encoded size: 1128, compression ratio: 4.91
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5416, encoded size: 1076, compression ratio: 5.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5544, encoded size: 1124, compression ratio: 4.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5512, encoded size: 1113, compression ratio: 4.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5416, encoded size: 1078, compression ratio: 5.02
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5512, encoded size: 1120, compression ratio: 4.92
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5768, encoded size: 1121, compression ratio: 5.15
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 188 vertices, 324 indices, raw size: 5832, encoded size: 1129, compression ratio: 5.17
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5576, encoded size: 1087, compression ratio: 5.13
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 162 vertices, 324 indices, raw size: 5256, encoded size: 1014, compression ratio: 5.18
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 166 vertices, 324 indices, raw size: 5448, encoded size: 1027, compression ratio: 5.30
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5544, encoded size: 1085, compression ratio: 5.11
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5576, encoded size: 1074, compression ratio: 5.19
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5576, encoded size: 1081, compression ratio: 5.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 172 vertices, 324 indices, raw size: 5512, encoded size: 1057, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 162 vertices, 324 indices, raw size: 5256, encoded size: 1006, compression ratio: 5.22
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 166 vertices, 324 indices, raw size: 5320, encoded size: 1021, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 184 vertices, 324 indices, raw size: 5832, encoded size: 1084, compression ratio: 5.38
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 188 vertices, 324 indices, raw size: 5672, encoded size: 1128, compression ratio: 5.03
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5544, encoded size: 1112, compression ratio: 4.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 180 vertices, 324 indices, raw size: 5672, encoded size: 1088, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5448, encoded size: 1076, compression ratio: 5.06
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5576, encoded size: 1087, compression ratio: 5.13
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5352, encoded size: 1068, compression ratio: 5.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5608, encoded size: 1108, compression ratio: 5.06
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5576, encoded size: 1091, compression ratio: 5.11
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 188 vertices, 324 indices15:14:20 | INFO: Draco encoder: Encoding mesh slat_52.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_53.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_54.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_55.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_56.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_57.
+15:14:20 | INFO: Draco encoder: Encoding mesh slat_58.
+15:14:20 | INFO: Draco encoder: Encoding mesh sofa_back_a.
+15:14:20 | INFO: Draco encoder: Encoding mesh sofa_back_b.
+15:14:20 | INFO: Draco encoder: Encoding mesh sofa_base_a.
+15:14:20 | INFO: Draco encoder: Encoding mesh sofa_base_b.
+15:14:20 | INFO: Draco encoder: Encoding mesh stair_glass.
+15:14:20 | INFO: Draco encoder: Encoding mesh stair_planter.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_leg_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_leg_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_leg_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_seat_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_seat_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh stool_seat_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh tall_units.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_col_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_col_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_col_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_col_3.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_cov.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_e.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_roof.
+, raw size: 5672, encoded size: 1142, compression ratio: 4.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5448, encoded size: 1066, compression ratio: 5.11
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 182 vertices, 324 indices, raw size: 5512, encoded size: 1083, compression ratio: 5.09
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 178 vertices, 324 indices, raw size: 5320, encoded size: 1065, compression ratio: 5.00
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 170 vertices, 324 indices, raw size: 5384, encoded size: 1041, compression ratio: 5.17
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5768, encoded size: 1097, compression ratio: 5.26
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 186 vertices, 324 indices, raw size: 5704, encoded size: 1114, compression ratio: 5.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 188 vertices, 324 indices, raw size: 5512, encoded size: 1111, compression ratio: 4.96
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8346, compression ratio: 8.86
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 8074, compression ratio: 9.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 486 vertices, 2304 indices, raw size: 20160, encoded size: 3376, compression ratio: 5.97
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 486 vertices, 2304 indices, raw size: 20160, encoded size: 3324, compression ratio: 6.06
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 338, compression ratio: 2.49
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 464 vertices, 1140 indices, raw size: 17128, encoded size: 3772, compression ratio: 4.54
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 48 vertices, 108 indices, raw size: 1752, encoded size: 468, compression ratio: 3.74
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 48 vertices, 108 indices, raw size: 1752, encoded size: 467, compression ratio: 3.75
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 48 vertices, 108 indices, raw size: 1752, encoded size: 469, compression ratio: 3.74
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 352 vertices, 852 indices, raw size: 12968, encoded size: 2642, compression ratio: 4.91
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 352 vertices, 852 indices, raw size: 12968, encoded size: 2638, compression ratio: 4.92
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 352 vertices, 852 indices, raw size: 12968, encoded size: 2557, compression ratio: 5.07
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 172 vertices, 324 indices, raw size: 5736, encoded size: 1199, compression ratio: 4.78
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 634, compression ratio: 5.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 634, compression ratio: 5.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 628, compression ratio: 5.21
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 88 vertices, 228 indices, raw size: 3272, encoded size: 616, compression ratio: 5.31
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 321, compression ratio: 2.62
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 341, compression ratio: 2.46
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 215:14:20 | INFO: Draco encoder: Encoding mesh terrace_soffit.
+15:14:20 | INFO: Draco encoder: Encoding mesh terrace_w.
+15:14:20 | INFO: Draco encoder: Encoding mesh throw.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_3.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_4.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_5.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_6.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_7.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_8.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_9.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_10.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_11.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_12.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_13.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_14.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_15.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_16.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_17.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_3.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_4.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_5.
+4 vertices, 36 indices, raw size: 840, encoded size: 321, compression ratio: 2.62
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 317, compression ratio: 2.65
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 327, compression ratio: 2.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 1734 vertices, 9216 indices, raw size: 73920, encoded size: 7103, compression ratio: 10.41
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 140 vertices, 324 indices, raw size: 4872, encoded size: 1039, compression ratio: 4.69
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 146 vertices, 324 indices, raw size: 4904, encoded size: 1066, compression ratio: 4.60
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 130 vertices, 324 indices, raw size: 4456, encoded size: 1011, compression ratio: 4.41
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 134 vertices, 324 indices, raw size: 4680, encoded size: 1019, compression ratio: 4.59
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 132 vertices, 324 indices, raw size: 4712, encoded size: 986, compression ratio: 4.78
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 134 vertices, 324 indices, raw size: 4648, encoded size: 1030, compression ratio: 4.51
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 132 vertices, 324 indices, raw size: 4616, encoded size: 1021, compression ratio: 4.52
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 154 vertices, 324 indices, raw size: 5224, encoded size: 1124, compression ratio: 4.65
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 154 vertices, 324 indices, raw size: 5128, encoded size: 1123, compression ratio: 4.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 133 vertices, 324 indices, raw size: 4616, encoded size: 1020, compression ratio: 4.53
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 165 vertices, 324 indices, raw size: 5640, encoded size: 1173, compression ratio: 4.81
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 163 vertices, 324 indices, raw size: 5448, encoded size: 1158, compression ratio: 4.70
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 171 vertices, 324 indices, raw size: 5480, encoded size: 1200, compression ratio: 4.57
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 168 vertices, 324 indices, raw size: 5320, encoded size: 1152, compression ratio: 4.62
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 163 vertices, 324 indices, raw size: 5480, encoded size: 1161, compression ratio: 4.72
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 170 vertices, 324 indices, raw size: 5672, encoded size: 1191, compression ratio: 4.76
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 155 vertices, 324 indices, raw size: 5320, encoded size: 1139, compression ratio: 4.67
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 168 vertices, 324 indices, raw size: 5544, encoded size: 1189, compression ratio: 4.66
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Enc15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_6.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_7.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_8.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_9.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_10.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_11.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_12.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_13.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_14.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_15.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_16.
+15:14:20 | INFO: Draco encoder: Encoding mesh tread_led_17.
+15:14:20 | INFO: Draco encoder: Encoding mesh tv.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_0.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_1.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_2.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_3.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_4.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_5.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_6.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_7.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_8.
+15:14:20 | INFO: Draco encoder: Encoding mesh unit_gap_9.
+15:14:20 | INFO: Draco encoder: Encoding mesh wall_back.
+15:14:20 | INFO: Draco encoder: Encoding mesh wall_back_tall.
+15:14:20 | INFO: Draco encoder: Encoding mesh wall_e.
+15:14:20 | INFO: Draco encoder: Encoding mesh wall_w.
+oded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 279, compression ratio: 3.01
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 287, compression ratio: 2.93
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 285, compression ratio: 2.95
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 282, compression ratio: 2.98
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 281, compression ratio: 2.99
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 340, compression ratio: 2.47
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 267, compression ratio: 3.15
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 259, compression ratio: 3.24
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 266, compression ratio: 3.16
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 330, compression ratio: 2.55
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 310, compression ratio: 2.71
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 343, compression ratio: 2.45
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 24 vertices, 36 indices, raw size: 840, encoded size: 341, compressi15:14:20 | INFO: Draco encoder: Encoding mesh wardrobe.
+15:14:20 | INFO: Draco encoder: Encoding mesh wicker_basket_01.
+15:14:21 | INFO: Finished glTF 2.0 export in 36.16560935974121 s
+
+[blender] exported public\models\interior.glb 5.84 MB
+[blender] === gallery ===
+01:16.984  cycles           | WARNING HIPEW initialization failed: Error opening HIP dynamic library
+[blender] Cycles device: OPTIX
+15:14:22 | INFO: Data are loaded, start creating Blender stuff
+15:14:22 | INFO: Blender create Mesh node lounge_chair
+15:14:22 | INFO: glTF import finished in 0.07s
+15:14:22 | INFO: Data are loaded, start creating Blender stuff
+15:14:22 | INFO: Blender create Mesh node lounge_chair
+15:14:23 | INFO: glTF import finished in 0.04s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Cube.011
+15:14:23 | INFO: glTF import finished in 0.05s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Cylinder.009
+15:14:23 | INFO: glTF import finished in 0.10s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Circle
+15:14:23 | INFO: Blender create Mesh node Circle.001
+15:14:23 | INFO: Blender create Mesh node low.008
+15:14:23 | INFO: glTF import finished in 0.36s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Vert.001
+15:14:23 | INFO: glTF import finished in 0.09s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Cube.001
+15:14:23 | INFO: glTF import finished in 0.05s
+15:14:23 | INFO: Data are loaded, start creating Blender stuff
+15:14:23 | INFO: Blender create Mesh node Cube.054
+15:14:23 | INFO: glTF import finished in 0.06s
+15:14:24 | INFO: Data are loaded, start creating Blender stuff
+15:14:24 | INFO: Blender create Mesh node Cube.054
+15:14:24 | INFO: glTF import finished in 0.07s
+15:14:24 | INFO: Data are loaded, start creating Blender stuff
+15:14:24 | INFO: Blender create Mesh node Cube.054
+15:14:24 | INFO: glTF import finished in 0.09s
+15:14:24 | INFO: Data are loaded, start creating Blender stuff
+15:14:24 | INFO: Blender create Mesh node Cube.054
+15:14:24 | INFO: glTF import finished in 0.18s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cube.054
+15:14:25 | INFO: glTF import finished in 0.16s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cube.054
+15:14:25 | INFO: glTF import finished in 0.08s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cube.054
+15:14:25 | INFO: glTF import finished in 0.07s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cube.054
+15:14:25 | INFO: glTF import finished in 0.06s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cylinder.003
+15:14:25 | INFO: glTF import finished in 0.04s
+15:14:25 | INFO: Data are loaded, start creating Blender stuff
+15:14:25 | INFO: Blender create Mesh node Cylinder.003
+15:14:25 | INFO: glTF import finished in 0.04s
+15:14:26 | INFO: Data are loaded, start creating Blender stuff
+15:14:26 | INFO: Blender create Mesh node Cylinder.003
+15:14:26 | INFO: glTF import finished in 0.13s
+15:14:26 | INFO: Data are loaded, start creating Blender stuff
+15:14:26 | INFO: Blender create Mesh node Cube.001
+15:14:26 | INFO: glTF import finished in 0.06s
+15:14:26 | INFO: Data are loaded, start creating Blender stuff
+15:14:26 | INFO: Blender create Mesh node HaworthiaScan_Model_2.001
+15:14:26 | INFO: Blender create Mesh node Plane.118
+15:14:26 | INFO: Blender create Mesh node Plane.116
+15:14:26 | INFO: Blender create Mesh node Mesh
+15:14:26 | INFO: glTF import finished in 0.06s
+15:14:26 | INFO: Data are loaded, start creating Blender stuff
+15:14:26 | INFO: Blender create Mesh node lounge_chair
+15:14:26 | INFO: glTF import finished in 0.05s
+15:14:26 | INFO: Data are loaded, start creating Blender stuff
+15:14:26 | INFO: Blender create Mesh node HaworthiaScan_Model_2.001
+15:14:26 | INFO: Blender create Mesh node Plane.118
+15:14:26 | INFO: Blender create Mesh node Plane.116
+15:14:27 | INFO: Blender create Mesh node Mesh
+15:14:27 | INFO: glTF import finished in 0.14s
+15:14:27 | INFO: Data are loaded, start creating Blender stuff
+15:14:27 | INFO: Blender create Mesh node Circle
+15:14:27 | INFO: Blender create Mesh node Circle.001
+15:14:27 | INFO: Blender create Mesh node low.008
+15:14:27 | INFO: glTF import finished in 0.24s
+15:14:27 | INFO: Data are loaded, start creating Blender stuff
+15:14:27 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:14:27 | INFO: Blender create Mesh node Circle.008
+15:14:27 | INFO: Blender create Mesh node Circle.002
+15:14:27 | INFO: Blender create Mesh node Plane.070
+15:14:27 | INFO: glTF import finished in 0.56s
+15:14:28 | INFO: Data are loaded, start creating Blender stuff
+15:14:28 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:14:28 | INFO: Blender create Mesh node Circle.008
+15:14:28 | INFO: Blender create Mesh node Circle.002
+15:14:28 | INFO: Blender create Mesh node Plane.070
+15:14:29 | INFO: glTF import finished in 0.51s
+15:14:30 | INFO: Data are loaded, start creating Blender stuff
+15:14:30 | INFO: Blender create Mesh node potted_plant_01_base_low
+15:14:30 | INFO: Blender create Mesh node Circle.008
+15:14:30 | INFO: Blender create Mesh node Circle.002
+15:14:30 | INFO: Blender create Mesh node Plane.070
+15:14:30 | INFO: glTF import finished in 0.54s
+15:14:31 | INFO: Data are loaded, start creating Blender stuff
+15:14:31 | INFO: Blender create Mesh node Circle
+15:14:31 | INFO: Blender create Mesh node Circle.001
+15:14:31 | INFO: Blender create Mesh node low.008
+15:14:32 | INFO: glTF import finished in 0.56s
+15:14:32 | INFO: Data are loaded, start creating Blender stuff
+15:14:32 | INFO: Blender create Mesh node Plane.014
+15:14:32 | INFO: Blender create Mesh node Plane.003
+15:14:32 | INFO: Blender create Mesh node Cylinder.012
+15:14:32 | INFO: Blender create Mesh node Plane.019
+15:14:32 | INFO: Blender create Mesh node Cylinder.015
+15:14:32 | INFO: glTF import finished in 0.07s
+[blender] rendering living
+01:54.281  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\living.jpg'
+[blender] rendering terrace
+02:13.828  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\terrace.jpg'
+[blender] rendering kitchen
+02:40.000  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\kitchen.jpg'
+[blender] rendering bedroom
+03:07.343  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\bedroom.jpg'
+[blender] rendering exterior
+03:22.453  render           | Saved: 'C:\Users\conta\OneDrive\Desktop\zynocodes\3D-project\public\renders\exterior.jpg'
+[blender] gallery done → public\renders
+[blender] summary:
+[blender]   interior    ok (64s)
+[blender]   gallery     ok (126s)
+on ratio: 2.46
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 204 vertices, 324 indices, raw size: 6632, encoded size: 1296, compression ratio: 5.12
+DracoEncoder | Preserve triangle order: no
+DracoEncoder | Encoded 15352 vertices, 66828 indices, raw size: 624920, encoded size: 103305, compression ratio: 6.05
+
+Blender quit
