@@ -24,6 +24,7 @@ export type ShotId =
   | 'playground'
   | 'lounge'
   | 'beach'
+  | 'boat'
 
 export interface Shot {
   id: ShotId
@@ -37,6 +38,8 @@ export interface Shot {
   azimuth: number
   elevation: number
   status: string
+  /** fixed eye position (world) instead of azimuth/elevation/distance */
+  eye?: [number, number, number]
 }
 
 const A = layout.amenities
@@ -51,6 +54,7 @@ export const SHOTS: Shot[] = [
   { id: 'playground', label: 'Playground', icon: 'play', target: [A.playground.x, A.playground.z], lift: 1, distance: 30, azimuth: 36, elevation: 22, status: "Children's playground" },
   { id: 'lounge', label: 'Social Lounge', icon: 'lounge', target: [A.lounge.x, A.lounge.z], lift: 2, distance: 34, azimuth: -20, elevation: 18, status: 'Social lounge & gardens' },
   { id: 'beach', label: 'Beach Club', icon: 'beach', target: [A.beachClub.x, A.beachClub.z], lift: 1, distance: 70, azimuth: 160, elevation: 16, status: 'Beach club on the bay' },
+  { id: 'boat', label: 'From the Bay', icon: 'boat', target: [10, -70], lift: 18, distance: 0, azimuth: 0, elevation: 0, eye: [-40, 2.55, 330], status: 'Aboard · the view from the bay' },
 ]
 
 export const TIME_PRESETS = [

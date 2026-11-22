@@ -16,6 +16,7 @@ import { cellBox } from '../geo/build'
 import { resOrigin } from '../masterplan/ResidenceBlock'
 import { villaTransform } from '../masterplan/Villas'
 import { MOTION } from './motion'
+import { BOAT, boatPose } from './boat'
 
 export function shotPose(id: ShotId) {
   const s = SHOTS.find((x) => x.id === id)!
@@ -23,7 +24,9 @@ export function shotPose(id: ShotId) {
   const target = new THREE.Vector3(tx, height(tx, tz) + s.lift, tz)
   const az = THREE.MathUtils.degToRad(s.azimuth)
   const el = THREE.MathUtils.degToRad(s.elevation)
-  const pos = target.clone().add(new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(s.distance))
+  const pos = s.eye
+    ? new THREE.Vector3(...s.eye)
+    : target.clone().add(new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), Math.cos(az) * Math.cos(el)).multiplyScalar(s.distance))
   return { pos, target }
 }
 
@@ -202,7 +205,34 @@ export function CameraRig({ shadowFocus }: { shadowFocus: React.MutableRefObject
         useStore.setState({ flying: false })
         f.onDone?.()
       }
+    } else if (c && st.shot === 'boat' && st.mode === 'masterplan' && !st.selectedUnit) {
+      // aboard: the camera rides the yacht (swell + anchor swing), drag to look around
+      if (!BOAT.active) {
+        BOAT.active = true
+        BOAT.t0 = performance.now() / 1000
+        BOAT.yaw = BOAT.yawT = 0
+        BOAT.pitch = BOAT.pitchT = -0.075 // glance down enough to see the bow
+      }
+      c.enabled = false
+      const t = performance.now() / 1000 - BOAT.t0
+      const bp = boatPose(t)
+      const { pos, target } = shotPose('boat')
+      // ease the drift in from zero so arrival is seamless
+      const k = Math.min(1, t / 6)
+      camera.position.copy(pos).add(bp.offset.multiplyScalar(k))
+      const a = 1 - Math.exp(-5 * dt)
+      BOAT.yaw += (BOAT.yawT - BOAT.yaw) * a
+      BOAT.pitch += (BOAT.pitchT - BOAT.pitch) * a
+      const dir = target.clone().sub(camera.position).normalize()
+      dir.applyAxisAngle(new THREE.Vector3(0, 1, 0), BOAT.yaw + bp.heading * k)
+      const look = camera.position.clone().add(dir.multiplyScalar(100))
+      look.y += Math.tan(BOAT.pitch) * 100
+      camera.lookAt(look)
+      camera.rotateX(bp.pitch * k)
+      camera.rotateZ(bp.roll * k)
+      c.target.copy(look)
     } else if (c) {
+      BOAT.active = false
       c.update()
       // never dip under the terrain
       const g = height(camera.position.x, camera.position.z) + 2.5

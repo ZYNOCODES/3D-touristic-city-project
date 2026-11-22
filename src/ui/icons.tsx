@@ -9,6 +9,7 @@ const P: Record<string, JSX.Element> = {
   court: <path d="M3 5h18v14H3zM12 5v14M3 9h3v6H3m18-6h-3v6h3M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />,
   play: <path d="M4 20V8l4-4 4 4v12M4 12h8M12 9l8 8M17 20v-3M3 20h18" />,
   lounge: <path d="M4 12V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3M3 12h18v5H3zM5 17v2m14-2v2" />,
+  boat: <path d="M3 17h18l-2.5 4h-13L3 17Zm9-14v12m0-12 6 10H12m0-8L7 13h5M2 21c1.5 0 2-1 3.5-1S8 21 9.5 21s2-1 3.5-1 2 1 3.5 1 2-1 3.5-1" />,
   beach: <path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Zm0 9 4 9M2 21h20" />,
   sun: <path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />,
   sunset: <path d="M12 3v3m-7.8 3.2 2.1 2.1m13.5-2.1-2.1 2.1M2 17h20M7 17a5 5 0 0 1 10 0M4 21h16" />,

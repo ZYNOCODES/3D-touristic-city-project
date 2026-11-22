@@ -12,6 +12,7 @@ import { Villas } from './masterplan/Villas'
 import { ResidenceBlock } from './masterplan/ResidenceBlock'
 import { Amenities } from './masterplan/Amenities'
 import { UnitPins } from './masterplan/UnitPins'
+import { BoatView } from './masterplan/BoatView'
 import { RealPeople as People } from './people/RealPeople'
 import { CameraRig, unitAnchor } from './camera/CameraRig'
 import { Interior } from './interior/Interior'
@@ -91,6 +92,7 @@ function World() {
       <Amenities />
       <People />
       <BayLife />
+      <BoatView />
       {!inside && <UnitPins />}
       {inside && hasInterior && <Interior />}
       <InteriorShadowFocus focus={shadowFocus} />

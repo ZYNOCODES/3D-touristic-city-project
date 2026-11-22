@@ -60,7 +60,7 @@ function AmenityLabels() {
   const show = useStore((s) => s.showLabels && s.mode === 'masterplan')
   const go = useStore((s) => s.goShot)
   if (!show) return null
-  const items = SHOTS.filter((s) => !['masterplan', 'villas'].includes(s.id))
+  const items = SHOTS.filter((s) => !['masterplan', 'villas', 'boat'].includes(s.id))
   return (
     <>
       {items.map((s) => {
