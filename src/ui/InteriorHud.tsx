@@ -18,7 +18,7 @@ export function InteriorHud() {
       <header className="topbar light">
         <div className="crumbs pill">
           <button onClick={exit}>
-            <Icon name="map" size={15} /> Masterplan
+            <Icon name="building" size={15} /> Hotel
           </button>
           <Icon name="chevR" size={13} />
           <span className="here">{u.name}</span>
@@ -26,13 +26,13 @@ export function InteriorHud() {
         </div>
         <div className="topbar-right">
           <div className="pill quick">
-            <span>{u.bedrooms} bd</span>
-            <span>{u.bathrooms} ba</span>
-            <span>{Math.round(u.areaM2 * 10.7639).toLocaleString()} sq ft</span>
-            <b>{u.status === 'sold' ? 'Sold' : fmtPrice(u.price)}</b>
+            <span>{u.beds}</span>
+            <span>{u.guests} guests</span>
+            <span>{u.areaM2} m²</span>
+            <b>{u.status === 'sold' ? 'Booked' : fmtPrice(u.price)}</b>
           </div>
           <button className="pill cta" onClick={() => openSheet(u.id)}>
-            <Icon name="doc" size={15} /> Property details
+            <Icon name="doc" size={15} /> Room details
           </button>
         </div>
       </header>

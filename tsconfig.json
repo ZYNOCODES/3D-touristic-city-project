@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
@@ -12,7 +16,25 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ]
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "src/scene/masterplan",
+    "src/scene/interior",
+    "src/scene/geo",
+    "src/scene/people/RealPeople.tsx",
+    "src/scene/people/People.tsx",
+    "src/scene/people/human.ts",
+    "src/scene/vegetation/plan.ts",
+    "src/scene/vegetation/MediterraneanVegetation.tsx",
+    "src/data/residenceSpec.ts",
+    "src/data/amenityProps.ts",
+    "src/lib/footprints.ts",
+    "src/lib/siteMask.ts"
+  ]
 }

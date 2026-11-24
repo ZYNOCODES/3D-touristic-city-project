@@ -36,3 +36,4 @@ if (import.meta.env.DEV) {
     },
   }
 }
+if (import.meta.env.DEV) import('./scene/qa').then((m) => m.installQa())

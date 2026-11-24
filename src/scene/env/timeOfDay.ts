@@ -17,13 +17,13 @@ interface Key {
 
 // Sun sets over the ocean (+z) so the masterplan (looking inland) is front-lit.
 const KEYS: Key[] = [
-  { t: 0.0, elev: 22, azim: 95, sun: [1.0, 0.86, 0.72], intensity: 2.6, ambient: 0.35, env: 0.9, fog: [0.72, 0.8, 0.88], fogDensity: 0.00032, exposure: 1.0 },
-  { t: 0.3, elev: 52, azim: 62, sun: [1.0, 0.96, 0.9], intensity: 3.4, ambient: 0.4, env: 1.0, fog: [0.7, 0.8, 0.9], fogDensity: 0.00026, exposure: 0.95 },
-  { t: 0.5, elev: 24, azim: 38, sun: [1.0, 0.85, 0.66], intensity: 3.0, ambient: 0.36, env: 0.95, fog: [0.82, 0.78, 0.74], fogDensity: 0.0003, exposure: 1.0 },
-  { t: 0.62, elev: 6, azim: 22, sun: [1.0, 0.6, 0.32], intensity: 2.6, ambient: 0.3, env: 1.0, fog: [0.86, 0.62, 0.48], fogDensity: 0.00036, exposure: 1.1 },
-  { t: 0.72, elev: -2, azim: 14, sun: [0.95, 0.42, 0.26], intensity: 0.6, ambient: 0.22, env: 0.9, fog: [0.42, 0.36, 0.42], fogDensity: 0.00034, exposure: 1.25 },
-  { t: 0.82, elev: 30, azim: -40, sun: [0.55, 0.66, 1.0], intensity: 0.32, ambient: 0.12, env: 0.9, fog: [0.07, 0.09, 0.14], fogDensity: 0.0003, exposure: 1.5 },
-  { t: 1.0, elev: 34, azim: -45, sun: [0.55, 0.66, 1.0], intensity: 0.3, ambient: 0.1, env: 0.9, fog: [0.05, 0.07, 0.11], fogDensity: 0.0003, exposure: 1.5 },
+  { t: 0.0, elev: 22, azim: -20, sun: [1.0, 0.86, 0.72], intensity: 2.6, ambient: 0.35, env: 0.9, fog: [0.72, 0.8, 0.88], fogDensity: 0.00032, exposure: 1.0 },
+  { t: 0.3, elev: 50, azim: -16, sun: [1.0, 0.95, 0.865], intensity: 4.0, ambient: 0.3, env: 0.95, fog: [0.5, 0.68, 0.9], fogDensity: 0.0003, exposure: 0.95 },
+  { t: 0.5, elev: 24, azim: -46, sun: [1.0, 0.85, 0.66], intensity: 3.0, ambient: 0.36, env: 0.95, fog: [0.82, 0.78, 0.74], fogDensity: 0.0003, exposure: 1.0 },
+  { t: 0.62, elev: 6, azim: -54, sun: [1.0, 0.6, 0.32], intensity: 2.6, ambient: 0.3, env: 1.0, fog: [0.86, 0.62, 0.48], fogDensity: 0.00036, exposure: 1.1 },
+  { t: 0.72, elev: -2, azim: -58, sun: [0.95, 0.42, 0.26], intensity: 0.6, ambient: 0.22, env: 0.9, fog: [0.42, 0.36, 0.42], fogDensity: 0.00034, exposure: 1.25 },
+  { t: 0.82, elev: 30, azim: 34, sun: [0.55, 0.66, 1.0], intensity: 0.32, ambient: 0.12, env: 0.9, fog: [0.07, 0.09, 0.14], fogDensity: 0.0003, exposure: 1.5 },
+  { t: 1.0, elev: 34, azim: 36, sun: [0.55, 0.66, 1.0], intensity: 0.3, ambient: 0.1, env: 0.9, fog: [0.05, 0.07, 0.11], fogDensity: 0.0003, exposure: 1.5 },
 ]
 
 export interface Lighting {

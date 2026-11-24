@@ -1,0 +1,56 @@
+{
+ "aleppo_a": {
+  "atlas": "models/vegetation/aleppo_a.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 10.522,
+  "center": [
+   0.317,
+   5.059,
+   -0.685
+  ],
+  "height": 10.117,
+  "width": 7.976
+ },
+ "aleppo_b": {
+  "atlas": "models/vegetation/aleppo_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 8.613,
+  "center": [
+   -0.037,
+   4.141,
+   -1.543
+  ],
+  "height": 8.282,
+  "width": 7.186
+ },
+ "mastic_b": {
+  "atlas": "models/vegetation/mastic_b.webp",
+  "cols": 8,
+  "rows": 3,
+  "elevations": [
+   0,
+   30,
+   60
+  ],
+  "size": 3.262,
+  "center": [
+   -0.128,
+   1.134,
+   -0.142
+  ],
+  "height": 2.267,
+  "width": 3.137
+ }
+}

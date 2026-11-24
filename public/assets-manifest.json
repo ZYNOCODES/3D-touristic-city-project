@@ -3,35 +3,35 @@
   "offline": false,
   "hdri": {
     "day": {
-      "id": "kloofendal_48d_partly_cloudy_puresky",
+      "id": "kloofendal_43d_clear_puresky",
       "file": "hdri/day.hdr",
-      "cachePath": "assets/cache/hdri/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "cachePath": "assets/cache/hdri/kloofendal_43d_clear_puresky_1k.hdr",
       "sun": {
-        "azimuth": 0.602854449639057,
-        "elevation": 0.8329515678219032,
-        "peak": 31564.0832
+        "azimuth": 0.6289321230331129,
+        "elevation": 0.7455146629124216,
+        "peak": 51228.4672
       },
       "license": "CC0 (Poly Haven)"
     },
     "golden": {
       "id": "qwantani_sunset_puresky",
       "file": "hdri/golden.hdr",
-      "cachePath": "assets/cache/hdri/qwantani_sunset_puresky_2k.hdr",
+      "cachePath": "assets/cache/hdri/qwantani_sunset_puresky_1k.hdr",
       "sun": {
-        "azimuth": 0.6273981422452273,
-        "elevation": 0.10891263593988053,
-        "peak": 44740.3008
+        "azimuth": 0.6289321230331129,
+        "elevation": 0.10737865515199488,
+        "peak": 50467.6352
       },
       "license": "CC0 (Poly Haven)"
     },
     "night": {
       "id": "qwantani_night_puresky",
       "file": "hdri/night.hdr",
-      "cachePath": "assets/cache/hdri/qwantani_night_puresky_2k.hdr",
+      "cachePath": "assets/cache/hdri/qwantani_night_puresky_1k.hdr",
       "sun": {
-        "azimuth": -2.2442138926766932,
-        "elevation": 0.5875146417602005,
-        "peak": 41.52065
+        "azimuth": 0.7884661249732196,
+        "elevation": 0.009203884727313847,
+        "peak": 24.130425
       },
       "license": "CC0 (Poly Haven)"
     }

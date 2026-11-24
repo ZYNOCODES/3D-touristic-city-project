@@ -25,14 +25,14 @@ POLYHAVEN_API = "https://api.polyhaven.com"
 OFFLINE = os.environ.get("OFFLINE", "0") == "1"
 # Texture / HDRI resolution to fetch ("1k", "2k", "4k").
 TEX_RES = os.environ.get("TEX_RES", "1k")
-HDRI_RES = os.environ.get("HDRI_RES", "2k")
+HDRI_RES = os.environ.get("HDRI_RES", "1k")
 
 # --------------------------------------------------------------------------
 # Asset manifest — every entry is CC0 from Poly Haven (https://polyhaven.com)
 # --------------------------------------------------------------------------
 HDRIS = {
     # key used by the web app       Poly Haven id
-    "day": "kloofendal_48d_partly_cloudy_puresky",
+    "day": "kloofendal_43d_clear_puresky",
     "golden": "qwantani_sunset_puresky",
     "night": "qwantani_night_puresky",
 }

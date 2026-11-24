@@ -42,4 +42,4 @@ export const smooth = (a: number, b: number, x: number) => {
   return t * t * (3 - 2 * t)
 }
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t
-export const damp = (a: number, b: number, lambda: number, dt: number) => lerp(a, b, 1 - Math.exp(-lambda * dt))
+export const damp = (a: number, b: number, lambda: number, dt: number) => lerp(Number.isFinite(a) ? a : b, b, 1 - Math.exp(-lambda * (Number.isFinite(dt) ? Math.min(dt, 0.25) : 0.016)))

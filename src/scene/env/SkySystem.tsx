@@ -10,10 +10,11 @@ import { loadAssetsManifest, loadHDRI } from '../../lib/assets'
 import { useStore } from '../../store'
 import { GLOBAL, SUN, damp } from '../shared'
 import { HDRI_TARGET, lightingAt } from './timeOfDay'
+import { onQuality, quality } from '../cove/quality'
 
 const KEYS = ['day', 'golden', 'night'] as const
 // target mean sky luminance of each HDRI after normalisation
-const TARGET_LUM = { day: 1.05, golden: 0.75, night: 0.045 }
+const TARGET_LUM = { day: 0.62, golden: 0.6, night: 0.045 }
 
 interface HdriInfo {
   tex: THREE.DataTexture
@@ -61,62 +62,83 @@ void main(){
   gl_Position = p.xyww; // push to far plane
 }`
 
-const frag = /* glsl */ `
+const SKY_GLSL = /* glsl */ `
 uniform sampler2D tDay; uniform sampler2D tGold; uniform sampler2D tNight;
-uniform vec3 uW; uniform vec3 uGain; uniform vec3 uDelta; uniform float uHasHdri;
-uniform vec3 uSunDir; uniform vec3 uSunColor; uniform float uNightF; uniform float uClamp;
-varying vec3 vDir;
-#define PI 3.141592653589793
+uniform vec3 uW; uniform vec3 uGain; uniform vec3 uDelta; uniform float uHasHdri; uniform float uNightF; uniform float uClamp;
 vec3 sampleEq(sampler2D t, vec3 d, float delta){
   float phi = atan(d.z, d.x) - delta;
-  float u = fract(phi / (2.0*PI) + 0.5);
-  float v = asin(clamp(d.y, -1.0, 1.0)) / PI + 0.5;
-  return texture2D(t, vec2(u, v)).rgb;
+  float u = fract(phi / 6.283185307 + 0.5);
+  float v = asin(clamp(d.y, -1.0, 1.0)) / 3.141592654 + 0.5;
+  return textureLod(t, vec2(u, v), 0.0).rgb;
 }
-float h1(vec3 p){ p = fract(p*0.3183099+0.1); p*=17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
 vec3 analytic(vec3 d){
   float y = max(d.y, 0.0);
-  vec3 zenith = mix(vec3(0.22,0.42,0.78), vec3(0.01,0.015,0.04), uNightF);
-  vec3 horizon = mix(mix(vec3(0.75,0.84,0.95), vec3(1.0,0.62,0.4), smoothstep(0.35,0.0,uSunDir.y)), vec3(0.04,0.05,0.09), uNightF);
+  vec3 zenith = mix(vec3(0.16,0.36,0.78), vec3(0.01,0.015,0.04), uNightF);
+  vec3 horizon = mix(mix(vec3(0.62,0.78,0.95), vec3(1.0,0.62,0.4), smoothstep(0.35,0.0,uSunDir.y)), vec3(0.04,0.05,0.09), uNightF);
   vec3 c = mix(horizon, zenith, pow(y, 0.45));
   float s = max(dot(d, uSunDir), 0.0);
-  c += uSunColor * (pow(s, 900.0) * 40.0 + pow(s, 12.0) * 0.35) * (1.0 - uNightF*0.9);
-  float st = step(0.9975, h1(floor(d*420.0))) * uNightF * smoothstep(0.0,0.2,d.y);
-  return c + st * 2.0;
+  return c + uSunColor * (pow(s, 900.0) * 40.0 + pow(s, 12.0) * 0.35) * (1.0 - uNightF*0.9);
 }
-void main(){
-  vec3 d = normalize(vDir);
-  vec3 dd = d; dd.y = max(dd.y, -0.02) ; dd = normalize(dd);
-  vec3 col;
-  if (uHasHdri > 0.5) {
-    col = vec3(0.0);
-    if (uW.x > 0.001) col += min(sampleEq(tDay, dd, uDelta.x), vec3(uClamp)) * uGain.x * uW.x;
-    if (uW.y > 0.001) col += min(sampleEq(tGold, dd, uDelta.y), vec3(uClamp)) * uGain.y * uW.y;
-    if (uW.z > 0.001) col += min(sampleEq(tNight, dd, uDelta.z), vec3(uClamp)) * uGain.z * uW.z;
-  } else {
-    col = analytic(dd);
+vec3 skyColor(vec3 d){
+  vec3 dd = d; dd.y = max(dd.y, 0.004); dd = normalize(dd);
+  if (uHasHdri < 0.5) return analytic(dd);
+  vec3 col = vec3(0.0);
+  if (uW.x > 0.001) {
+    // clear Mediterranean day: the HDRI keeps its sun and haze structure, graded towards a deep cobalt zenith
+    vec3 c = min(sampleEq(tDay, dd, uDelta.x), vec3(uClamp)) * uGain.x;
+    float l = dot(c, vec3(0.2126, 0.7152, 0.0722));
+    float y = clamp(dd.y, 0.0, 1.0);
+    vec3 grad = mix(vec3(0.40, 0.62, 0.86), vec3(0.055, 0.20, 0.56), pow(y, 0.42));
+    vec3 soft = c / (1.0 + max(l - 0.35, 0.0) * 0.9);
+    soft = max(mix(vec3(dot(soft, vec3(0.2126, 0.7152, 0.0722))), soft, 1.5), 0.0);
+    vec3 dayc = mix(soft, grad * (0.8 + 0.35 * min(l, 1.6)), 0.6);
+    dayc += max(c - 6.0, 0.0);
+    col += dayc * uW.x;
   }
-  gl_FragColor = vec4(col, 1.0);
+  if (uW.y > 0.001) col += min(sampleEq(tGold, dd, uDelta.y), vec3(uClamp)) * uGain.y * uW.y;
+  if (uW.z > 0.001) col += min(sampleEq(tNight, dd, uDelta.z), vec3(uClamp)) * uGain.z * uW.z;
+  return col;
+}`
+const frag = /* glsl */ `
+uniform vec3 uSunDir; uniform vec3 uSunColor;
+varying vec3 vDir;
+${SKY_GLSL}
+void main(){
+  gl_FragColor = vec4(skyColor(normalize(vDir)), 1.0);
   #include <tonemapping_fragment>
   #include <colorspace_fragment>
 }`
 
+/** Sky lookup shared with the sea (declares its own uniforms except uSunDir / uSunColor). */
+export const SKY = {
+  glsl: SKY_GLSL,
+  uniforms: {
+    tDay: { value: null as THREE.Texture | null }, tGold: { value: null as THREE.Texture | null }, tNight: { value: null as THREE.Texture | null },
+    uW: { value: new THREE.Vector3(1, 0, 0) }, uGain: { value: new THREE.Vector3(1, 1, 1) }, uDelta: { value: new THREE.Vector3() },
+    uHasHdri: { value: 0 }, uNightF: GLOBAL.uNight, uClamp: { value: 40 },
+  },
+  hideInMirror: [] as THREE.Object3D[],
+}
+
 export function makeSkyMaterial() {
   const blank = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1)
   blank.needsUpdate = true
+  SKY.uniforms.tDay.value ??= blank
+  SKY.uniforms.tGold.value ??= blank
+  SKY.uniforms.tNight.value ??= blank
   return new THREE.ShaderMaterial({
     vertexShader: vert,
     fragmentShader: frag,
     side: THREE.BackSide,
     depthWrite: false,
     uniforms: {
-      tDay: { value: blank },
-      tGold: { value: blank },
-      tNight: { value: blank },
-      uW: { value: new THREE.Vector3(1, 0, 0) },
-      uGain: { value: new THREE.Vector3(1, 1, 1) },
-      uDelta: { value: new THREE.Vector3() },
-      uHasHdri: { value: 0 },
+      tDay: SKY.uniforms.tDay,
+      tGold: SKY.uniforms.tGold,
+      tNight: SKY.uniforms.tNight,
+      uW: SKY.uniforms.uW,
+      uGain: SKY.uniforms.uGain,
+      uDelta: SKY.uniforms.uDelta,
+      uHasHdri: SKY.uniforms.uHasHdri,
       uSunDir: GLOBAL.uSunDir,
       uSunColor: GLOBAL.uSunColor,
       uNightF: GLOBAL.uNight,
@@ -142,6 +164,7 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
     m.frustumCulled = false
     m.renderOrder = -1000
     m.scale.setScalar(20000)
+    SKY.hideInMirror.push(m)
     return m
   }, [skyMat])
   const envScene = useMemo(() => {
@@ -151,14 +174,18 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
   }, [envMat])
   const pmrem = useMemo(() => new THREE.PMREMGenerator(gl), [gl])
   const envRT = useRef<THREE.WebGLRenderTarget | null>(null)
+  const frameN = useRef(0)
   const lastEnv = useRef({ key: '', time: 0 })
 
   useEffect(() => {
     let alive = true
     loadAssetsManifest().then(async (m) => {
       const out: Partial<Record<(typeof KEYS)[number], HdriInfo>> = {}
+      const order = lightingAt(useStore.getState().timeOfDay).weights
+      const first = KEYS[order.indexOf(Math.max(...order))]
       await Promise.all(
-        KEYS.map(async (k) => {
+        [first, ...KEYS.filter((k) => k !== first)].map(async (k, i) => {
+          if (i > 0) await new Promise((r) => setTimeout(r, 4000))
           const tex = await loadHDRI(k)
           if (!tex) return
           const { mean, horizon } = analyse(tex)
@@ -168,9 +195,9 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
           const delta = sun ? phiTarget - sun.azimuth : 0
           const gain = TARGET_LUM[k] / Math.max(mean, 1e-4)
           out[k] = { tex, gain, delta, horizon: horizon.multiplyScalar(gain) }
+          if (alive) setHdris({ ...out })
         }),
       )
-      if (alive) setHdris(out)
     })
     return () => {
       alive = false
@@ -179,14 +206,17 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
 
   useEffect(() => {
     const u = skyMat.uniforms
-    const has = !!(hdris.day && hdris.golden && hdris.night)
-    u.uHasHdri.value = has ? 1 : 0
-    if (has) {
-      u.tDay.value = hdris.day!.tex
-      u.tGold.value = hdris.golden!.tex
-      u.tNight.value = hdris.night!.tex
-      u.uGain.value.set(hdris.day!.gain, hdris.golden!.gain, hdris.night!.gain)
-      u.uDelta.value.set(hdris.day!.delta, hdris.golden!.delta, hdris.night!.delta)
+    const any = hdris.day ?? hdris.golden ?? hdris.night
+    u.uHasHdri.value = any ? 1 : 0
+    if (any) {
+      const d = hdris.day ?? any
+      const g = hdris.golden ?? any
+      const n = hdris.night ?? any
+      u.tDay.value = d.tex
+      u.tGold.value = g.tex
+      u.tNight.value = n.tex
+      u.uGain.value.set(d.gain, g.gain * (hdris.golden ? 1 : 0.8), n.gain * (hdris.night ? 1 : 0.045))
+      u.uDelta.value.set(d.delta, g.delta, n.delta)
     }
     lastEnv.current.key = ''
   }, [hdris, skyMat])
@@ -203,7 +233,7 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
   const sun = useMemo(() => {
     const l = new THREE.DirectionalLight(0xffffff, 3)
     l.castShadow = true
-    l.shadow.mapSize.set(4096, 4096)
+    l.shadow.mapSize.set(quality.shadow, quality.shadow)
     l.shadow.bias = -0.00025
     l.shadow.normalBias = 0.04
     l.shadow.radius = 3
@@ -211,6 +241,17 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
     l.shadow.camera.far = 3000
     return l
   }, [])
+  useEffect(
+    () =>
+      onQuality(() => {
+        sun.shadow.mapSize.set(quality.shadow, quality.shadow)
+        sun.shadow.map?.dispose()
+        sun.shadow.map = null as unknown as THREE.WebGLRenderTarget
+        shadowKey.current = ''
+      }),
+    [sun],
+  )
+  const shadowKey = useRef('')
   const hemi = useMemo(() => new THREE.HemisphereLight(0xdfeaff, 0x3b3a2a, 0.3), [])
   useEffect(() => {
     scene.add(sun, sun.target, hemi)
@@ -220,6 +261,8 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
   }, [scene, sun, hemi])
 
   const fogHorizon = useMemo(() => new THREE.Color(), [])
+  const tmpC = useMemo(() => new THREE.Color(), [])
+  const white = useMemo(() => new THREE.Color(1, 1, 1), [])
   useFrame((state, dt) => {
     const st = useStore.getState()
     // animate the time of day towards the requested target
@@ -240,11 +283,12 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
     u.uW.value.set(L.weights[0], L.weights[1], L.weights[2])
 
     // fog colour: from HDRI horizons when present
-    if (hdris.day && hdris.golden && hdris.night) {
+    const anyH = hdris.day ?? hdris.golden ?? hdris.night
+    if (anyH) {
       fogHorizon.setRGB(0, 0, 0)
-      fogHorizon.add(hdris.day.horizon.clone().multiplyScalar(L.weights[0]))
-      fogHorizon.add(hdris.golden.horizon.clone().multiplyScalar(L.weights[1]))
-      fogHorizon.add(hdris.night.horizon.clone().multiplyScalar(L.weights[2]))
+      fogHorizon.add(tmpC.copy((hdris.day ?? anyH).horizon).multiplyScalar(L.weights[0]))
+      fogHorizon.add(tmpC.copy((hdris.golden ?? anyH).horizon).multiplyScalar(L.weights[1]))
+      fogHorizon.add(tmpC.copy((hdris.night ?? anyH).horizon).multiplyScalar(L.weights[2] * (hdris.night ? 1 : 0.045)))
       fogHorizon.lerp(L.fog, 0.35)
       // keep the haze from washing the image out: clamp its luminance
       const lum = 0.2126 * fogHorizon.r + 0.7152 * fogHorizon.g + 0.0722 * fogHorizon.b
@@ -262,7 +306,7 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
     // sun / moon light with shadows that follow the area of interest
     const focus = shadowFocus.current
     const dist = camera.position.distanceTo(focus)
-    const half = THREE.MathUtils.clamp(dist * 0.75, 30, 520)
+    const half = THREE.MathUtils.clamp(dist * 0.62, 26, 150)
     const cam = sun.shadow.camera
     if (Math.abs(cam.right - half) > half * 0.05) {
       cam.left = -half
@@ -282,9 +326,17 @@ export function SkySystem({ shadowFocus }: { shadowFocus: React.MutableRefObject
     sun.intensity = L.intensity
     sun.shadow.normalBias = 0.02 + half * 0.0006
     hemi.intensity = L.ambient * 0.5
-    hemi.color.copy(fogHorizon).lerp(new THREE.Color(1, 1, 1), 0.4)
+    hemi.color.copy(fogHorizon).lerp(white, 0.4)
 
     dome.position.copy(camera.position)
+    // low: redraw the shadow map only when the light or the framed area changes; otherwise every 2nd frame
+    const sk = `${fx.toFixed(0)},${fz.toFixed(0)},${half.toFixed(0)},${L.sunDir.y.toFixed(3)},${scene.children.length}`
+    frameN.current++
+    gl.shadowMap.autoUpdate = false
+    if (sk !== shadowKey.current || quality.tier === 'high' || frameN.current % (quality.tier === 'medium' ? 2 : 45) === 0) {
+      shadowKey.current = sk
+      gl.shadowMap.needsUpdate = true
+    }
 
     // regenerate the environment when the blend changed noticeably
     const key = L.weights.map((w) => w.toFixed(2)).join(',') + (u.uHasHdri.value ? 'h' : `a${L.sunDir.y.toFixed(2)}`)

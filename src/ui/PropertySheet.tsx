@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ADVISOR, AMENITY_LIST, PROJECT } from '../data/project'
 import { FLOORPLANS } from '../data/floorplans'
 import { GALLERY, SPECIFICATIONS } from '../data/specs'
-import { STATUS_META, UNIT_BY_ID, UNIT_TYPES, fmtPrice, m2ToSqft } from '../data/units'
+import { HOTEL, STATUS_META, UNIT_BY_ID, UNIT_TYPES, fmtPrice, m2ToSqft } from '../data/units'
 import { useStore } from '../store'
 import { FloorplanViewer } from './Floorplan'
 import { Icon } from './icons'
@@ -12,8 +12,8 @@ import { LocationMap } from './LocationMap'
 
 const BASE = import.meta.env.BASE_URL
 
-function Gallery({ kind }: { kind: 'villa' | 'apartment' }) {
-  const GALLERY_LIST = GALLERY[kind]
+function Gallery() {
+  const GALLERY_LIST = GALLERY
   const [ok, setOk] = useState<Record<string, boolean>>({})
   const [i, setI] = useState(0)
   const items = GALLERY_LIST.filter((g) => ok[g.src] !== false)
@@ -122,49 +122,47 @@ export function PropertySheet() {
   const t = UNIT_TYPES[u.typeId]
   const plan = FLOORPLANS[t.floorplan]
   const meta = STATUS_META[u.status]
-  const facts = [
-    { icon: 'bed', label: 'Bedrooms', value: u.bedrooms },
-    { icon: 'bath', label: 'Bathrooms', value: u.bathrooms },
-    { icon: 'car', label: 'Parking', value: u.parking },
-    { icon: 'area', label: 'Interior', value: `${m2ToSqft(u.areaM2).toLocaleString()} sq ft`, sub: `${u.areaM2} m²` },
-    { icon: 'terrace', label: 'Terraces', value: `${m2ToSqft(u.terraceM2).toLocaleString()} sq ft`, sub: `${u.terraceM2} m²` },
-    u.plotM2 ? { icon: 'plot', label: 'Plot', value: `${m2ToSqft(u.plotM2).toLocaleString()} sq ft`, sub: `${u.plotM2} m²` } : { icon: 'floor', label: 'Floor', value: `Level ${u.floor}`, sub: 'Residence block' },
+  const facts: { icon: string; label: string; value: string | number; sub?: string }[] = [
+    { icon: 'bed', label: 'Beds', value: u.beds },
+    { icon: 'people', label: 'Guests', value: u.guests },
+    { icon: 'area', label: 'Room', value: `${u.areaM2} m²`, sub: `${m2ToSqft(u.areaM2)} sq ft` },
+    { icon: 'terrace', label: 'Terrace', value: `${u.terraceM2} m²`, sub: `${m2ToSqft(u.terraceM2)} sq ft` },
+    { icon: 'floor', label: 'Floor', value: `Level ${u.floor}`, sub: `of ${HOTEL.floors}` },
     { icon: 'eye', label: 'View', value: u.view },
-    { icon: 'doc', label: 'Unit code', value: u.code },
   ]
   return (
     <div className={`sheet ${id ? 'open' : ''}`}>
       <div className="sheet-scroll" ref={scroller} onScroll={(e) => setStuck((e.target as HTMLDivElement).scrollTop > 380)}>
         <div className={`sheet-bar ${stuck ? 'stuck' : ''}`}>
           <button className="chip dark" onClick={close}>
-            <Icon name="arrowL" size={14} /> {interiorUnit ? 'Back to tour' : 'Masterplan'}
+            <Icon name="arrowL" size={14} /> {interiorUnit ? 'Back to the room' : 'Hotel'}
           </button>
           <div className="bar-facts">
             <b>{u.name}</b>
-            <span>{u.bedrooms} bd</span>
-            <span>{u.bathrooms} ba</span>
-            <span>{m2ToSqft(u.areaM2).toLocaleString()} sq ft</span>
-            <span className="price">{u.status === 'sold' ? 'Sold' : fmtPrice(u.price)}</span>
+            <span>{u.beds}</span>
+            <span>{u.guests} guests</span>
+            <span>{u.areaM2} m²</span>
+            <span className="price">{u.status === 'sold' ? 'Booked' : `${fmtPrice(u.price)} / night`}</span>
           </div>
           <button className="chip" onClick={() => document.getElementById('advisor')?.scrollIntoView({ behavior: 'smooth' })}>
-            Book presentation
+            Request dates
           </button>
         </div>
 
         <section className="hero">
-          <Gallery kind={u.kind} />
+          <Gallery />
           <div className="hero-copy">
             <span className="badge" style={{ background: meta.color }}>{meta.label}</span>
             <div className="eyebrow">{PROJECT.name} · {t.label}</div>
             <h1>{u.name}</h1>
             <p className="lede">
-              A {t.label.toLowerCase()} framed by the rainforest canopy, with floor-to-ceiling glass opening onto a private infinity-edge pool above the bay. Every plan, finish and amenity is described below — the full brochure is one click away.
+              {t.blurb} Sliding glass opens the whole room to the terrace; the pool, the sea deck and the jump rocks are an elevator ride below.
             </p>
-            <div className="hero-price">{u.status === 'sold' ? 'Sold' : fmtPrice(u.price)}</div>
+            <div className="hero-price">{u.status === 'sold' ? 'Booked' : `${fmtPrice(u.price)} / night`}</div>
             <div className="hero-actions">
               {!interiorUnit && (
                 <button className="btn dark" onClick={() => enter(u.id)}>
-                  <Icon name="eye" size={15} /> Virtual tour
+                  <Icon name="eye" size={15} /> Step inside
                 </button>
               )}
               <button className="btn outline" onClick={() => window.print()}>
@@ -201,7 +199,7 @@ export function PropertySheet() {
         </section>
 
         <section>
-          <h2>Community amenities</h2>
+          <h2>At the hotel</h2>
           <div className="amenities">
             {AMENITY_LIST.map((a) => (
               <div key={a.label}>
@@ -213,7 +211,7 @@ export function PropertySheet() {
         </section>
 
         <section id="advisor">
-          <h2>Your {PROJECT.name} advisor</h2>
+          <h2>Reservations</h2>
           <div className="advisor">
             <div className="advisor-card">
               <div className="avatar">{ADVISOR.name.split(' ').map((p) => p[0]).join('')}</div>

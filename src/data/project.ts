@@ -1,60 +1,43 @@
-// Project-level promotion data. Everything here is mock data for a fictional
-// development — swap these objects for a real project's content.
-import layout from './layout.json'
+// Project-level promotion data. Everything here is mock data for a fictional hotel —
+// swap these objects for a real project's content.
 
 export const PROJECT = {
-  id: 'vellmare-bay',
-  name: 'Vellmare Bay',
-  tagline: 'Residences in the canopy, above the bay',
-  developer: 'Vellmare Living',
-  currency: 'USD',
-  otherProjects: [
-    { id: 'vellmare-bay', name: 'Vellmare Bay', status: 'Selling now' },
-    { id: 'vellmare-ridge', name: 'Vellmare Ridge', status: 'Coming 2027' },
-    { id: 'vellmare-cove', name: 'Vellmare Cove', status: 'Sold out' },
-  ],
+  id: 'vellmare-cove',
+  name: 'Vellmare Cove',
+  tagline: 'One hotel. One hidden cove. The sea below your room.',
+  developer: 'Vellmare Hotels',
+  currency: 'EUR',
 }
 
-export type ShotId =
-  | 'masterplan'
-  | 'villas'
-  | 'residence'
-  | 'pool'
-  | 'court'
-  | 'playground'
-  | 'lounge'
-  | 'beach'
-  | 'boat'
+export type ShotId = 'hotel' | 'rooms' | 'pool' | 'deck' | 'jump' | 'cove' | 'lookout' | 'sky' | 'sea'
 
 export interface Shot {
   id: ShotId
   label: string
   icon: string
-  /** ground point the camera looks at (y is sampled from terrain + lift) */
-  target: [number, number]
-  lift: number
-  distance: number
-  /** degrees, 0 = looking towards -z (inland, from the ocean side) */
-  azimuth: number
-  elevation: number
   status: string
-  /** fixed eye position (world) instead of azimuth/elevation/distance */
-  eye?: [number, number, number]
+  eye: [number, number, number]
+  target: [number, number, number]
+  /** orbit limits around the framed target, so only finished scenery is ever in view */
+  az: number // ± degrees
+  up: number // degrees the camera may rise
+  down: number // degrees the camera may sink
+  zoom: [number, number] // min / max distance factor
+  fov?: number
+  /** wider lens on tall phone screens */
+  portraitFov?: number
 }
 
-const A = layout.amenities
-const R = layout.residence
-
 export const SHOTS: Shot[] = [
-  { id: 'masterplan', label: 'Masterplan', icon: 'map', target: [0, -110], lift: 20, distance: 720, azimuth: -8, elevation: 21, status: 'Masterplan overview' },
-  { id: 'villas', label: 'Villas', icon: 'villa', target: [-175, -30], lift: 6, distance: 230, azimuth: -18, elevation: 30, status: 'Exploring the villa terraces' },
-  { id: 'residence', label: 'Residence Block', icon: 'building', target: [R.x, R.z + 10], lift: 11, distance: 165, azimuth: 14, elevation: 11, status: 'Vellmare Residences · terraced apartments' },
-  { id: 'pool', label: 'Swimming Pool', icon: 'pool', target: [A.pool.x, A.pool.z], lift: 1, distance: 46, azimuth: 28, elevation: 22, status: 'Navigating to central pool area' },
-  { id: 'court', label: 'Sports Court', icon: 'court', target: [A.court.x, A.court.z], lift: 1, distance: 36, azimuth: -32, elevation: 24, status: 'Sports court · basketball & futsal' },
-  { id: 'playground', label: 'Playground', icon: 'play', target: [A.playground.x, A.playground.z], lift: 1, distance: 30, azimuth: 36, elevation: 22, status: "Children's playground" },
-  { id: 'lounge', label: 'Social Lounge', icon: 'lounge', target: [A.lounge.x, A.lounge.z], lift: 2, distance: 34, azimuth: -20, elevation: 18, status: 'Social lounge & gardens' },
-  { id: 'beach', label: 'Beach Club', icon: 'beach', target: [A.beachClub.x, A.beachClub.z], lift: 1, distance: 70, azimuth: 160, elevation: 16, status: 'Beach club on the bay' },
-  { id: 'boat', label: 'From the Bay', icon: 'boat', target: [10, -70], lift: 18, distance: 0, azimuth: 0, elevation: 0, eye: [-40, 2.55, 330], status: 'Aboard · the view from the bay' },
+  { id: 'hotel', label: 'The Hotel', icon: 'building', eye: [-14, 13, 34], target: [0, 34, -92], az: 24, up: 10, down: 3, zoom: [0.62, 1.12], portraitFov: 58, status: 'Vellmare Cove · the hotel' },
+  { id: 'rooms', label: 'Rooms', icon: 'bed', eye: [-12, 40, -34], target: [2, 40, -92], az: 30, up: 14, down: 14, zoom: [0.55, 1.15], portraitFov: 56, status: 'Choose a room · tap any balcony' },
+  { id: 'pool', label: 'Infinity Pool', icon: 'pool', eye: [17.5, 13.2, -73], target: [-9, 9.2, -52], az: 24, up: 14, down: 5, zoom: [0.55, 1.1], portraitFov: 60, status: 'Infinity pool above the cove' },
+  { id: 'deck', label: 'Sea Deck', icon: 'lounge', eye: [0, 6.2, -20], target: [17, 2.2, -47], az: 26, up: 14, down: 4, zoom: [0.5, 1.15], portraitFov: 58, status: 'Sea deck · straight into the water' },
+  { id: 'jump', label: 'Jump Rocks', icon: 'dive', eye: [-6, 6.5, 13], target: [-35, 6.5, -8], az: 24, up: 14, down: 5, zoom: [0.5, 1.15], portraitFov: 60, status: 'Jump rocks · 4, 8 and 12 metres' },
+  { id: 'cove', label: 'In the Water', icon: 'wave', eye: [9, 1.15, 34], target: [-4, 1.6, -10], az: 30, up: 24, down: 0.3, zoom: [0.5, 1.1], portraitFov: 60, status: 'Swimming in the cove' },
+  { id: 'lookout', label: 'Pine Lookout', icon: 'tree', eye: [-60, 31, 66], target: [6, 4, 4], az: 14, up: 8, down: 6, zoom: [0.8, 1.06], portraitFov: 56, status: 'Lookout under the pines' },
+  { id: 'sky', label: 'Sky Bar', icon: 'terrace', eye: [6, 82.3, -99], target: [-8, 62, -30], az: 30, up: 12, down: 6, zoom: [0.9, 1.1], portraitFov: 60, status: 'Sky bar · the whole cove and the open sea' },
+  { id: 'sea', label: 'From the Sea', icon: 'boat', eye: [8, 3.4, 138], target: [0, 26, -80], az: 10, up: 8, down: 0.6, zoom: [0.8, 1.06], portraitFov: 50, status: 'Arriving by boat' },
 ]
 
 export const TIME_PRESETS = [
@@ -64,36 +47,33 @@ export const TIME_PRESETS = [
 ] as const
 
 export const LOCATION = {
-  center: [10.4405, -85.7765] as [number, number],
-  zoom: 11,
-  address: 'Bahía Vellmare, Guanacaste coast, Costa Rica (fictional)',
+  center: [43.2012, 5.4998] as [number, number],
+  zoom: 12,
+  address: 'Calanque Vellmare, Mediterranean coast (fictional)',
   pois: [
-    { name: 'Vellmare Bay', kind: 'project', pos: [10.4405, -85.7765], eta: '' },
-    { name: 'Beach & Beach Club', kind: 'beach', pos: [10.4428, -85.7812], eta: '2 min walk' },
-    { name: 'Marina & Yacht Club', kind: 'marina', pos: [10.4325, -85.7905], eta: '6 min drive' },
-    { name: 'Village centre & dining', kind: 'dining', pos: [10.4502, -85.7618], eta: '8 min drive' },
-    { name: 'International School', kind: 'school', pos: [10.4268, -85.7472], eta: '12 min drive' },
-    { name: 'Regional Hospital', kind: 'health', pos: [10.4701, -85.7312], eta: '18 min drive' },
-    { name: 'Golf & Country Club', kind: 'golf', pos: [10.4092, -85.7536], eta: '15 min drive' },
-    { name: 'International Airport', kind: 'airport', pos: [10.5933, -85.5444], eta: '55 min drive' },
+    { name: 'Vellmare Cove', kind: 'project', pos: [43.2012, 5.4998], eta: '' },
+    { name: 'Private boat landing', kind: 'marina', pos: [43.1985, 5.5008], eta: '3 min by boat' },
+    { name: 'Coastal trail head', kind: 'golf', pos: [43.2085, 5.5068], eta: '12 min walk' },
+    { name: 'Fishing harbour & dining', kind: 'dining', pos: [43.2142, 5.5371], eta: '20 min by boat' },
+    { name: 'International airport', kind: 'airport', pos: [43.4393, 5.2214], eta: '45 min drive' },
   ] as { name: string; kind: string; pos: [number, number]; eta: string }[],
 }
 
 export const ADVISOR = {
-  name: 'Isabela Montoya',
-  role: 'Senior Sales Advisor',
-  agency: 'Vellmare Living · Sales Gallery',
-  phone: '+506 4000 1234',
-  email: 'sales@vellmare.example',
-  languages: ['English', 'Español', 'Português'],
-  hours: 'Mon–Sat · 9:00–18:00',
+  name: 'Reservations',
+  role: 'Guest relations',
+  agency: 'Vellmare Cove',
+  phone: '+33 4 00 00 12 34',
+  email: 'stay@vellmare.example',
+  languages: ['English', 'Français', 'العربية'],
+  hours: 'Every day · 24 h',
 }
 
 export const AMENITY_LIST = [
-  { label: 'Infinity pool deck', detail: '36 m lap & leisure pool, loungers, cabanas' },
-  { label: 'Sports court', detail: 'Basketball / futsal, night lighting' },
-  { label: "Children's playground", detail: 'Slides, swings, soft-fall surface' },
-  { label: 'Social lounge', detail: 'Pavilion, fire pit, outdoor kitchen' },
-  { label: 'Beach club', detail: 'Private loungers, kayaks, sunset bar' },
-  { label: 'Canopy trails', detail: '3.2 km of shaded walking paths' },
+  { label: 'Infinity pool', detail: '32 m pool whose edge meets the sea' },
+  { label: 'Sea deck', detail: 'Timber deck with ladders straight into the cove' },
+  { label: 'Jump rocks', detail: 'Natural ledges at 4, 8 and 12 metres' },
+  { label: 'Sky bar', detail: 'Rooftop bar over the whole coast' },
+  { label: 'Pine lookout', detail: 'Shaded trail above the cove' },
+  { label: 'Boat landing', detail: 'Arrive by sea' },
 ]

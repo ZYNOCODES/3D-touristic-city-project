@@ -17,7 +17,7 @@ function Loader() {
         <div className="bar">
           <i style={{ width: `${Math.round(p * 100)}%` }} />
         </div>
-        <small>Preparing the masterplan · {Math.round(p * 100)}%</small>
+        <small>Preparing the cove · {Math.round(p * 100)}%</small>
       </div>
     </div>
   )

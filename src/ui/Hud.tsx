@@ -2,33 +2,20 @@ import { useEffect, useRef, useState } from 'react'
 import { PROJECT, SHOTS, TIME_PRESETS } from '../data/project'
 import { ALL_UNITS, STATUS_META, UNIT_BY_ID } from '../data/units'
 import { useStore } from '../store'
+import { quality, setTier, type Tier } from '../scene/cove/quality'
 import { Icon } from './icons'
 
 export function TopBar() {
-  const [open, setOpen] = useState(false)
   const [layers, setLayers] = useState(false)
   const availability = useStore((s) => s.availability)
   const showPeople = useStore((s) => s.showPeople)
-  const showLabels = useStore((s) => s.showLabels)
   const set = useStore((s) => s.set)
   const counts = ALL_UNITS.reduce((a, u) => ((a[u.status] = (a[u.status] || 0) + 1), a), {} as Record<string, number>)
   return (
     <header className="topbar">
-      <div className="pill brand" onClick={() => setOpen((v) => !v)}>
+      <div className="pill brand" onClick={() => useStore.getState().goShot('hotel')}>
         <span className="brand-mark" />
         <span className="brand-name">{PROJECT.name}</span>
-        <Icon name="chevD" size={14} />
-        {open && (
-          <div className="menu" onClick={(e) => e.stopPropagation()}>
-            <div className="menu-title">Projects</div>
-            {PROJECT.otherProjects.map((p) => (
-              <button key={p.id} className={`menu-item ${p.id === PROJECT.id ? 'active' : ''}`} disabled={p.id !== PROJECT.id} onClick={() => setOpen(false)}>
-                <span>{p.name}</span>
-                <small>{p.status}</small>
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       <div className="topbar-right">
@@ -49,17 +36,26 @@ export function TopBar() {
             <i />
           </label>
         </div>
-        <div className="pill icon-btn" title="Layers" onClick={() => setLayers((v) => !v)}>
+        <div className="pill icon-btn" title="View options" onClick={() => setLayers((v) => !v)}>
           <Icon name="layers" />
           {layers && (
             <div className="menu right" onClick={(e) => e.stopPropagation()}>
-              <div className="menu-title">Layers</div>
+              <div className="menu-title">View</div>
               <label className="check">
-                <input type="checkbox" checked={showLabels} onChange={(e) => set({ showLabels: e.target.checked })} /> Amenity labels
+                                <input type="checkbox" checked={showPeople} onChange={(e) => set({ showPeople: e.target.checked })} /> Guests
               </label>
-              <label className="check">
-                <input type="checkbox" checked={showPeople} onChange={(e) => set({ showPeople: e.target.checked })} /> Residents & activity
-              </label>
+              <div className="menu-title">Quality</div>
+              {(['low', 'medium', 'high'] as Tier[]).map((t) => (
+                <label className="check" key={t}>
+                  <input
+                    type="radio"
+                    name="q"
+                    defaultChecked={quality.tier === t}
+                    onChange={() => setTier(t)}
+                  />{' '}
+                  {t[0].toUpperCase() + t.slice(1)}
+                </label>
+              ))}
             </div>
           )}
         </div>
@@ -169,7 +165,7 @@ export function HoverTip() {
       {u && (
         <>
           <b>{u.name}</b> – <span style={{ color: STATUS_META[u.status].color }}>{STATUS_META[u.status].label}</span>
-          <div>Click to preview · virtual tour</div>
+          <div>Click to open the room</div>
         </>
       )}
     </div>

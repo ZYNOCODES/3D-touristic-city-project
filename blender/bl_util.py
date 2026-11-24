@@ -227,14 +227,14 @@ def box(name, mat, x0, y0, z0, x1, y1, z1, col=None, bevel=0.0, segments=2):
 
 
 def cyl(name, mat, x, y0, z, r, h, seg=16, r2=None, col=None, bevel=0.0):
-    bpy.ops.mesh.primitive_cone_add(vertices=seg, radius1=r, radius2=r if r2 is None else r2, depth=h, location=W(x, y0 + h / 2, z))
-    obj = bpy.context.active_object
-    obj.name = name
-    for c in obj.users_collection:
-        c.objects.unlink(obj)
-    _link(obj, col)
+    me = bpy.data.meshes.new(name)
+    bm = bmesh.new()
+    bmesh.ops.create_cone(bm, cap_ends=True, segments=seg, radius1=r, radius2=r if r2 is None else r2, depth=h)
+    bm.to_mesh(me)
+    bm.free()
+    obj = _link(bpy.data.objects.new(name, me), col)
+    obj.location = W(x, y0 + h / 2, z)
     obj.data.materials.append(material(mat))
-    bpy.ops.object.shade_smooth() if False else None
     for p in obj.data.polygons:
         p.use_smooth = len(p.vertices) == 4
     if bevel:
@@ -274,15 +274,15 @@ def hip_roof(name, mat, x0, z0, x1, z1, y, rise, col=None, thickness=0.22):
 
 
 def apply_all_modifiers(objs=None):
+    dg = bpy.context.evaluated_depsgraph_get()
+    dg.update()
+    done = []
     for o in objs or list(bpy.context.scene.objects):
-        if o.type != "MESH" or not o.modifiers:
-            continue
-        bpy.context.view_layer.objects.active = o
-        for m in list(o.modifiers):
-            try:
-                bpy.ops.object.modifier_apply(modifier=m.name)
-            except RuntimeError as e:
-                log("modifier apply failed", o.name, m.name, e)
+        if o.type == "MESH" and o.modifiers:
+            done.append((o, bpy.data.meshes.new_from_object(o.evaluated_get(dg))))
+    for o, me in done:
+        o.modifiers.clear()
+        o.data = me
 
 
 def cube_project_uvs(objs=None, scale=1.0):

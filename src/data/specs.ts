@@ -1,49 +1,35 @@
 export const SPECIFICATIONS = [
   {
-    title: 'Structure & Finishes',
+    title: 'In the room',
     items: [
-      ['Structure', 'Reinforced concrete frame on engineered terraces, seismic zone IV compliant'],
-      ['Ceiling heights', '3.2 m living areas, 6.4 m double-height lounge'],
-      ['Glazing', 'Floor-to-ceiling low-E laminated glass, lift-and-slide pocket doors'],
-      ['Flooring', 'Large-format honed limestone porcelain, oak in bedrooms'],
-      ['Joinery', 'Rift-sawn oak slat feature walls, cantilevered oak stair treads'],
-      ['Kitchen', 'Calacatta stone island, integrated appliances, walk-in pantry'],
+      ['Bed', 'King bed facing the sea, linen bedding, blackout and sheer curtains'],
+      ['Bathroom', 'Freestanding tub, walk-in rain shower, double stone vanity'],
+      ['Terrace', 'Full-width sliding glass, loungers or chairs, sheltered by the wave above'],
+      ['Comfort', 'Silent air conditioning, floor heating in the bathroom, Nespresso and minibar'],
+      ['Connectivity', 'Fibre Wi-Fi, 55-inch screen, wireless charging on both sides'],
     ],
   },
   {
-    title: 'MEP & Smart Systems',
+    title: 'In the cove',
     items: [
-      ['Climate', 'VRF inverter A/C with zoned smart thermostats, ceiling fans'],
-      ['Energy', '12 kWp rooftop solar, 20 kWh battery storage, EV-ready parking'],
-      ['Water', 'Rainwater harvesting, solar water heating, filtered drinking water'],
-      ['Home automation', 'Lighting scenes, motorised blinds, pool & access control via app'],
-      ['Connectivity', 'Fibre to the home, mesh Wi-Fi, prewired AV in living areas'],
-      ['Security', '24/7 gated access, CCTV perimeter, smart locks'],
+      ['Infinity pool', '32 m pool on the edge of the cliff, heated from April to November'],
+      ['Sea deck', 'Timber deck with ladders, towels, paddle boards and snorkels'],
+      ['Jump rocks', 'Marked ledges at 4, 8 and 12 metres with a lifeguard from 9:00 to 19:00'],
+      ['Sky bar', 'Rooftop bar, open to the horizon until midnight'],
     ],
   },
   {
-    title: 'Outdoor & Amenities',
+    title: 'Good to know',
     items: [
-      ['Private pool', 'Infinity-edge plunge pool with heat pump & LED lighting'],
-      ['Terraces', 'Thermo-ash decking, covered outdoor lounge, BBQ station'],
-      ['Landscaping', 'Olive, cypress, pine and lavender planting, drip irrigation, garden lighting'],
-      ['Community', 'Pool deck, sports court, playground, social lounge, beach club'],
-      ['Services', 'Optional rental programme, concierge & housekeeping'],
+      ['Check-in / out', 'From 15:00 / until 12:00'],
+      ['Getting here', 'By boat from the harbour, or by the private road'],
+      ['Children', 'Welcome; jump rocks from 12 years with an adult'],
     ],
   },
 ] as const
 
-export const GALLERY = {
-  villa: [
-    { src: 'renders/villa_living.jpg', caption: 'Living room with stone fireplace' },
-    { src: 'renders/villa_terrace.jpg', caption: 'Covered terrace & private pool' },
-    { src: 'renders/villa_dining.jpg', caption: 'Dining & kitchen' },
-    { src: 'renders/villa_bedroom.jpg', caption: 'Master suite' },
-    { src: 'renders/exterior.jpg', caption: 'Villa exterior' },
-  ],
-  apartment: [
-    { src: 'renders/apt_living.jpg', caption: 'Living room facing the bay' },
-    { src: 'renders/apt_kitchen.jpg', caption: 'Kitchen & dining' },
-    { src: 'renders/apt_bedroom.jpg', caption: 'Bedroom behind the glass partition' },
-  ],
-}
+export const GALLERY = [
+  { src: 'renders/room_bed.jpg', caption: 'Bed and oak wall' },
+  { src: 'renders/room_view.jpg', caption: 'The room opens to the terrace' },
+  { src: 'renders/room_bath.jpg', caption: 'Freestanding tub and stone vanity' },
+]

@@ -31,6 +31,10 @@
     "apartment_interior": {
       "file": "models/apartment_interior.glb",
       "bytes": 5019192
+    },
+    "hotel": {
+      "file": "models/hotel.glb",
+      "bytes": 856916
     }
   }
 }

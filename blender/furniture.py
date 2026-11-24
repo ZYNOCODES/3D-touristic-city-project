@@ -157,7 +157,7 @@ def bed(col, room, x, z, w=1.9, l=2.15, rot=0.0, frame="walnut", linen="cushion"
     def build():
         x0, x1 = x - w / 2, x + w / 2
         z0, z1 = z - l / 2, z + l / 2
-        b("bed_base", frame, x0 - 0.05, 0.08, z0, x1 + 0.05, 0.38, z1 + 0.05, col, bevel=0.015)
+        b("bed_base", frame, x0 + 0.03, 0.08, z0, x1 - 0.03, 0.36, z1 - 0.08, col, bevel=0.015)
         soft(b("headboard", "fabric", x0 - 0.15, 0.08, z0 - 0.12, x1 + 0.15, 1.25, z0, col), 2, 0.05)
         mat = soft(b("mattress", linen, x0, 0.38, z0 + 0.02, x1, 0.62, z1, col), 1, 0.04)
         for i, px in enumerate((x - w / 4, x + w / 4)):
@@ -382,10 +382,19 @@ def lounger(col, room, x, z, rot=0.0, wood="cladding", pad="cushion"):
         for sx in (-0.3, 0.3):
             for sz in (-0.9, 0.9):
                 b("lg_leg", wood, x + sx - 0.03, 0, z + sz - 0.03, x + sx + 0.03, 0.2, z + sz + 0.03, col)
-        soft(b("lg_pad", pad, x - 0.32, 0.28, z - 0.98, x + 0.32, 0.35, z + 0.4, col), 1, 0.025)
-        bk = soft(b("lg_back", pad, x - 0.32, 0.28, z + 0.4, x + 0.32, 0.35, z + 1.0, col), 1, 0.025)
-        bk.rotation_euler.x = math.radians(38)
-        bk.location += U.W(0, 0.18, -0.05) - U.W(0, 0, 0)
+        soft(b("lg_pad", pad, x - 0.32, 0.28, z - 0.98, x + 0.32, 0.36, z + 0.36, col), 1, 0.025)
+        # back rest: hinged at (z + 0.36, y 0.30), raised 38 degrees
+        an = math.radians(38)
+        cs, sn = math.cos(an), math.sin(an)
+        for nm, mt, t0, t1 in (("lg_back", pad, 0.0, 0.08), ("lg_backf", wood, -0.03, -0.005)):
+            v = []
+            for l in (0.0, 0.68):
+                for t in (t0, t1):
+                    for xx in (-0.32, 0.32):
+                        v.append((x + xx, 0.30 + l * sn + t * cs, z + 0.36 + l * cs - t * sn))
+            o = U.mesh_from(nm, mt, v, [(0, 1, 3, 2), (4, 6, 7, 5), (0, 2, 6, 4), (1, 5, 7, 3), (2, 3, 7, 6), (0, 4, 5, 1)], col)
+            if nm == "lg_back":
+                soft(o, 1, 0.025)
 
     objs = _collect(build)
     if rot:

@@ -5,7 +5,9 @@ import { BlendFunction, Effect, EffectAttribute, ToneMappingMode } from 'postpro
 import * as THREE from 'three'
 import { MOTION } from '../camera/motion'
 import { GLOBAL } from '../shared'
+import { useEffect, useState } from 'react'
 import { useStore } from '../../store'
+import { onQuality, quality } from '../cove/quality'
 
 /** Radial "speed" blur driven by camera velocity during flights. */
 class SpeedBlurEffect extends Effect {
@@ -72,10 +74,17 @@ export function PostFX() {
     grade.uniforms.get('golden')!.value = GLOBAL.uGolden.value
     grade.uniforms.get('night')!.value = GLOBAL.uNight.value
   })
+  const [, bump] = useState(0)
+  useEffect(() => onQuality(() => bump((n) => n + 1)), [])
+  // without the composer nothing else draws the frame (a positive-priority useFrame disables auto-render)
+  useFrame(({ gl: r, scene, camera }) => {
+    if (!quality.post) r.render(scene, camera)
+  }, 1)
+  if (!quality.post) return null
   return (
-    <EffectComposer multisampling={0} enableNormalPass={false}>
-      <N8AO aoRadius={interior ? 1.2 : 4} intensity={interior ? 2.2 : 1.6} distanceFalloff={interior ? 0.6 : 1.5} quality="medium" halfRes={!interior} />
-      <Bloom mipmapBlur luminanceThreshold={1.1} luminanceSmoothing={0.2} intensity={0.55} radius={0.7} />
+    <EffectComposer key={quality.tier} multisampling={0} enableNormalPass={false}>
+      {quality.ao ? <N8AO aoRadius={interior ? 0.7 : 1.3} intensity={interior ? 1.6 : 1.3} distanceFalloff={interior ? 0.6 : 1.2} quality="medium" halfRes /> : <></>}
+      <Bloom mipmapBlur luminanceThreshold={1.6} luminanceSmoothing={0.3} intensity={0.3} radius={0.7} />
       <primitive object={speed} />
       <primitive object={grade} />
       <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
